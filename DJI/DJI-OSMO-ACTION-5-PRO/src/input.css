@@ -1,46 +1,46 @@
 /* Reset básico */
-* {
+  .dji-lamina * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", serif;
   }
   
-  body {
+  .dji-lamina {
     font-family: Arial, sans-serif;
     color: #fff;
     background-color: #000;
     line-height: 1.6;
   }
   
-  section {
+  .dji-lamina section {
     text-align: center;
   }
   
   /* Títulos, subtitulos, descrições e textos padrões */
-  h3, h4, h5 {
+  .dji-lamina h3, .dji-lamina h4, .dji-lamina h5 {
     margin-bottom: 15px;
   }
   
-  p {
+  .dji-lamina p {
     margin-bottom: 20px;
   }
 
-  .feature__title {
+  .dji-lamina .feature__title {
     font-size: 38px;
     margin-bottom: 0px;
     line-height: 1em;
   }
 
-  .feature__title > span {
+  .dji-lamina .feature__title > span {
     font-weight: 400;
   }
 
-  .feature__subtitle {
+  .dji-lamina.feature__subtitle {
     font-size: 30px;
   }
 
-  .feature__description {
+  .dji-lamina .feature__description {
     max-width: 672px;
     color: #a6a6a6;
     margin: 0 auto;
@@ -68,6 +68,11 @@
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+  }
+
+  .showcase__gallery-image video {
+    max-width: 100%;
+    width: 100%;
   }
   
   .showcase__image {
@@ -129,7 +134,7 @@
   
   .package__gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
     gap: 10px;
   }
 
@@ -165,7 +170,7 @@
   }
 
   .gallery__image-01 { grid-area: a; }
-  .gallery__image-02 { grid-area: b; }
+  .gallery__image-02 { grid-area: b; border-radius: 10px; position: relative; }
   .gallery__image-03 { grid-area: c; }
   .gallery__image-04 { grid-area: d; }
   .gallery__image-05 { grid-area: e; }
@@ -173,6 +178,13 @@
 
   .gallery__image {
     width: 100%;
+  }
+
+  .gallery__image-02 > .feature__title {
+    position: absolute;
+    z-index: 2;
+    font-size: 24px;
+    margin-top: 35.54px;
   }
 
   .dobra-03 {
@@ -215,6 +227,28 @@
 
   .video > .feature__description {
     margin: 0;
+  }
+
+  .dobra-04 {
+    margin: 32px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .dobra-04 > .sensor__camera {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dobra-04 > .sensor__camera > .feature__description {
+    margin-bottom: 20px;
+    max-width: 550px;
+  }
+
+  .dobra-04 .feature__title {
+    margin-bottom: 10px;
   }
 
   /* Aproveitamento de areas parecidas */
@@ -286,8 +320,8 @@
     max-width: 430px;
   }
 
-  .dobra-06 > .feature__color > img,
-  .dobra-07 > .feature__shine > img { grid-area: c; }
+  .dobra-06 > .feature__color > .showcase__gallery-image,
+  .dobra-07 > .feature__shine > .showcase__gallery-image { grid-area: c; }
 
   .dobra-07-1 {
     display: grid !important;
@@ -321,11 +355,12 @@
 
   .dobra-07-1 > .feature__carousel > div.swiper-slide > h3 { grid-area: a; align-self: flex-end; }
 
-  .dobra-07-1 > .feature__carousel > div.swiper-slide > p {
+  .dobra-07-1 > .feature__carousel > div.swiper-slide > .feature__description {
     grid-area: b;
     align-self: flex-start;
     max-width: 350px;
-    justify-self: flex-start;
+    justify-self: flex-start !important;
+    margin: 0;
   }
 
   .dobra-07-1 > .feature__carousel > div.swiper-slide > .video { grid-area: c; align-self: center; }
@@ -336,12 +371,12 @@
   }
 
   /* Configurações carrossel */
-  .swiper-slide-next,
-  .swiper-slide-prev {
+  .dji-lamina .swiper-slide-next,
+  .dji-lamina .swiper-slide-prev {
     opacity: 50%;
   }
 
-  .flags {
+  .dji-lamina .flags {
     position: relative;
     height: 50px;
     display: grid;
@@ -355,7 +390,7 @@
     width: 100%;
   }
 
-  .controls {
+  .dji-lamina .controls {
     grid-area: a;
     display: flex;
     flex-direction: row-reverse;
@@ -364,41 +399,41 @@
     gap: 20px;
   }
 
-  .swiper-pagination { grid-area: b; }
+  .dji-lamina .swiper-pagination { grid-area: b; }
 
-  .swiper-button-next, .swiper-button-prev {
+  .dji-lamina .swiper-button-next, .dji-lamina .swiper-button-prev {
     position: relative !important;
     right: 0 !important;
     left: 0 !important;
     opacity: 50%;
   }
 
-  .swiper-button-next:after {
+  .dji-lamina .swiper-button-next:after {
     content: url("./assets/images/dobra-7-1-dji-osmo-action-5-pro-carousel-right.png") !important;
     max-height: 30px;
     display: flex;
     align-items: center;
   }
 
-  .swiper-button-prev:after {
+  .dji-lamina   .swiper-button-prev:after {
     content: url("./assets/images/dobra-7-1-dji-osmo-action-5-pro-carousel-left.png") !important;
     max-height: 30px;
     display: flex;
     align-items: center;
   }
 
-  .swiper-pagination {
+  .dji-lamina .swiper-pagination {
     width: fit-content !important;
   }
 
-  .swiper-pagination-bullet {
+  .dji-lamina .swiper-pagination-bullet {
     background-color: #797979 !important;
     width: 37px !important;
     height: 2.5px !important;
     border-radius: 0 !important;
   }
 
-  .swiper-pagination-bullet-active {
+  .dji-lamina .swiper-pagination-bullet-active {
     background-color: #ffffff !important;
   }
 
@@ -453,11 +488,17 @@
   .dobra-09 > .feature__center > .feature__description:nth-child(4) { grid-area: d; max-width: 528px;}
   .dobra-09 > .feature__center > .feature__description:nth-child(5) { grid-area: e; max-width: 441px;}
 
+  .dobra-09 > .feature__center > .video__play {
+    max-width: 441px;
+    justify-self: center;
+  }
+
   .dobra-09 > .feature__center > .feature__text,
   .dobra-09 > .feature__center > .video__play:nth-child(2) {
     max-width: 528px;
     width: 100%;
     align-self: flex-end;
+    justify-self: center;
   }
 
   .dobra-09 > .feature__center > .feature__description:nth-child(4),
@@ -577,6 +618,120 @@
     height: 100%;
   }
 
+  /* Dobra 13 e 14 */
+  .dobra-13, .dobra-14 { background-color: transparent !important; }
+
+  .background-grandient {
+    background: linear-gradient(180deg, #000000 0%, #141414 26.5%, #141414 64%);
+  }
+
+  .background-grandient > .feature__title {
+    margin: 32px auto;
+    padding: 0;
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .showcase {
+    gap: 20px;
+  }
+
+  .showcase__gallery img {
+    margin: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .showcase__gallery img:hover {
+    transform: scale(1.025);
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .category-button {
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    color: #a6a6a6;
+    background: transparent;
+    border-bottom: 2px solid #a6a6a6;
+    transition: 200ms ease;
+    transition: background-color border color 0.3s ease;
+    padding: 12px 20px;
+  }
+  
+  /* Estilo ao passar o mouse */
+  .category-button:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Botão ativo */
+  .category-button.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+  .showcase .feature__description {
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
+  .showcase .feature__description.active {
+    opacity: 100% !important;
+    min-height: 35px;
+  }
+
+  /* Descrições dobra-13 e dobra-14 */
+  .dobra-14 .feature__description--destaques {
+    max-width: 450px;
+  }
+
+  .dobra-14 .package__title {
+    font-size: 38px;
+  }
+
+  .dobra-14 {
+    padding: 64px 0px;
+  }
+
+  .dobra-14 .package__subtitle {
+    font-size: 24px;
+  }
+
+  .dobra-14 .package__content {
+    margin-bottom: 32px;
+  }
+
+  .dobra-14 .showcase__gallery {
+    max-width: 1200px;
+  }
+
+  .dobra-16 {
+    padding: 32px 0;
+  }
+
+  .dobra-16 > .package__content > .feature__title {
+    font-size: 30px;
+  } 
+
+
   .dobra-white {
     background: url("./assets/images/dobra-13.png") no-repeat;
     background-size: cover;
@@ -680,86 +835,38 @@
     justify-content: center;
   }
 
-  .dobra-14 .package__title {
-    font-size: 38px;
-  }
-
-  .dobra-14 {
-    padding: 64px 0px;
-  }
-
-  .dobra-14 .package__subtitle {
-    font-size: 24px;
-  }
-
-  .dobra-14 .package__content {
-    margin-bottom: 32px;
-  }
-
-  
-  .showcase__gallery img {
-    margin: 5px;
-    transition: transform 0.2s;
-  }
-  
-  .showcase__gallery img:hover {
-    transform: scale(1.025);
-  }
-  
-  .button-container {
+  .dobra-16 {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  button {
-    font-size: 16px;
-    padding: 12px;
-    cursor: pointer;
-    border: none;
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    transition: background-color 0.3s ease;
-  }
-
-  .category-button {
-    font-size: 16px;
-    padding: 12px;
-    cursor: pointer;
-    border: none;
-    color: #a6a6a6;
-    background: #000;
-    border-bottom: 2px solid #a6a6a6;
-    transition: 200ms ease;
-    transition: background-color border color 0.3s ease;
-  }
-  
-  /* Estilo ao passar o mouse */
-  .category-button:hover {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-  }
-  
-  /* Botão ativo */
-  .category-button.active {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-  }
-
-  /* Dobra 13 e 14 */
-  .showcase {
+    flex-direction: column;
     gap: 20px;
   }
 
-  .showcase .feature__description {
-    justify-content: center;
-    text-align: center;
-    opacity: 0;
-    transition: opacity .3s ease;
+  .dobra-16 > .package__gallery {
+    width: 100%;
+    max-width: 1200px;
   }
 
-  .showcase .feature__description.active {
-    opacity: 100% !important;
+  .dobra-16 > .package__content > .feature__title {
+    line-height: normal;
+  }
+
+  .dobra-17 {
+    background-color: #fff;
+    color: #000000;
+    margin-bottom: 32px;
+  }
+
+  .dobra-17 > .feature__content,
+  .dobra-17 > .feature__content > ol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dobra-17 > .feature__content > p
+  .dobra-17 > .feature__content > ol > li {
+    margin: 0;
+    font-size: 12px;
   }
   
   /* Ajustes para Mobile */
