@@ -1,0 +1,402 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+    line-height: 1.6;
+  }
+  
+  section {
+    text-align: center;
+  }
+  
+  h3, h4, h5 {
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  /* Banners e imagens */
+  .banner__image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .gallery__container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 16px; 
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .gallery__image-01 { grid-area: 1 / 1 / 2 / 2; }
+  .gallery__image-02 { grid-area: 1 / 2 / 3 / 3; }
+  .gallery__image-03 { grid-area: 2 / 1 / 3 / 2; }
+  .gallery__image-04 { grid-area: 3 / 1 / 4 / 3; }
+  .gallery__image-05 { grid-area: 4 / 1 / 5 / 2; }
+  .gallery__image-06 { grid-area: 4 / 2 / 5 / 3; }
+
+  .gallery__image{
+    width: 100%;
+  }
+  
+  .gallery__image,
+  .showcase__gallery-image, 
+  .camera__image, 
+  .features-list__image, 
+  .telephoto__image, 
+  .panorama__image, 
+  .lidar__image, 
+  .return-home__image, 
+  .assistance__image, 
+  .tracking__feature-image, 
+  .package__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .showcase__image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Botões */
+  .showcase__buttons, 
+  .features-list__button, 
+  .return-home__button {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .showcase__button, 
+  .features-list__button, 
+  .return-home__button {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .showcase__button:hover, 
+  .features-list__button:hover, 
+  .return-home__button:hover {
+    background: #555;
+  }
+  
+  /* Estrutura geral */
+  .feature__content, 
+  .camera__content, 
+  .features-list__content, 
+  .telephoto__content, 
+  .tracking__details, 
+  .package__content {
+    text-align: start;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  .features-list__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .tracking__details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .package__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .dobra-01{
+    background: url("./assets/images/dobra-01.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vw;
+    padding-top: 32px;
+  }
+
+  .dobra-02{
+    padding: 32px 0px;
+  }
+
+  .dobra-03{
+    background: url("./assets/images/dobra-03.png") no-repeat;
+    background-size: contain;
+    background-position: top;
+    height: 58vw;
+    padding: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dobra-09{
+    background: url("./assets/images/dobra-09.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dobra-white{
+    background: url("./assets/images/dobra-13.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+  }
+
+  
+  .dobra-02, 
+  .dobra-04, 
+  .dobra-05, 
+  .dobra-06, 
+  .dobra-07, 
+  .dobra-08, 
+  .dobra-10, 
+  .dobra-11, 
+  .dobra-12,
+  .dobra-15 {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .dobra-13, .dobra-14{
+    background: #fff;
+    color: #000;
+  }
+  
+
+  .feature__title{
+    font-size: 38px;
+    margin-bottom: 0px;
+    line-height: 1em;
+  }
+
+  .feature__subtitle{
+    font-size: 30px;
+  }
+  
+
+  .dobra-03 .feature__content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+
+  .dobra-05, .dobra-07{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dobra-05 .camera__content,
+  .dobra-07 .telephoto__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .panorama__title, 
+  .lidar__title, 
+  .assistance__title, 
+  .tracking__title, 
+  .camera__title, 
+  .telephoto__title, 
+  .safety__title{
+    font-size: 38px;
+    max-width: 720px;
+    text-align: center;
+  }
+
+  .dobra-12{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .dobra-13{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .dobra-13 .tracking__details-01, .dobra-13 .tracking__details-02, .dobra-13 .tracking__details-03{
+   display: flex;
+   flex-direction: column; 
+  }
+
+  .dobra-13 .feature--01, .dobra-13 .feature--02, .dobra-13 .feature--03{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  .dobra-13 .feature--02{
+    flex-direction: row-reverse;
+  }
+
+  .dobra-15--bg{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+  }
+
+  .dobra-15{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .dobra-15--description{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    text-align: start;
+    color: #a6a6a6;
+    max-width: 420px;
+  }
+
+  .dobra-15--description h3{
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .dobra-10, .dobra-12{
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+
+  .tracking__feature--description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dobra-14 .package__title{
+    font-size: 38px;
+  }
+
+  .dobra-14{
+    padding: 64px 0px;
+  }
+
+  .dobra-14 .package__subtitle{
+    font-size: 24px;
+  }
+
+  .dobra-14 .package__content{
+    margin-bottom: 32px;
+  }
+
+
+  .feature__description{
+    max-width: 642px;
+    color: #a6a6a6;
+    margin: 0 auto;
+  }
+
+
+  .dobra-04 .showcase__gallery{
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+  .showcase__gallery img {
+    margin: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .showcase__gallery img:hover {
+    transform: scale(1.025);
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 20px;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+  .category-button {
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background: #000;
+    transition: 200ms ease;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilo ao passar o mouse */
+  .category-button:hover {
+    background-color: #555;
+  }
+  
+  /* Botão ativo */
+  .category-button.active {
+    border-bottom: 1px solid #fff;
+  }
+  
+  
