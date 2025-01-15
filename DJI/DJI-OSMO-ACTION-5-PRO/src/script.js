@@ -41,20 +41,51 @@ function showGallery(category, button, fatherClassName) {
   activeDescription.style.display = "flex";
 }
 
-// Ativar carrossel
+// Ativar carrossel dobra-07-1
 var swiper = new Swiper(".dobra-07-1", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".dji-lamina .swiper-button-next",
+    prevEl: ".dji-lamina .swiper-button-prev",
   },
-  slidesPerView: "auto",
-  centeredSlides: true,
-  spaceBetween: 60,
+  breakpoints: {
+        991: {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 60
+        },
+        767: {
+                centeredSlides: true,
+                spaceBetween: 40
+        }
+  },
+  slidesPerView: 1.1,
+  centeredSlides: false,
+  spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
+
+// Ativar carrossel dobra-13
+var swiper = new Swiper(".buttons-carousel", {
+        breakpoints: {
+                1200: {
+                        slidesPerView: 5,
+                        centeredSlides: false,
+                        
+                },
+                890: {
+                        slidesPerView: 3,
+                        centeredSlides: false,
+                        width: 1200
+                }
+        },
+        slidesPerView: 1.5,
+        centeredSlides: false,
+        freeMode: true        
+});
+
 
 // Videos
 const videos = [
@@ -62,12 +93,12 @@ const videos = [
         selector: ".video-1",
         htmlVideo: `
         <h4 class="feature__title">
-                Poderosa<br />
+                Poderosa
                 estabilização com
-                HorizonSteady<br />
+                HorizonSteady
                 em 360°
         </h4>
-        <video autoplay loop class="gallery__image gallery__image-02" muted data-js="video">
+        <video autoplay loop class="gallery__image" muted data-js="video">
                 <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-osmo-action-5-pro/dobra-2-dji-osmo-action-5-pro-carousel-video.mp4" type="video/mp4"/>
         </video>
         `,

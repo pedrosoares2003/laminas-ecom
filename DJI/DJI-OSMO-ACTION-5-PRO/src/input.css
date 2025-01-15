@@ -169,22 +169,30 @@
     margin: auto;
   }
 
-  .gallery__image-01 { grid-area: a; }
-  .gallery__image-02 { grid-area: b; border-radius: 10px; position: relative; }
-  .gallery__image-03 { grid-area: c; }
-  .gallery__image-04 { grid-area: d; }
-  .gallery__image-05 { grid-area: e; }
-  .gallery__image-06 { grid-area: f; }
-
-  .gallery__image {
-    width: 100%;
+  .dobra-02 .gallery__image {
+    height: 100%;
+    overflow: hidden;
   }
 
-  .gallery__image-02 > .feature__title {
+  .dobra-02 .gallery__image-01 { grid-area: a; }
+  .dobra-02 .gallery__image-02 { grid-area: b; border-radius: 15px; position: relative; display: flex; justify-content: center; }
+  .dobra-02 .gallery__image-03 { grid-area: c; }
+  .dobra-02 .gallery__image-04 { grid-area: d; }
+  .dobra-02 .gallery__image-05 { grid-area: e; }
+  .dobra-02 .gallery__image-06 { grid-area: f; }
+
+  .dobra-02 .gallery__image-02 > .feature__title {
     position: absolute;
     z-index: 2;
     font-size: 24px;
     margin-top: 35.54px;
+    max-width: 215px;
+  }
+
+  .dobra-02 .gallery__image-02 > video.gallery__image {
+    height: 100%;
+    max-width: 110%;
+    border-radius: 15px;
   }
 
   .dobra-03 {
@@ -192,7 +200,7 @@
     background-size: cover;
     background-position: center bottom;
     height: 30vw;
-    padding-top: 32px;
+    padding-top: 32px !important;
     min-height: 582px;
   }
 
@@ -371,8 +379,8 @@
   }
 
   /* Configurações carrossel */
-  .dji-lamina .swiper-slide-next,
-  .dji-lamina .swiper-slide-prev {
+  .dji-lamina .dobra-07-1 .swiper-slide-next,
+  .dji-lamina .dobra-07-1 .swiper-slide-prev {
     opacity: 50%;
   }
 
@@ -440,8 +448,8 @@
   .dobra-08 {
     background: url("./assets/images/dobra-8-dji-osmo-action-5-pro-banner.png") no-repeat !important;
     background-size: cover !important;
-    background-position: center bottom;
-    height: 30vw;
+    background-position: 75% !important;
+    height: 36vw;
     padding-top: 32px;
     min-height: 582px;
     margin: 32px auto;
@@ -449,6 +457,7 @@
 
   .dobra-08 > .feature__content {
     margin-top: 60px;
+    max-width: 1200px;
   }
 
   .dobra-08 > .feature__content > .feature__title {
@@ -466,6 +475,7 @@
                          "d e";
     text-align: start;
     row-gap: 10px;
+    column-gap: 60px;
   }
 
   .dobra-09 > .feature__center > .feature__text {
@@ -484,9 +494,9 @@
   }
 
   .dobra-09 > .feature__center > .video__play:nth-child(2) { grid-area: b; }
-  .dobra-09 > .feature__center > .video__play:nth-child(3) { grid-area: c; justify-self: center;}
+  .dobra-09 > .feature__center > .video__play:nth-child(3) { grid-area: c; justify-self: flex-end;}
   .dobra-09 > .feature__center > .feature__description:nth-child(4) { grid-area: d; max-width: 528px;}
-  .dobra-09 > .feature__center > .feature__description:nth-child(5) { grid-area: e; max-width: 441px;}
+  .dobra-09 > .feature__center > .feature__description:nth-child(5) { grid-area: e; max-width: 441px; justify-self: flex-end; }
 
   .dobra-09 > .feature__center > .video__play {
     max-width: 441px;
@@ -498,13 +508,16 @@
     max-width: 528px;
     width: 100%;
     align-self: flex-end;
-    justify-self: center;
+    justify-self: flex-start;
+  }
+
+  .dobra-09 > .feature__center > .feature__description:nth-child(4) {
+    justify-self: flex-start;
   }
 
   .dobra-09 > .feature__center > .feature__description:nth-child(4),
   .dobra-09 > .feature__center > .feature__description:nth-child(5) {
     width: 100%;
-    justify-self: center;
     font-size: 14px;
   }
 
@@ -621,6 +634,21 @@
   /* Dobra 13 e 14 */
   .dobra-13, .dobra-14 { background-color: transparent !important; }
 
+  /* Configuração do carrossel dobra-13 */
+  .dobra-13 {
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+
+  .dobra-13 .swiper-wrapper {
+    align-items: flex-end;
+  }
+
+  .dobra-13 .swiper-wrapper > .category-button {
+    max-width: 250px;
+  }
+
   .background-grandient {
     background: linear-gradient(180deg, #000000 0%, #141414 26.5%, #141414 64%);
   }
@@ -685,6 +713,8 @@
     color: #fff;
     border-bottom: 2px solid #fff;
   }
+  
+  /* Descrições dobra-13 e dobra-14 */
 
   .showcase .feature__description {
     justify-content: center;
@@ -698,7 +728,6 @@
     min-height: 35px;
   }
 
-  /* Descrições dobra-13 e dobra-14 */
   .dobra-14 .feature__description--destaques {
     max-width: 450px;
   }
@@ -730,7 +759,6 @@
   .dobra-16 > .package__content > .feature__title {
     font-size: 30px;
   } 
-
 
   .dobra-white {
     background: url("./assets/images/dobra-13.png") no-repeat;
@@ -870,6 +898,217 @@
   }
   
   /* Ajustes para Mobile */
+  @media screen and (max-width: 1200px) {
+    .dji-lamina section {
+      padding: 0 21.8px
+    } 
+  }
+
+  @media screen and (max-width: 991px) {
+    .dobra-07-1 > .feature__carousel {
+      align-items: flex-start;
+    }
+
+    .dobra-07-1 > .feature__carousel > div.swiper-slide {
+      grid-template-columns: 1fr;
+      grid-template-areas: "a"
+                           "b"
+                           "c";
+      max-width: 400px;
+      height: auto;
+    }
+
+    .dobra-07-1 .flags {
+      max-width: 400px !important;
+    }
+
+    .dobra-07-1 .flags .controls {
+      display: none;
+    }
+
+    .dobra-10 {
+      padding: 0 !important;
+    }
+
+    .dobra-10 > .feature__camera {
+      grid-template-columns: 1fr;
+      grid-template-areas: "a"
+                           "b"
+                           "c";
+                           overflow: hidden;
+    }
+
+    .dobra-10 > .feature__camera > .feature__text {
+      justify-self: center;
+      max-width: 430px;
+      width: 100%;
+      padding: 0 21.8px;
+    }
+
+    .dobra-10 > .feature__camera > .feature__text:nth-child(2) {
+      margin-top: 0;
+    }
+
+    .dobra-10 > .feature__camera > img {
+      justify-self: flex-end;
+      margin-left: 0;
+      margin-right: -15%;
+      width: 113%;
+      max-width: none;
+    }
+
+    .dobra-11 > .feature__stability > .feature__card {
+      grid-template-columns: 1fr;
+      grid-template-areas: "a"
+                           "b"
+                           "c"
+                           "d";
+      justify-items: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    .dobra-02 > .gallery__container {
+      grid-template-columns: 1fr;
+      grid-template-areas: "a"
+                           "c"
+                           "e"
+                           "b"
+                           "d"
+                           "f";
+    }
+
+    .dobra-02 > .gallery__container > div.gallery__image {
+      max-width: 380px;
+      border-radius: 10px;
+    }
+
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(1),
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(4),
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(5) {
+      max-height: 280px;
+    }
+
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(2),
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(3),
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(6) {
+      max-height: 320px;
+      overflow: hidden;
+    }
+
+    /* Troca de imagem para versão mobile */
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(1) > img.gallery__image { content: url('./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-1-mobile.png'); }
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(4) > img.gallery__image { content: url('./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-4-mobile.png'); }
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(5) > img.gallery__image { content: url('./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-5-mobile.png'); }
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(3) > img.gallery__image { content: url('./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-3-mobile.png'); }
+    .dobra-02 > .gallery__container > .gallery__image:nth-child(6) > img.gallery__image { content: url('./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-6-mobile.png'); }
+
+    .dobra-02 .gallery__image-02 {
+      align-items: center;
+    }
+
+    .dobra-02 .gallery__image-02 > .feature__title {
+      max-width: 320px;
+      width: 100%;
+      font-size: 22px;
+      top: 0;
+    }
+
+    .dobra-02 .gallery__image-02 > video.gallery__image {
+      height: auto;
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .dobra-05,
+    .dobra-06,
+    .dobra-07 {
+      padding: 0 !important;
+    }
+
+    .dobra-05 > .feature__display,
+    .dobra-05 > .feature__glass,
+    .dobra-06 > .feature__color,
+    .dobra-07 > .feature__shine {
+      padding: 0 21.8px;
+    }
+
+    .dobra-05 > .feature__display,
+    .dobra-06 > .feature__color,
+    .dobra-07 > .feature__shine {
+      grid-template-columns: 1fr;
+      grid-template-areas: "a"
+                           "b"
+                           "c";
+    }
+
+    .dobra-05 > .feature__display > .feature__title,
+    .dobra-06 > .feature__color > .feature__title,
+    .dobra-07 > .feature__shine > .feature__title {
+      margin-right: 0;
+      justify-self: flex-start;
+    }
+
+    .dobra-05 > .feature__display > div:nth-child(2) > .feature__description,
+    .dobra-06 > .feature__color > div:nth-child(2) > .feature__description,
+    .dobra-07 > .feature__shine > div:nth-child(2) > .feature__description {
+      max-width: none;
+    }
+
+    .dobra-07-1 .flags {
+      justify-self: flex-start;
+    }
+
+    .dobra-08 {
+      background-image: url("./assets/images/dobra-8-dji-osmo-action-5-pro-banner-mobile.png") !important;
+    }
+
+    .dobra-08 > .feature__content > .feature__title {
+      font-size: 0px;
+      max-width: 300px;
+    }
+
+    .dobra-08 > .feature__content > .feature__title::after {
+      content: "Entre na era da revolução de imagens";
+      font-size: 46px;
+      line-height: 110%;
+    }
+
+    .dobra-08 .feature__content > .feature__subtitle {
+      font-size: 0px;
+    }
+
+    .dobra-08 .feature__content > .feature__subtitle::after {
+      content: "Eleve a definição das suas cenas";
+      font-size: 20px;
+      color: #a6a6a6;
+    }
+
+    .dobra-09 > .feature__center {
+      grid-template-columns: 1fr;
+      grid-template-areas: "a"
+                           "b"
+                           "d"
+                           "c"
+                           "e";
+    }
+
+    .dobra-09 > .feature__center > * {
+      justify-self: center !important;
+      max-width: 440px !important;
+    }
+
+    .dobra-09 > .feature__center > .feature__description:nth-child(4),
+    .dobra-09 > .feature__center > .feature__description:nth-child(5) {
+      padding: 0 10px;
+      font-weight: 700;
+      color: #fff;
+      margin-top: -40px;
+    }
+  }
+
   @media screen and (max-width: 500px) {
     .dobra-01 > .feature__title {
       font-size: 32px;
@@ -881,4 +1120,43 @@
       font-size: 20px;
       margin-top: 10px;
     }
+
+    .dobra-03 {
+      background-size: 1200px;
+      background-position: 55%;
+    }
+
+    .dobra-03 .feature__content > .feature__title {
+      font-size: 48px;
+    }
+
+    .dobra-04 > .sensor__camera {
+      text-align: start;
+    }
+
+    .dobra-04 > .sensor__camera > .feature__title {
+      font-size: 32px;
+    }
+
+    .dobra-04 > .sensor__camera > .feature__description {
+      max-width: 100%;
+    }
+
+    .dobra-12 > .feature__scene {
+      grid-template-columns: 1fr;
+      grid-template-areas: "a"
+                           "b"
+                           "c"
+                           "d"
+                           "e";
+    }
+
+    .dobra-12 > .feature__scene > .feature__title {
+      max-width: 250px;
+    }
+
+    .dobra-12 > .feature__scene > .gallery__image-01 { content: url("./assets/images/dobra-12-dji-osmo-action-5-pro-gallery-1-mobile.png");}
+    .dobra-12 > .feature__scene > .gallery__image-02 { content: url("./assets/images/dobra-12-dji-osmo-action-5-pro-gallery-2-mobile.png");}
+    .dobra-12 > .feature__scene > .gallery__image-03 { content: url("./assets/images/dobra-12-dji-osmo-action-5-pro-gallery-3-mobile.png");}
+    .dobra-12 > .feature__scene > .gallery__image-04 { content: url("./assets/images/dobra-12-dji-osmo-action-5-pro-gallery-4-mobile.png");}
   }

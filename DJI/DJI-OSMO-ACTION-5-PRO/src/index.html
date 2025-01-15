@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DJI OSMO ACTION 5 PRO</title>
-    <!-- <link rel="stylesheet" href="../dist/output.css"> -->
-    <link rel="stylesheet" href="input.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  </head>
-
   <body>
     <div class="dji-lamina">
+      <!-- Head -->
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>DJI OSMO ACTION 5 PRO</title>
+      <!-- <link rel="stylesheet" href="../dist/output.css"> -->
+      <link rel="stylesheet" href="./input.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      
+      <!-- /Head -->
+
       <!-- Dobra 01 -->
       <section class="dobra-01 banner">
         <h3 class="feature__title">OSMO ACTION 5 <span>PRO</span></h3>
@@ -27,12 +28,23 @@
       <!-- Dobra 02 -->
       <section class="dobra-02 gallery">
         <div class="gallery__container">
-          <img class="gallery__image gallery__image-01" src="./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-1.png" alt="Imagem 1" />
-          <div class="video-1 gallery__image gallery__image-02"></div>
-          <img class="gallery__image gallery__image-03" src="./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-3.png" alt="Imagem 3" />
-          <img class="gallery__image gallery__image-04" src="./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-4.png" alt="Imagem 4" />
-          <img class="gallery__image gallery__image-05" src="./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-5.png" alt="Imagem 5" />
-          <img class="gallery__image gallery__image-06" src="./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-6.png" alt="Imagem 6" />
+          <div class="gallery__image gallery__image-01">
+            <img class="gallery__image" src="./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-1.png" alt="Imagem 1" />
+          </div>
+          <div class="video-1 gallery__image gallery__image-02">
+          </div>
+          <div class="gallery__image gallery__image-03">
+            <img class="gallery__image" src="./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-3.png" alt="Imagem 3" />
+          </div>
+          <div class="gallery__image gallery__image-04">
+            <img class="gallery__image" src="./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-4.png" alt="Imagem 4" />
+          </div>
+          <div class="gallery__image gallery__image-05">
+            <img class="gallery__image" src="./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-5.png" alt="Imagem 5" />
+          </div>
+          <div class="gallery__image gallery__image-06">
+            <img class="gallery__image" src="./assets/images/dobra-2-dji-osmo-action-5-pro-gallery-6.png" alt="Imagem 6" />
+          </div>
         </div>
       </section>
 
@@ -361,12 +373,14 @@
             </div> 
           </div>
           
-          <div class="button-container">
-            <button class="category-button active" onclick="showGallery('armazenamento', this, 'dobra-13')">47GB de armazenamento<br /> integrado</button>
-            <button class="category-button" onclick="showGallery('transferencia', this, 'dobra-13')">Transferência de<br /> alta velocidade</button>
-            <button class="category-button" onclick="showGallery('carregamento', this, 'dobra-13')">Carregamento rápido<br /> da bateria</button>
-            <button class="category-button" onclick="showGallery('transmissao', this, 'dobra-13')">Transmissão ao vivo<br /> por wi-fi</button>
-            <button class="category-button" onclick="showGallery('timecode', this, 'dobra-13')">Timecode</button>
+          <div class="swiper buttons-carousel">
+            <div class="swiper-wrapper button-container">
+              <button class="swiper-slide category-button active" onclick="showGallery('armazenamento', this, 'dobra-13')">47GB de armazenamento<br /> integrado</button>
+              <button class="swiper-slide category-button" onclick="showGallery('transferencia', this, 'dobra-13')">Transferência de<br /> alta velocidade</button>
+              <button class="swiper-slide category-button" onclick="showGallery('carregamento', this, 'dobra-13')">Carregamento rápido<br /> da bateria</button>
+              <button class="swiper-slide category-button" onclick="showGallery('transmissao', this, 'dobra-13')">Transmissão ao vivo<br /> por wi-fi</button>
+              <button class="swiper-slide category-button" onclick="showGallery('timecode', this, 'dobra-13')">Timecode</button>
+            </div>
           </div>
 
           <div class="descriptions">
