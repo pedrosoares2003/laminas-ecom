@@ -46,7 +46,7 @@
     color: #a6a6a6;
     margin: 0 auto;
     font-weight: 700;
-    line-height: 110%;
+    line-height: 115%;
     font-size: 20px;
   }
   
@@ -586,7 +586,7 @@
   .dobra-09 > .feature__center > .feature__description:nth-child(4),
   .dobra-09 > .feature__center > .feature__description:nth-child(5) {
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .dobra-09 > .feature__center > .video__play:nth-child(2),
@@ -769,6 +769,11 @@
     gap: 20px;
   }
 
+  .showcase > div.showcase__gallery,
+  .showcase > div.showcase__gallery > img {
+    border-radius: 25px;
+  }
+
   .showcase__gallery,
   .showcase__gallery * { 
     border-radius: 25px !important;
@@ -785,47 +790,47 @@
   
   .button-container {
     display: flex;
-    justify-content: center;
     margin-top: 20px;
   }
-  
-  button {
-    font-size: 16px;
-    padding: 12px;
-    cursor: pointer;
-    border: none;
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    transition: background-color 0.3s ease;
-  }
 
-  .category-button {
+  .background-grandient .category-button {
     font-size: 16px;
     padding: 12px;
     cursor: pointer;
     border: none;
     color: #a6a6a6;
-    background: transparent;
     border-bottom: 2px solid #a6a6a6;
     transition: 200ms ease;
-    transition: background-color border color 0.3s ease;
-    padding: 12px 20px;
+    /* transition: background-color border color 0.3s ease; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .background-grandient .buttons-carousel .swiper-slide:nth-child(1) .category-button > span { max-width: 216px; }
+  .background-grandient .buttons-carousel .swiper-slide:nth-child(2) .category-button > span { max-width: 140px; }
+  .background-grandient .buttons-carousel .swiper-slide:nth-child(3) .category-button > span { max-width: 180px; }
+  .background-grandient .buttons-carousel .swiper-slide:nth-child(4) .category-button > span { max-width: 180px; }
+  .background-grandient .buttons-carousel .swiper-slide:nth-child(5) .category-button > span { max-width: 73px; }
+
+  .background-grandient > .dobra-13 > .buttons-carousel > .button-container > .swiper-slide:nth-child(5) > .category-button {
+    height: 77.19px;
+    display: flex;
+    align-items: center;
   }
   
   /* Estilo ao passar o mouse */
-  .category-button:hover {
+  .background-grandient .category-button:hover {
     color: #fff;
     border-bottom: 2px solid #fff;
   }
   
   /* Botão ativo */
-  .category-button.active {
+  .background-grandient .category-button.active {
     color: #fff;
     border-bottom: 2px solid #fff;
   }
   
   /* Descrições dobra-13 e dobra-14 */
-
   .showcase .feature__description {
     justify-content: center;
     text-align: center;
@@ -883,6 +888,7 @@
     margin-top: 115px;
   }
 
+  /* CSS Aproveitado */
   .dobra-white {
     background: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13.png") no-repeat;
     background-size: cover;
@@ -1159,11 +1165,20 @@
       width: 100%;
       max-width: none;
     }
+
+    .dobra-03 .feature__content > .feature__subtitle {
+      font-size: 16px;
+    }
+
+    .dobra-03 .feature__content > .feature__title {
+      font-size: 48px;
+      max-width: 300px;
+    }
   }
 
   @media screen and (max-width: 767px) {
     .dji-lamina p.feature__description {
-      font-size: 16px;
+      font-size: 16px !important;
     }
 
     .dobra-01 > .feature__title {
@@ -1277,7 +1292,8 @@
 
     .dobra-08 .feature__content > .feature__subtitle::after {
       content: "Eleve a definição das suas cenas";
-      font-size: 20px;
+      font-size: 16px;
+      opacity: 65%;
     }
 
     .dobra-09 {
@@ -1328,6 +1344,11 @@
       max-width: 350px;
     }
 
+    .dobra-12 > .feature__scene > .gallery__image {
+      width: auto;
+      justify-self: center;
+    }
+
     .dobra-12 > .feature__scene > .gallery__image-01 { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-12-dji-osmo-action-5-pro-gallery-1-mobile.png");}
     .dobra-12 > .feature__scene > .gallery__image-02 { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-12-dji-osmo-action-5-pro-gallery-2-mobile.png");}
     .dobra-12 > .feature__scene > .gallery__image-03 { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-12-dji-osmo-action-5-pro-gallery-3-mobile.png");}
@@ -1351,8 +1372,7 @@
     }
 
     .dobra-13 > .showcase > div.showcase__gallery {
-      height: 100%;
-      max-height: 390px;
+      height: 390px;
       width: 100%;
       max-width: 390px;
       overflow: hidden;
@@ -1362,12 +1382,15 @@
       margin: 0 auto;
     }
 
-    .dobra-13 > .showcase > div.showcase__gallery > img {
-      height: 100%;
-      width: auto;
-      max-width: none;
-      max-height: 350px;
+    .dobra-13 > .showcase > div.showcase__gallery:nth-child(5) {
+      justify-content: flex-start;
     }
+
+    .dobra-13 > .showcase > div.showcase__gallery:nth-child(1) > img { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13-dji-osmo-action-5-pro-gallery-1-mobile.png"); }
+    .dobra-13 > .showcase > div.showcase__gallery:nth-child(2) > img { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13-dji-osmo-action-5-pro-gallery-2-mobile.png"); }
+    .dobra-13 > .showcase > div.showcase__gallery:nth-child(3) > img { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13-dji-osmo-action-5-pro-gallery-3-mobile.png"); }
+    .dobra-13 > .showcase > div.showcase__gallery:nth-child(4) > img { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13-dji-osmo-action-5-pro-gallery-4-mobile.png"); }
+    .dobra-13 > .showcase > div.showcase__gallery:nth-child(5) > img { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13-dji-osmo-action-5-pro-gallery-5-mobile.png"); }
 
     .dobra-14 {
       margin-top: 70px;
@@ -1412,16 +1435,27 @@
   }
 
   @media screen and (max-width: 500px) {
+    .dji-lamina p {
+      font-smooth: always !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word;
+      white-space: normal;
+    }
+
     .dobra-01 {
       background-size: auto 100%;
+      padding: 0 10px !important;
     }
 
     .dobra-01 > .feature__title {
-      font-size: 37px;
+      font-size: 36px;
       line-height: 24px;
       padding-left: 0;
       padding-right: 0;
       padding-top: 80px;
+      min-width: 363.75px;
     }
 
     .dobra-01 > .feature__subtitle {
@@ -1434,17 +1468,10 @@
       background-position: 55%;
     }
 
-    .dobra-03 .feature__content > .feature__subtitle {
-      font-size: 16px;
-    }
-
-    .dobra-03 .feature__content > .feature__title {
-      font-size: 48px;
-    }
-
     .dobra-04 {
       margin: 70px auto;
       row-gap: 70px;
+      /* padding: 0 1px !important; */
     }
 
     .dobra-04 > .sensor__camera {
@@ -1459,5 +1486,18 @@
     .dobra-04 > .sensor__camera > .feature__description {
       max-width: 100%;
       margin-bottom: 35px;
+    }
+
+    .dobra-13 .category-button {
+      padding: 12px 0;
+    }
+
+    .dobra-13 div.buttons-carousel .swiper-slide .category-button > span {
+      max-width: none !important;
+    }
+
+    .dobra-13 > .buttons-carousel > .button-container > .swiper-slide:nth-child(5) > .category-button {
+      height: auto !important;
+      max-width: 73px;
     }
   }

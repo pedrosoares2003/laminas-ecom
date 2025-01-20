@@ -17,7 +17,7 @@ function showGallery(category, button, fatherClassName) {
   // Exibe a descrição correspondente
   const activeDescription = document.querySelector(`.${fatherClassName} .feature__description--${category}`);
     if (activeDescription) {
-      activeDescription.style.display = "flex";
+      activeDescription.style.display = "inline";
     }
 
   // Remove a classe "active" de todos os botões
@@ -38,7 +38,7 @@ function showGallery(category, button, fatherClassName) {
     desc.style.display = "none";
   });
   activeDescription.classList.add("active");
-  activeDescription.style.display = "flex";
+  activeDescription.style.display = "inline";
 }
 
 // Ativar carrossel dobra-07-1
@@ -70,20 +70,26 @@ var swiper = new Swiper(".dobra-07-1", {
 // Ativar carrossel dobra-13
 var swiper = new Swiper(".buttons-carousel", {
         breakpoints: {
-                1200: {
-                        slidesPerView: 5,
-                        centeredSlides: false,
-                        
+                1135: {
+                        slidesPerView: 5
                 },
-                890: {
-                        slidesPerView: 3,
-                        centeredSlides: false,
-                        width: 1200
+                991: {
+                        slidesPerView: 4.5
+                },
+                767: {
+                        slidesPerView: 3.5
+                },
+                580: {
+                        slidesPerView: 2.5
+                },
+                490: {
+                        slidesPerView: 1.5
                 }
         },
-        slidesPerView: 1.5,
-        centeredSlides: false,
-        freeMode: true        
+        spaceBetween: 0,
+        slidesPerView: 1.3,
+        freeMode: true,
+        watchSlidesProgress: true 
 });
 
 
