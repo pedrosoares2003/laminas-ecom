@@ -1,0 +1,7 @@
+.dobra_19 {
+    background-color: #111113;
+}
+
+.dobra_19 > div:nth-child(2) {
+    max-width: 1200px;
+}

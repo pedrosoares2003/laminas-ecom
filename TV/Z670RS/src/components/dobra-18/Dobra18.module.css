@@ -1,0 +1,11 @@
+.dobra_18 {
+    background-color: #050601;
+}
+
+.dobra_18 > div:nth-child(1) {
+    max-width: 1400px;
+}
+
+.dobra_18 > div:nth-child(1) > p {
+    max-width: 1250px;
+}

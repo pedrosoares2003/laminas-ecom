@@ -1,0 +1,38 @@
+.banner {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.banner > img {
+    width: 100%;
+}
+
+.banner > .textoBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 122px 0;
+}
+
+.banner > .textoBanner > h3,
+.banner > .textoBanner > p {
+    padding: 0 30px;
+}
+
+.banner > .textoBanner > h3 {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.banner > .textoBanner > p {
+    font-size: 25.81px;
+    max-width: 1450px;
+}

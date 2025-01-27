@@ -1,0 +1,12 @@
+.dobra_15 {
+    background-color: #050601;
+;
+}
+
+.dobra_15 > div:nth-child(2) {
+    max-width: 1400px;
+}
+
+.dobra_15 > div:nth-child(2) > p {
+    max-width: 1200px;
+}
