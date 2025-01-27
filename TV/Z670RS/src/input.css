@@ -243,3 +243,74 @@ body {
   .tv-lamina .dobra-27 > div:nth-child(2) > p {
     max-width: 1275px;
   }
+
+  /* Responsividade das fontes */
+
+  
+  @media screen and (max-width: 768px) {
+    .tv-lamina .banner > .textoBanner > h3 {
+      font-size: 44px;
+    }
+  
+    .tv-lamina .banner > .textoBanner > p {
+      font-size: 20px;
+    }
+
+    .tv-lamina .dobra-03 > .textoBanner > h3 {
+      max-width: 700px;
+    }
+
+    .tv-lamina .dobra-03 > .textoBanner > h3,
+    .tv-lamina .dobra-04 > .textoBanner > h3,
+    .tv-lamina .dobra-07 > .textoBanner > h3 {
+      max-width: 700px;
+    }
+
+    .tv-lamina .dobra-08 > .textoBanner > h3,
+    .tv-lamina .dobra-15 > .textoBanner > h3,
+    .tv-lamina .dobra-16 > .textoBanner > h3,
+    .tv-lamina .dobra-17 > .textoBanner > h3,
+    .tv-lamina .dobra-18 > .textoBanner > h3 {
+      max-width: 550px;
+    }
+
+    .tv-lamina .dobra-09 > .textoBanner > h3 {
+      max-width: 650px;
+    }
+
+    .tv-lamina .dobra-11 > .textoBanner > h3,
+    .tv-lamina .dobra-27 > .textoBanner > h3 {
+      max-width: 500px;
+    }
+
+    .tv-lamina .dobra-19 > .textoBanner > h3 {
+      max-width: 663px;
+    }
+
+    .tv-lamina .dobra-25 > .textoBanner > h3 {
+      max-width: 700px !important;
+    }
+    
+    .tv-lamina .dobra-26 > .textoBanner > h3 {
+      max-width: 550px;
+    }
+  }
+
+  @media screen and (max-width: 428px) {
+    .tv-lamina .banner > .textoBanner > h3 {
+      font-size: 33px;
+    }
+  
+    .tv-lamina .banner > .textoBanner > p {
+      font-size: 16px;
+    }
+    
+    .tv-lamina .dobra-05 > .textoBanner > h3,
+    .tv-lamina .dobra-22 > .textoBanner > h3 {
+      max-width: 350px;
+    }
+
+    .tv-lamina .dobra-27 > .textoBanner > h3 {
+      max-width: 375px;
+    }
+  }
