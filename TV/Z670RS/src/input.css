@@ -1,0 +1,245 @@
+/* RETIRAR */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* /RETIRAR */
+
+/* Reset básico */
+  .tv-lamina * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+  }
+  
+  .tv-lamina {
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .tv-lamina section {
+    text-align: center;
+  }
+
+  .tv-lamina .banner {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+  }
+
+  .tv-lamina .banner > img {
+    width: 100%;
+    margin-bottom: -10px;
+  }
+
+  .tv-lamina .banner > .textoBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 122px 0;
+  }
+
+  .tv-lamina .banner > .textoBanner > h3,
+  .tv-lamina .banner > .textoBanner > p {
+    padding: 0 30px;
+  }
+
+  .tv-lamina .banner > .textoBanner > h3 {
+    font-size: 70px;
+    font-weight: 400;
+  }
+
+  .tv-lamina .banner > .textoBanner > p {
+    font-size: 25.81px;
+    max-width: 1450px;
+  }
+
+  .tv-lamina .dobra-04,
+  .tv-lamina .dobra-05,
+  .tv-lamina .dobra-06,
+  .tv-lamina .dobra-07,
+  .tv-lamina .dobra-08,
+  .tv-lamina .dobra-09,
+  .tv-lamina .dobra-10,
+  .tv-lamina .dobra-11,
+  .tv-lamina .dobra-12,
+  .tv-lamina .dobra-13,
+  .tv-lamina .dobra-14,
+  .tv-lamina .dobra-24,
+  .tv-lamina .dobra-25 {
+    background-color: #000;
+  }
+
+  .tv-lamina .dobra-03 {
+    background-color: #000614;
+  }
+
+  .tv-lamina .dobra-08 > div:nth-child(2) {
+    max-width: 1125px;
+  }
+
+  .tv-lamina .dobra-09 > div:nth-child(2) {
+    max-width: 1300px;
+  }
+
+  .tv-lamina .dobra-10 > div:nth-child(2) {
+    max-width: 1200px;
+  }
+
+  .tv-lamina .dobra-11 > div:nth-child(2) {
+    max-width: 1300px;
+  }
+
+  .tv-lamina .dobra-12 > div:nth-child(1) {
+    max-width: 1200px;
+  }
+
+  .tv-lamina .dobra-13 > div:nth-child(2) {
+    max-width: 1225px;
+  }
+
+  .tv-lamina .dobra-13 > div:nth-child(2) > h3 {
+    max-width: 1000px;
+  }
+
+  .tv-lamina .dobra-14 > div:nth-child(1) {
+    max-width: 1150px;
+  }
+
+  .tv-lamina .dobra-15 {
+    background-color: #050601;
+  ;
+  }
+
+  .tv-lamina .dobra-15 > div:nth-child(2) {
+    max-width: 1400px;
+  }
+
+  .tv-lamina .dobra-15 > div:nth-child(2) > p {
+    max-width: 1200px;
+  }
+
+  .tv-lamina .dobra-16 {
+    background-color: #050601;
+  }
+
+  .tv-lamina .dobra-16 > div:nth-child(1) {
+    max-width: 1400px;
+  }
+
+  .tv-lamina .dobra-16 > div:nth-child(1) > p {
+    max-width: 1350px;
+  }
+
+  .tv-lamina .dobra-17 {
+    background-color: #050601;
+  }
+
+  .tv-lamina .dobra-17 > div:nth-child(1) {
+    max-width: 1400px;
+  }
+
+  .tv-lamina .dobra-17 > div:nth-child(1) > p {
+    max-width: 1325px;
+  }
+
+  .tv-lamina .dobra-18 {
+    background-color: #050601;
+  }
+
+  .tv-lamina .dobra-18 > div:nth-child(1) {
+    max-width: 1400px;
+  }
+
+  .tv-lamina .dobra-18 > div:nth-child(1) > p {
+    max-width: 1250px;
+  }
+
+  .tv-lamina .dobra-19 {
+    background-color: #111113;
+  }
+
+  .tv-lamina .dobra-19 > div:nth-child(2) {
+    max-width: 1200px;
+  }
+
+  .tv-lamina .dobra-20 {
+    background-color: #F7F7F7;
+  }
+
+  .tv-lamina .dobra-20 > div:nth-child(2) {
+    max-width: 1250px;
+    color: #000;
+  }
+
+  .tv-lamina .dobra-21 {
+    background-color: #010101;
+  }
+
+  .tv-lamina .dobra-21 > div:nth-child(2) {
+    max-width: 1500px;
+  }
+
+  .tv-lamina .dobra-22 {
+    background-color: #010101;
+  }
+
+  .tv-lamina .dobra-22 > div:nth-child(2) {
+    max-width: 1060px;
+  }
+
+  .tv-lamina .dobra-23 {
+    background-color: #DAD2C7;
+  }
+
+  .tv-lamina .dobra-23 > div:nth-child(1) {
+    max-width: 1150px;
+    color: #000;
+  }
+
+  .tv-lamina .dobra-24 > div:nth-child(1) {
+    max-width: 1150px;
+  }
+
+  .tv-lamina .dobra-25 > div:nth-child(2) {
+    max-width: 1190px;
+  }
+
+  .tv-lamina .dobra-25 > div:nth-child(2) > h3 {
+    max-width: 1150px;
+  }
+
+  .tv-lamina .dobra-26 {
+    background-color: #A1A8B2;
+  }
+
+  .tv-lamina .dobra-26 > div:nth-child(1) {
+    max-width: 1200px;
+  }
+
+  .tv-lamina .dobra-26 > div:nth-child(1) > p {
+    max-width: 1100px;
+  }
+
+  .tv-lamina .dobra-27 {
+    background-color: #CBCFD2;
+  }
+
+  .tv-lamina .dobra-27 > div:nth-child(2) {
+    max-width: 1350px;
+    color: #000;
+  }
+
+  .tv-lamina .dobra-27 > div:nth-child(2) > p {
+    max-width: 1275px;
+  }
