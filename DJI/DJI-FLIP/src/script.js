@@ -42,23 +42,24 @@ function showGallery(category, button, fatherClassName) {
 }
 
 // Ativar carrossel dobra-12
-var swiper = new Swiper(".dobra-12", {
+var swiper = new Swiper(".dobra-12 .carrossel", {
   navigation: {
     nextEl: ".dji-lamina .swiper-button-next",
     prevEl: ".dji-lamina .swiper-button-prev",
   },
   breakpoints: {
         991: {
-                slidesPerView: "auto",
+                slidesPerView: 1.5,
                 centeredSlides: true,
                 spaceBetween: 60
         },
         767: {
+                slidesPerView: 1.2,
                 centeredSlides: true,
                 spaceBetween: 40
         }
   },
-  slidesPerView: 1.1,
+  slidesPerView: 1,
   centeredSlides: false,
   spaceBetween: 30,
   pagination: {

@@ -89,7 +89,7 @@ body {
   .showcase__gallery-image video {
     max-width: 100%;
     width: 100%;
-    border-radius: 25px;
+    border-radius: 5px;
   }
   
   .showcase__image {
@@ -163,13 +163,13 @@ body {
   .showcase > div.showcase__gallery,
   .showcase > div.showcase__gallery > img,
   .showcase > div.showcase__gallery > video {
-    border-radius: 25px;
+    border-radius: 5px;
     max-width: 1160px;
   }
 
   .showcase__gallery,
   .showcase__gallery * { 
-    border-radius: 25px !important;
+    border-radius: 5px !important;
   }
 
   .showcase__gallery img {
@@ -275,7 +275,6 @@ body {
     font-size: 64px;
     max-width: 800px;
   }
-
 
   .dobra-02 > .text_container > .feature__description {
     max-width: 895px;
@@ -578,14 +577,8 @@ body {
   }
 
   /* Edições carrossel */
-  .dobra-12 > .feature__carousel {
-    align-items: center;
-  }
-
-  .dobra-12 > .feature__carousel > div.swiper-slide {
+  .dobra-12 .swiper {
     width: 100%;
-    max-width: 1160px;
-    gap: 20px;
   }
 
   /* Configurações carrossel */
@@ -606,6 +599,7 @@ body {
     flex-direction: row-reverse;
     justify-self: center;
     width: 100%;
+    margin-top: 20px;
   }
 
   .controls {
@@ -1100,32 +1094,34 @@ body {
   }
   
   /* Ajustes para Mobile */
+  @media screen and (max-width: 1275px) {
+    .dobra-25 > .feature__content > ol {
+      padding-left: 20px;
+    }
+  }
+
   @media screen and (max-width: 1200px) {
     section {
-      padding: 0 21.8px
-    } 
+      padding: 40px 21.8px !important;
+    }
+
+    video {
+      width: 100%;
+    }
+
+    .dobra-12 {
+      padding: 40px 0 !important;
+    }
+
+    .dobra-12 .flags {
+      max-width: 776px;
+    }
   }
 
   @media screen and (max-width: 991px) {
-    .dobra-07-1 > .feature__carousel {
-      align-items: flex-start;
-    }
-
-    .dobra-07-1 > .feature__carousel > div.swiper-slide {
-      grid-template-columns: 1fr;
-      grid-template-areas: "a"
-                           "b"
-                           "c";
-      max-width: 400px;
-      height: auto;
-    }
-
-    .dobra-07-1 .flags {
-      max-width: 400px !important;
-    }
-
-    .dobra-07-1 .flags .controls {
-      display: none;
+    .dobra-12 .flags {
+      max-width: 991px !important;
+      width: 80%;
     }
 
     .dobra-10 {
@@ -1158,69 +1154,43 @@ body {
       width: 113%;
       max-width: none;
     }
-
-    .dobra-11 {
-      margin: 70px auto;
-    }
-
-    .dobra-11 > .feature__stability > .feature__card {
-      grid-template-columns: 1fr;
-      grid-template-areas: "a"
-                           "b"
-                           "c"
-                           "d";
-      justify-items: flex-start;
-    }
-
-    .dobra-11 > .feature__stability > .feature__card:nth-child(3) {
-      margin-top: 39px;
-    }
   }
 
   @media screen and (max-width: 890px) {
+    .dobra-02 {
+      padding: 80px 0;
+    }
+
+    .dobra-02 > .text_container {
+      gap: 30px;
+    }
+
     .dobra-02 > .gallery__container {
       grid-template-columns: 1fr;
       grid-template-areas: "a"
-                           "c"
-                           "e"
                            "b"
+                           "c"
                            "d"
+                           "e"
                            "f";
     }
 
-    .dobra-02 > .gallery__container > div.gallery__image {
+    .dobra-02 > .gallery__container > div.gallery__image,
+    .dobra-02 > .gallery__container > div.video-1 {
       max-width: 380px;
       border-radius: 10px;
     }
 
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(1),
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(4),
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(5) {
-      max-height: 280px;
-    }
-
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(2),
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(3),
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(6) {
-      max-height: 320px;
-      overflow: hidden;
-    }
-
-    /* Troca de imagem para versão mobile */
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(1) > img.gallery__image { content: url('https://djibrasil.vteximg.com.br/arquivos/dobra-2-dji-osmo-action-5-pro-gallery-1-mobile.png'); }
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(4) > img.gallery__image { content: url('https://djibrasil.vteximg.com.br/arquivos/dobra-2-dji-osmo-action-5-pro-gallery-4-mobile.png'); }
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(5) > img.gallery__image { content: url('https://djibrasil.vteximg.com.br/arquivos/dobra-2-dji-osmo-action-5-pro-gallery-5-mobile.png'); }
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(3) > img.gallery__image { content: url('https://djibrasil.vteximg.com.br/arquivos/dobra-2-dji-osmo-action-5-pro-gallery-3-mobile.png'); }
-    .dobra-02 > .gallery__container > .gallery__image:nth-child(6) > img.gallery__image { content: url('https://djibrasil.vteximg.com.br/arquivos/dobra-2-dji-osmo-action-5-pro-gallery-6-mobile.png'); }
-
-    .dobra-02 .gallery__image-02 {
-      align-items: center;
-    }
-
-    .dobra-02 .gallery__image-02 > .feature__title {
-      max-width: 320px;
+    .dobra-02 > .gallery__container > div.gallery__image img,
+    .dobra-02 > .gallery__container > div.gallery__image video {
       width: 100%;
-      font-size: 22px;
+      max-width: 100%;
+    }
+
+    .dobra-02 .gallery__image-05 > .feature__title {
+      width: 100%;
+      font-size: 20px;
+      margin-top: 30px;
       top: 0;
     }
 
@@ -1242,7 +1212,11 @@ body {
 
   @media screen and (max-width: 767px) {
     p.feature__description {
-      font-size: 16px !important;
+      font-size: 14px !important;
+    }
+
+    h3.feature__title {
+      font-size: 32px !important;
     }
 
     .dobra-01 > .feature__title {
@@ -1260,104 +1234,13 @@ body {
       padding: 70px 21.8px;
     }
 
-    .dobra-05,
+    .dobra-02 > .text_container > .feature__title {
+      margin-top: 20px;
+    }
+
     .dobra-06,
     .dobra-07 {
-      padding: 0 !important;
-    }
-
-    .dobra-05 > .feature__glass,
-    .dobra-06 > .feature__color,
-    .dobra-07 > .feature__criatividade {
-      padding: 0 21.8px;
-    }
-
-    .dobra-05 > .feature__display,
-    .dobra-06 > .feature__color,
-    .dobra-07 > .feature__criatividade {
-      grid-template-columns: 1fr;
-      grid-template-areas: "a"
-                           "b"
-                           "c";
-    }
-
-    .dobra-05 > .feature__display,
-    .dobra-05 > .feature__glass,
-    .dobra-06 > .feature__color,
-    .dobra-07 > .feature__criatividade {
-      row-gap: 25px;
-    }
-
-    .dobra-05 > .feature__display > div:nth-child(3),
-    .dobra-05 > .feature__glass > div:nth-child(2),
-    .dobra-06 > .feature__color > div:nth-child(3),
-    .dobra-07 > .feature__criatividade > img:nth-child(3) {
-      margin-top: 10px;
-    }
-
-    .dobra-05 > .feature__display > .feature__title,
-    .dobra-06 > .feature__color > .feature__title,
-    .dobra-07 > .feature__criatividade > .feature__title {
-      margin-right: 0;
-      justify-self: flex-start;
-      font-size: 40px;
-    }
-
-    .dobra-05 > .feature__display > div:nth-child(2) > .feature__description,
-    .dobra-06 > .feature__color > div:nth-child(2) > .feature__description,
-    .dobra-07 > .feature__criatividade > div:nth-child(2) > .feature__description {
-      max-width: none;
-    }
-
-    .dobra-05 > .feature__display > .feature__title,
-    .dobra-05 > .feature__display > div:nth-child(2) {
-      padding: 0 21.8px;
-    }
-
-    .dobra-05 > .feature__display > div.banner {
-      max-height: 243px;
-      min-height: 243px;
-    }
-
-    .dobra-05 > .feature__glass {
-      margin-top: 70px;
-    }
-
-    .dobra-06 {
-      margin: 70px auto;
-    }
-
-    .dobra-07-1 {
-      margin: 70px auto;
-    }
-
-    .dobra-07-1 .flags {
-      justify-self: flex-start;
-    }
-
-    .dobra-08 {
-      background-image: url("https://djibrasil.vteximg.com.br/arquivos/dobra-8-dji-osmo-action-5-pro-banner-mobile.png") !important;
-    }
-
-    .dobra-08 > .feature__content > .feature__title {
-      font-size: 0px;
-      max-width: 300px;
-    }
-
-    .dobra-08 > .feature__content > .feature__title::after {
-      content: "Entre na era da revolução de imagens";
-      font-size: 46px;
-      line-height: 110%;
-    }
-
-    .dobra-08 .feature__content > .feature__subtitle {
-      font-size: 0px;
-    }
-
-    .dobra-08 .feature__content > .feature__subtitle::after {
-      content: "Eleve a definição das suas cenas";
-      font-size: 16px;
-      opacity: 65%;
+      padding: 0 21.8px !important;
     }
 
     .dobra-09 {
@@ -1395,56 +1278,139 @@ body {
       margin-top: -66px;
     }
 
-    .dobra-12 > .feature__scene {
-      grid-template-columns: 1fr;
-      grid-template-areas: "a"
-                           "b"
-                           "c"
-                           "d"
-                           "e";
-    }
-
-    .dobra-12 > .feature__scene > .feature__title {
-      max-width: 350px;
-    }
-
-    .dobra-12 > .feature__scene > .gallery__image {
-      width: auto;
-      justify-self: center;
-    }
-
-    .dobra-12 > .feature__scene > .gallery__image-01 { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-12-dji-osmo-action-5-pro-gallery-1-mobile.png");}
-    .dobra-12 > .feature__scene > .gallery__image-02 { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-12-dji-osmo-action-5-pro-gallery-2-mobile.png");}
-    .dobra-12 > .feature__scene > .gallery__image-03 { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-12-dji-osmo-action-5-pro-gallery-3-mobile.png");}
-    .dobra-12 > .feature__scene > .gallery__image-04 { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-12-dji-osmo-action-5-pro-gallery-4-mobile.png");}
-
-   .category-button {
+    .category-button {
       padding: 12px 10px;
     }
 
-    .dobra-13 > .showcase > div.showcase__gallery {
-      height: 390px;
+    .dobra-12 {
+      padding: 40px 21.8px !important;
+    }
+
+    .dobra-12 > .text_container {
+      padding-top: 20px;
+      row-gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .dobra-12 .flags {
+      display: none;
+    }
+
+    .dobra-12 .carrossel {
       width: 100%;
-      max-width: 390px;
-      overflow: hidden;
+    }
+
+    .dobra-12 > .text_container > .feature__description {
+      max-width: 357px;
+    }
+
+    .dobra-13 > .zoom_container {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 30px;
     }
 
-    .dobra-13 > .showcase > div.showcase__gallery:nth-child(5) {
-      justify-content: flex-start;
+    .dobra-13 > .zoom_container > .feature__description {
+      margin: 0;
+      max-width: 360px;
     }
 
-    .dobra-13 > .showcase > div.showcase__gallery:nth-child(1) > img { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13-dji-osmo-action-5-pro-gallery-1-mobile.png"); }
-    .dobra-13 > .showcase > div.showcase__gallery:nth-child(2) > img { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13-dji-osmo-action-5-pro-gallery-2-mobile.png"); }
-    .dobra-13 > .showcase > div.showcase__gallery:nth-child(3) > img { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13-dji-osmo-action-5-pro-gallery-3-mobile.png"); }
-    .dobra-13 > .showcase > div.showcase__gallery:nth-child(4) > img { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13-dji-osmo-action-5-pro-gallery-4-mobile.png"); }
-    .dobra-13 > .showcase > div.showcase__gallery:nth-child(5) > img { content: url("https://djibrasil.vteximg.com.br/arquivos/dobra-13-dji-osmo-action-5-pro-gallery-5-mobile.png"); }
+    .dobra-14 > .feature__capture,
+    .dobra-15 > .feature__capture {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+    }
 
-    .dobra-14 {
-      margin-top: 70px;
+    .dobra-14 > .feature__capture > .feature__subtitle,
+    .dobra-15 > .feature__capture > .feature__subtitle {
+      margin-bottom: -25px;
+      font-size: 15px;
+    }
+
+    .dobra-14 > .feature__capture > .feature__title,
+    .dobra-15 > .feature__capture > .feature__title {
+      font-size: 28px !important;
+      max-width: 450px !important;
+      width: 100%;
+    }
+
+    .dobra-14 > .feature__capture > div:nth-child(3),
+    .dobra-15 > .feature__capture > div:nth-child(3) {
+      grid-area: c;
+    }
+
+    .dobra-14 > .feature__capture > div > .feature__description,
+    .dobra-15 > .feature__capture > div > .feature__description {
+      max-width: 370px;
+      margin: 0;
+    }
+
+    .dobra-16 > .vertical_container,
+    .dobra-17 > .vertical_container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .dobra-16 > .vertical_container > .text__container > .feature__subtitle,
+    .dobra-17 > .vertical_container > .text__container > .feature__subtitle {
+      font-size: 15px;
+    }
+
+    .dobra-16 > .vertical_container > .text__container > .feature__title,
+    .dobra-17 > .vertical_container > .text__container > .feature__title {
+      font-size: 28px !important;
+    }
+
+    .dobra-16 > .vertical_container > .text__container > .feature__description,
+    .dobra-17 > .vertical_container > .text__container > .feature__description {
+      margin: 0;
+      max-width: 385px;
+    }
+
+    .dobra-17 > .vertical_container {
+      flex-direction: column-reverse;
+    }
+
+    .dobra-18 .descriptions {
+      margin: 0;
+    }
+    
+    .dobra-19 > .text_container {
+      margin-bottom: 40px;
+    }
+
+    .dobra-19 .gallery__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .possibilidades_container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .possibilidades_container > .feature__title {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    .possibilidades_container > .text_container > .feature__title {
+      font-size: 28px !important;
+    }
+
+    .dobra-21 {
+      padding: 0 21.8px !important;
+    }
+
+    .dobra-21 .possibilidades_container {
+      flex-direction: column-reverse;
+    }
+
+    .dobra-23--bg {
+      padding: 0 21.8px !important;
     }
 
     .dobra-23--bg > .dobra-23 {
@@ -1454,7 +1420,11 @@ body {
 
     .dobra-23--bg > .dobra-23 > .dobra-23--description > p {
       max-width: 330px !important;
-    } 
+    }
+
+    .dobra-24 {
+      padding-bottom: 80px !important;
+    }
 
     .dobra-24.package > .feature__title {
       margin-top: 70px;
@@ -1473,7 +1443,7 @@ body {
     }
 
     .dobra-24 .package__gallery > img {
-      max-width: 160px;
+      max-width: 185px;
     }
 
     .dobra-25 > .feature__content {
@@ -1486,69 +1456,270 @@ body {
   }
 
   @media screen and (max-width: 500px) {
-    p {
-      font-smooth: always !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      word-wrap: break-word !important;
-      overflow-wrap: break-word;
-      white-space: normal;
+    .dji-lamina {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .dji-lamina > section {
+      width: 100%;
+    }
+
+    .button-container > span {
+      color: #000;
+      padding: 8px 10px;
     }
 
     .dobra-01 {
       background-size: auto 100%;
       padding: 0 10px !important;
+      gap: 20px;
+    }
+
+    .dobra-01 > span {
+      font-size: 14px;
+      padding-top: 50px;
     }
 
     .dobra-01 > .feature__title {
-      font-size: 36px;
+      font-size: 54px !important;
       line-height: 24px;
       padding-left: 0;
       padding-right: 0;
-      padding-top: 80px;
-      min-width: 363.75px;
     }
 
     .dobra-01 > .feature__subtitle {
       font-size: 20px;
-      margin-top: 10px;
+      margin-top: 0px;
+    }
+
+    .dobra-02 {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .dobra-02 > .text_container > .feature__title {
+      max-width: 400px;
+    }
+
+    .dobra-02 > .text_container > .feature__description {
+      max-width: 380px;
+    }
+
+    .dobra-02 > .gallery__container > div.gallery__image,
+    .dobra-02 > .gallery__container > div.video-1 {
+      max-width: 500px;
     }
 
     .dobra-03 {
-      background-size: 1200px;
-      background-position: 55%;
+      background-size: auto 100%;
+      background-position: 50%;
+      min-height: 473px;
+      margin-top: 40px;
+    }
+
+    .dobra-03 .feature__content > .feature__title {
+      margin-top: 30px;
+      max-width: 400px;
     }
 
     .dobra-04 {
-      margin: 70px auto;
-      row-gap: 70px;
-      /* padding: 0 1px !important; */
+      margin: 0;
+      margin-top: 20px;
+      max-width: 402px;
     }
 
-    .dobra-04 > .sensor__camera {
-      text-align: start;
+    .dobra-04 > .feature__seguro .feature__title {
+      font-size: 28px !important;
     }
 
-    .dobra-04 > .sensor__camera > .feature__title {
-      font-size: 32px;
-      margin-bottom: 25px;
+    .dobra-05 {
+      margin: 20px 0;
+      max-width: 402px;
+      padding: 0 21.8px !important;
+      margin-bottom: 60px;
     }
 
-    .dobra-04 > .sensor__camera > .feature__description {
-      max-width: 100%;
-      margin-bottom: 35px;
+    .dobra-05 > .feature__compacto .feature__title {
+      font-size: 28px !important;
     }
 
-    .dobra-13 .category-button {
-      padding: 12px 0;
+    .dobra-06 {
+      min-height: 394px;
     }
 
-    .dobra-13 div.buttons-carousel .swiper-slide .category-button > span {
-      max-width: none !important;
+    .dobra-06 > .feature__content {
+      max-width: 425px;
+      margin-top: -20px;
     }
 
-    .dobra-13 > .buttons-carousel > .button-container > .swiper-slide:nth-child(5) > .category-button {
-      height: auto !important;
-      max-width: 73px;
+    .dobra-06 > .feature__content > .feature__title {
+      max-width: 350px;
+    }
+
+    .dobra-07 {
+      margin: 0;
+      padding: 40px 0 !important;
+    }
+
+    .dobra-07 > .feature__criatividade {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    .dobra-07 > .feature__criatividade > .feature__title {
+      padding: 0 21.8px;
+      font-size: 28px !important;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .dobra-07 > .feature__criatividade > div:nth-child(2) {
+      padding: 0 21.8px
+    }
+
+    .dobra-07 > .feature__criatividade video {
+      border-radius: 0 !important;
+    }
+
+    .dobra-08 {
+      margin: 0;
+      padding: 40px 0 !important;
+      gap: 30px;
+    }
+
+    .dobra-08 > .feature__diretor {
+      padding: 0;
+      display: flex !important;
+      flex-direction: column;
+      row-gap: 30px !important;
+    }
+
+    .dobra-08 > .feature__diretor > .feature__title {
+      padding: 0 21.8px;
+      font-size: 28px !important;
+    }
+
+    .dobra-08 > .feature__diretor > div > .feature__description {
+      padding: 0 21.8px;
+      max-width: 428px;
+    }
+
+    .dobra-08 > .showcase video {
+      border-radius: 0 !important;
+    }
+
+    .dobra-08 > .button-container {
+      margin-top: 0;
+    }
+
+    .dobra-08 > .button-container span {
+      font-size: 12px;
+    }
+
+    .dobra-09 {
+      margin: 0;
+      padding: 40px 0 !important;
+    }
+
+    .dobra-09 > .feature__capture {
+      padding: 0;
+      display: flex !important;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    .dobra-09 > .feature__capture > .feature__title {
+      padding: 0 21.8px;
+      max-width: 500px;
+      width: 100%;
+      font-size: 28px !important;
+    }
+
+    .dobra-09 > .feature__capture > div:nth-child(2) {
+      padding: 0 21.8px
+    }
+
+    .dobra-09 > .feature__capture > div > .feature__description {
+      max-width: 349px;
+    }
+
+    .dobra-09 > .feature__capture video {
+      border-radius: 0 !important;
+    }
+
+    .dobra-10 {
+      margin: 0;
+      padding: 40px 0 !important;
+      row-gap: 30px;
+    }
+
+    .dobra-10 > .feature__gravacoes {
+      padding: 0;
+      display: flex !important;
+      flex-direction: column;
+      padding: 0 21.8px;
+      margin-bottom: 0;
+      row-gap: 30px;
+    }
+
+    .dobra-10 > .feature__gravacoes > h3 {
+      font-size: 28px !important;
+      max-width: 350px;
+    }
+
+    .dobra-10 > .feature__gravacoes > div:nth-child(2) {
+      padding: 0 21.8px
+    }
+
+    .dobra-10 > .button-container {
+      margin-top: 0;
+    }
+
+    .dobra-10 > .button-container > span {
+      font-size: 10.24px;
+    }
+
+    .dobra-10 > .showcase video {
+      border-radius: 0 !important;
+    }
+
+    .dobra-11 {
+      padding: 0 !important;
+      min-height: 370px;
+    }
+
+    .dobra-11 > .feature__content {
+      margin-top: -20px;
+    }
+
+    .dobra-11 > .feature__content > .feature__title {
+      max-width: 250px;
+      font-size: 28px !important;
+    }
+
+    .dobra-18 > .feature__aprimoramento {
+      gap: 30px;
+    }
+
+    .dobra-18 > .feature__aprimoramento > div:nth-child(2) > .feature__description {
+      max-width: 380px;
+    }
+
+    .dobra-18 > .feature__aprimoramento > .feature__title {
+      font-size: 28px !important;
+    }
+
+    .dobra-18 .category-button {
+      font-size: 12px;
+      padding: 12px 15px;
+    }
+
+    .dobra-18 .descriptions .feature__description {
+      font-size: 12px !important;
+      max-width: 362px !important;
     }
   }
