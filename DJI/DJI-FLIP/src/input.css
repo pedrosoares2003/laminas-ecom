@@ -83,13 +83,13 @@ body {
   .package__image {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 18px !important;
   }
 
   .showcase__gallery-image video {
     max-width: 100%;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 18px !important;
   }
   
   .showcase__image {
@@ -163,13 +163,13 @@ body {
   .showcase > div.showcase__gallery,
   .showcase > div.showcase__gallery > img,
   .showcase > div.showcase__gallery > video {
-    border-radius: 5px;
+    border-radius: 18px !important;
     max-width: 1160px;
   }
 
   .showcase__gallery,
   .showcase__gallery * { 
-    border-radius: 5px !important;
+    border-radius: 18px !important;
   }
 
   .showcase__gallery img {
@@ -996,7 +996,7 @@ body {
     display: flex;
     flex-direction: row;
     column-gap: 32px;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     width: 100%;
     max-width: 1024px;
@@ -1010,24 +1010,33 @@ body {
     flex-direction: column;
     text-align: start;
     color: #a6a6a6;
-    max-width: 420px;
+    max-width: 550px;
+    width: 100%;
   }
 
   .dobra-23--bg > .dobra-23 > .dobra-23--description > h3 {
-    font-size: 28px;
+    font-size: 40px;
+    line-height: 115%;
     color: #fff;
-    max-width: 330px;
     font-weight: 600;
+    max-width: 450px;
+    margin-bottom: 50px;
+  }
+
+  .dobra-23--bg > .dobra-23 > .dobra-23--description > p {
+    font-size: 20px;
   }
 
   .dobra-23--bg > .dobra-23 > .dobra-23--description > p:nth-child(2) {
-    font-weight: 700;
-    max-width: 370px;
+    font-weight: 500;
+    max-width: 450px;
+    margin-bottom: 30px;
   }
 
   .dobra-23--bg > .dobra-23 > .dobra-23--description > p:nth-child(3) {
-    font-weight: 400;
-    max-width: 400px;
+    font-weight: 500;
+    max-width: 550px;
+    margin: 0;
   }
 
   .tracking__feature--description {
@@ -1116,6 +1125,10 @@ body {
     .dobra-12 .flags {
       max-width: 776px;
     }
+
+    .dobra-23--bg {
+      padding-bottom: 0 !important;
+    }
   }
 
   @media screen and (max-width: 991px) {
@@ -1153,6 +1166,14 @@ body {
       margin-right: -15%;
       width: 113%;
       max-width: none;
+    }
+
+    .dobra-23--bg > .dobra-23 {
+      align-items: flex-end;
+    }
+
+    .dobra-23--bg > .dobra-23 > .dobra-23--description {
+      margin-bottom: 50px;
     }
   }
 
@@ -1415,11 +1436,32 @@ body {
 
     .dobra-23--bg > .dobra-23 {
       flex-direction: column;
+      align-items: center;
       padding-top: 40px;
     }
 
+    .dobra-23--bg > .dobra-23 > .dobra-23--description {
+      width: auto;
+    }
+
+    .dobra-23--bg > .dobra-23 > .dobra-23--description > h3 {
+      font-size: 28px;
+      max-width: 339px;
+      margin-bottom: 30px;
+    }
+
     .dobra-23--bg > .dobra-23 > .dobra-23--description > p {
-      max-width: 330px !important;
+      font-size: 16px;
+      max-width: 370px !important;
+    }
+
+    .dobra-23--bg > .dobra-23 > .dobra-23--description > p:nth-child(2) {
+      font-weight: 700;
+    }
+
+    .dobra-23--bg > .dobra-23 > .dobra-23--description > p:nth-child(3) {
+      opacity: 90%;
+      max-width: 355px !important;
     }
 
     .dobra-24 {
@@ -1608,7 +1650,7 @@ body {
       max-width: 428px;
     }
 
-    .dobra-08 > .showcase video {
+    .dobra-08 > .showcase > .showcase__gallery > video {
       border-radius: 0 !important;
     }
 
@@ -1683,7 +1725,7 @@ body {
       font-size: 10.24px;
     }
 
-    .dobra-10 > .showcase video {
+    .dobra-10 > .showcase > .showcase__gallery > video {
       border-radius: 0 !important;
     }
 
