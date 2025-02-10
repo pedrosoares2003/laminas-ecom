@@ -68,32 +68,6 @@ var swiper = new Swiper(".dobra-12 .carrossel", {
   },
 });
 
-// Ativar carrossel dobra-13
-var swiper = new Swiper(".buttons-carousel", {
-        breakpoints: {
-                1135: {
-                        slidesPerView: 5
-                },
-                991: {
-                        slidesPerView: 4.5
-                },
-                767: {
-                        slidesPerView: 3.5
-                },
-                580: {
-                        slidesPerView: 2.5
-                },
-                490: {
-                        slidesPerView: 1.5
-                }
-        },
-        spaceBetween: 0,
-        slidesPerView: 1.3,
-        freeMode: true,
-        watchSlidesProgress: true 
-});
-
-
 // Videos
 const videos = [
   {
