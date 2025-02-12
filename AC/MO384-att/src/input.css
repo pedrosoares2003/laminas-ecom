@@ -1,0 +1,643 @@
+body * {
+  font-family: "elza", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body, 
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+span {
+  line-height: 135%;
+}
+
+.ac-lamina {
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 30px; */
+  width: 100%;
+  max-width: 1216px;
+}
+
+section {
+  border-radius: 40px;
+  max-width: 1920px;
+}
+
+  .ac-lamina .dobra-01 {
+    background-color: #0050dc;
+    color: #fff;
+    border-radius: 0 0 40px 40px;
+    padding: 40px 40px 0 40px;
+  }
+
+  .ac-lamina .dobra-01 > article {
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-areas: "logo sub-titulo selo-garantia"
+                        "logo titulo selo-garantia"
+                        "logo sku selo-garantia"
+                        "descricao produto selo-garantia";
+    column-gap: 20px;
+    justify-content: space-between;
+  }
+
+  .ac-lamina .dobra-01 > article > h1:nth-child(2),
+  .ac-lamina .dobra-01 > article > h2:nth-child(3) {
+    width: 100%;
+  }
+
+  .ac-lamina .dobra-01 > article > img:nth-child(1) {
+    grid-area: logo;
+  }
+
+  .ac-lamina .dobra-01 > article > h1:nth-child(2) {
+    grid-area: titulo;
+    justify-self: end;
+    text-align: center;
+    font-weight: 800;
+    font-size: 10rem;
+    max-height: 180px;
+    margin-top: -15px;
+  }
+
+  .ac-lamina .dobra-01 > article > h2:nth-child(3) {
+    grid-area: sub-titulo;
+    justify-self: flex-end;
+    text-align: end;
+  }
+
+  .ac-lamina .dobra-01 > article > p:nth-child(4) {
+    grid-area: descricao;
+    font-weight: 700;
+    font-size: 1.5rem;
+    max-width: 200px;
+    align-self: flex-end;
+    margin-bottom: 40px;
+    line-height: 100%;
+  }
+
+  .ac-lamina .dobra-01 > article > div:nth-child(5) {
+    grid-area: sku;
+    max-width: 547px;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .ac-lamina .dobra-01 > article > div:nth-child(5) > span {
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 7.5px 30px;
+    border-radius: 20px;
+  }
+
+  .ac-lamina .dobra-01 > article > img:nth-child(6) {
+    grid-area: produto;
+    justify-self: center;
+    z-index: 2;
+    margin-top: -90px;
+    margin-bottom: -100px;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .ac-lamina .dobra-01 > article > img:nth-child(7) {
+    grid-area: selo-garantia;
+    justify-self: flex-end;
+  }
+
+  .ac-lamina .video {
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+
+  .ac-lamina .video > article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 40px;
+  }
+
+  .ac-lamina .video > article > a:nth-child(1) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    justify-self: flex-end;
+  }
+
+  .ac-lamina .video > article > a:nth-child(1) > img:nth-child(1) {
+    position: absolute;
+    width: 100px;
+    opacity: 60%;
+  }
+
+  .ac-lamina .video > article > a:nth-child(1) > img:nth-child(2) {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .ac-lamina .video > article > div {
+    color: #0050dc;
+    justify-self: center;
+  }
+
+  .ac-lamina .video > article > div > h2 {
+    font-weight: 700;
+  }
+
+  .ac-lamina .video > article > div > p > a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #0050dc;
+  }
+
+  .ac-lamina .banner-imagem {
+    margin-top: 40px;
+    padding: 40px;
+    background-image: url("./assets/images/banner-imagem.webp");
+    background-size: 100%;
+    background-position: 100% 80%;
+    position: relative;
+    color: #0050dc;
+  }
+
+  .ac-lamina .ponto-luz {
+    width: 500px;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,0.9591438870470063) 0%, rgba(255,255,255,0.8975192371870623) 15%, rgba(255,255,255,0.852701310016194) 30%, rgba(255,255,255,0.7994800215007878) 45%, rgba(255,255,255,0.7518609738817402) 50%, rgba(255,255,255,0) 75%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,0.9591438870470063) 0%, rgba(255,255,255,0.8975192371870623) 15%, rgba(255,255,255,0.852701310016194) 30%, rgba(255,255,255,0.7994800215007878) 45%, rgba(255,255,255,0.7518609738817402) 50%, rgba(255,255,255,0) 75%);
+    background: linear-gradient(90deg, rgba(255,255,255,0.9591438870470063) 0%, rgba(255,255,255,0.8975192371870623) 15%, rgba(255,255,255,0.852701310016194) 30%, rgba(255,255,255,0.7994800215007878) 45%, rgba(255,255,255,0.7518609738817402) 50%, rgba(255,255,255,0) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-radius: 38px 38px 0 0;
+  }
+
+  .ac-lamina .banner-imagem > article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ac-lamina .banner-imagem > article > div:nth-child(1) {
+    max-width: 320px;
+  }
+
+  .ac-lamina .banner-imagem > article > div > h2 {
+    color: #0050dc;
+    font-weight: 700;
+  }
+
+  .ac-lamina .banner-imagem > article > div:nth-child(2) {
+    display: none;
+  }
+
+  .ac-lamina .cartoes {
+    padding: 40px;
+  }
+
+  .ac-lamina .cartoes article div {
+    /* max-width: 280px !important;
+    min-width: 280px !important; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    color: #0050dc;
+    text-align: center;
+  }
+
+  .ac-lamina .cartoes article > div {
+    align-items: center;
+  }
+
+  .ac-lamina .cartoes article div div:nth-child(1) {
+    background-color: #e3e3e3;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .ac-lamina .cartoes article div img {
+    margin-bottom: 10px;
+  }
+
+  .ac-lamina .cartoes article div h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .ac-lamina .cartoes article div p {
+    max-width: 250px;
+  }
+
+  .ac-lamina .number_slide1 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ac-lamina .number_slide1 > div > img {
+    height: 120%;
+    /* margin-left: -50px;
+    margin-top: 30px; */
+  }
+
+  .ac-lamina .number_slide2 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ac-lamina .number_slide2 > div > img {
+    height: 95%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .ac-lamina .number_slide3 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ac-lamina .number_slide3 > div > img {
+    width: 520px;
+    margin-top: 10px;
+  }
+
+  .ac-lamina .banner-imagem2 {
+    padding: 40px;
+    margin-bottom: 40px;
+    background-image: url("./assets/images/multi-dispositivos.webp");
+    background-size: 100%;
+    background-position: 100% 50%;
+    position: relative;
+    color: #0050dc;
+  }
+
+  .ac-lamina .ponto-luz2 {
+    width: 600px;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(270deg, rgba(255,255,255,0.9591438870470063) 0%, rgba(255,255,255,0.8975192371870623) 15%, rgba(255,255,255,0.852701310016194) 30%, rgba(255,255,255,0.7994800215007878) 45%, rgba(255,255,255,0.7518609738817402) 50%, rgba(255,255,255,0) 75%);
+    background: -webkit-linear-gradient(270deg, rgba(255,255,255,0.9591438870470063) 0%, rgba(255,255,255,0.8975192371870623) 15%, rgba(255,255,255,0.852701310016194) 30%, rgba(255,255,255,0.7994800215007878) 45%, rgba(255,255,255,0.7518609738817402) 50%, rgba(255,255,255,0) 75%);
+    background: linear-gradient(270deg, rgba(255,255,255,0.9591438870470063) 0%, rgba(255,255,255,0.8975192371870623) 15%, rgba(255,255,255,0.852701310016194) 30%, rgba(255,255,255,0.7994800215007878) 45%, rgba(255,255,255,0.7518609738817402) 50%, rgba(255,255,255,0) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    border-radius: 38px 38px 0 0;
+  }
+
+  .ac-lamina .banner-imagem2 > article {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ac-lamina .banner-imagem2 > article > div:nth-child(1) {
+    max-width: 300px;
+  }
+
+  .ac-lamina .banner-imagem2 > article > div > h2 {
+    color: #0050dc;
+    font-weight: 700;
+  }
+
+  .ac-lamina .banner-imagem2 > article > div:nth-child(2) {
+    display: none;
+  }
+
+  .ac-lamina .vantagens {
+    padding: 40px;
+    background-color: #0050dc;
+    border-radius: 20px;
+  }
+
+  .ac-lamina .vantagens > article {
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    grid-template-areas: "vantagem1 imagem";
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .ac-lamina .vantagens > article > div:nth-child(1) {
+    grid-area: imagem;
+    border-radius: 20px;
+    /* max-width: 500px; */
+    height: 100%;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .ac-lamina .vantagens > article > div:nth-child(1) > img {
+    width: 100%;
+  }
+
+  .ac-lamina .vantagens > article > div:nth-child(2) {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 5px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .ac-lamina .vantagens > article > div:nth-child(2) > h2 {
+    font-weight: 700;
+    font-size: 36px;
+    max-width: 220px;
+  }
+
+  .ac-lamina .vantagens > article > div:nth-child(2) > p {
+    font-size: 20px;
+    max-width: 220px;
+  }
+
+  .ac-lamina .vantagens > article > div:nth-child(2) {
+    grid-area: vantagem1;
+  }
+
+@media screen and (max-width: 991px) {
+  .ac-lamina .dobra-01 {
+    padding: 40px 20px 0 20px;
+  }
+
+  .ac-lamina .dobra-01 > article {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo logo"
+                        "descricao selo-garantia"
+                        "sub-titulo sub-titulo"
+                        "titulo titulo"
+                        "sku sku"
+                        "produto produto";
+  }
+
+  .ac-lamina .dobra-01 > article > img:nth-child(1) {
+    justify-self: center; 
+    width: 150px;
+    margin-bottom: 40px;
+    align-self: center;
+  }
+
+  .ac-lamina .dobra-01 > article > h1:nth-child(2) {
+    width: fit-content;
+    justify-self: center;
+  }
+
+  .ac-lamina .dobra-01 > article > h2:nth-child(3) {
+    width: 100%;
+    max-width: 530px;
+    justify-self: center;
+    margin-top: 30px;
+  }
+
+  .ac-lamina .dobra-01 > article > p:nth-child(4) {
+    margin-bottom: 0;
+    align-self: center;
+    justify-self: center;
+    min-width: 200px;
+    align-self: center;
+    font-size: 1rem;
+  }
+
+  .ac-lamina .dobra-01 > article > div:nth-child(4) {
+    width: 100%;
+    max-width: 530px;
+    justify-self: center;
+  }
+
+  .ac-lamina .dobra-01 > article > img:nth-child(6) {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .ac-lamina .dobra-01 > article > img:nth-child(7) {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 816px) {
+  .ac-lamina .video {
+    margin-top: 80px;
+  }
+
+
+  .ac-lamina .video > article {
+    flex-direction: column-reverse;
+  }
+
+  .ac-lamina .video > article > a:nth-child(1) {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    justify-content: flex-start;
+  }
+
+  .ac-lamina .video > article > a:nth-child(1) > img:nth-child(1) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* #video > article > a:nth-child(1) > img:nth-child(2) {
+    height: 100%;
+    width: auto;
+  } */
+
+  .ac-lamina .video > article > div {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .ac-lamina .dobra-01 > article > h1:nth-child(2) {
+    font-size: 8rem !important;
+    line-height: normal;
+  }
+
+  .ac-lamina .dobra-01 > article > h2:nth-child(3),
+  .ac-lamina .dobra-01 > article > div:nth-child(5) {
+    max-width: 423px;
+    margin: 0;
+  }
+
+  .ac-lamina .dobra-01 > article > h2:nth-child(3) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  /* #banner-imagem,
+  .ac-lamina .banner-imagem2 {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 50%;
+  }
+
+  .ac-lamina .banner-imagem > .ponto-luz,
+  .ac-lamina .banner-imagem2 > .ponto-luz2 {
+    height: 300px;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,0.8975192371870623) 0%, rgba(255,255,255,0.8499001895680147) 15%, rgba(255,255,255,0.852701310016194) 30%, rgba(255,255,255,0.7994800215007878) 50%, rgba(255,255,255,0.7518609738817402) 60%, rgba(255,255,255,0) 75%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.8975192371870623) 0%, rgba(255,255,255,0.8499001895680147) 15%, rgba(255,255,255,0.852701310016194) 30%, rgba(255,255,255,0.7994800215007878) 50%, rgba(255,255,255,0.7518609738817402) 60%, rgba(255,255,255,0) 75%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.8975192371870623) 0%, rgba(255,255,255,0.8499001895680147) 15%, rgba(255,255,255,0.852701310016194) 30%, rgba(255,255,255,0.7994800215007878) 50%, rgba(255,255,255,0.7518609738817402) 60%, rgba(255,255,255,0) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+  } */
+
+  .ac-lamina .banner-imagem2 {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .ac-lamina .banner-imagem,
+  .ac-lamina .banner-imagem2 {
+    background-image: none;
+  }
+
+  .ac-lamina .ponto-luz,
+  .ac-lamina .ponto-luz2 {
+    display: none;
+  }
+
+  .ac-lamina .banner-imagem > article,
+  .ac-lamina .banner-imagem2 > article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ac-lamina .banner-imagem > article > div:nth-child(2),
+  .ac-lamina .banner-imagem2 > article > div:nth-child(2) {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  .ac-lamina .banner-imagem > article > div:nth-child(2) > img,
+  .ac-lamina .banner-imagem2 > article > div:nth-child(2) > img {
+    width: 100%;
+    border-radius: 20px;
+    width: 600px;
+  }
+
+  .ac-lamina .banner-imagem2 > article {
+    justify-content: flex-start;
+  }
+
+  .ac-lamina .banner-imagem > article > div:nth-child(2) {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .ac-lamina .vantagens > article {
+    grid-template-columns: 1fr;
+    grid-template-areas: "vantagem1"
+                        "imagem";
+  }
+
+  .ac-lamina .vantagens > article > div:nth-child(1) {
+    max-width: 420px;
+  }
+
+  .ac-lamina .vantagens > article > div:nth-child(2) {
+    max-width: 420px;
+  }
+
+  .ac-lamina .vantagens > article > div:nth-child(2) > p {
+    max-width: none;
+  }
+
+  .ac-lamina .cards > article {
+    flex-direction: column;
+  }
+
+  .ac-lamina .cards > article > div {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .ac-lamina .dobra-01 > article > h1:nth-child(2) {
+    font-size: 6.5rem !important;
+  }
+
+  .ac-lamina .dobra-01 > article > h2:nth-child(3),
+  .ac-lamina .dobra-01 > article > div:nth-child(5) {
+    max-width: 343px;
+  }
+
+  .ac-lamina .dobra-01 > article > img:nth-child(6) {
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ac-lamina .dobra-01 > article > h1:nth-child(2) {
+    font-size: 5.5rem !important;
+  }
+
+  .ac-lamina .dobra-01 > article > h2:nth-child(3),
+  .ac-lamina .dobra-01 > article > div:nth-child(5) {
+    max-width: 319px;
+  }
+}
+
+/* Dots */
+
+@media screen and (max-width:1000px) {
+  .ac-lamina .dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .ac-lamina .dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 5px;
+    margin-top: 30px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .ac-lamina .dot:focus {
+    outline: none;
+  }
+
+  .ac-lamina .dot--active {
+    background: #0050dc;
+  }
+}
