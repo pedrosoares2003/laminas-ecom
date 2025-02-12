@@ -1,35 +1,47 @@
-body * {
-  font-family: "elza", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
+/* RETIRAR */
 
-body, 
-body * {
+body {
   margin: 0;
   padding: 0;
 }
 
-p,
-h1,
-h2,
-h3,
-span {
-  line-height: 135%;
-}
+/* /RETIRAR */
 
-.ac-lamina {
-  display: flex;
-  flex-direction: column;
-  /* row-gap: 30px; */
-  width: 100%;
-  max-width: 1216px;
-}
+  .ac-lamina * {
+    font-family: "elza", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+  }
 
-section {
-  border-radius: 40px;
-  max-width: 1920px;
-}
+  .ac-lamina p,
+  .ac-lamina h3,
+  .ac-lamina h4,
+  .ac-lamina span {
+    line-height: 135%;
+  }
+
+  .ac-lamina h3 {
+    font-size: 36px;
+  }
+
+  .ac-lamina h4 {
+    font-size: 1.5rem;
+  }
+
+  .ac-lamina {
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 30px; */
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+  }
+
+  .ac-lamina section {
+    border-radius: 40px;
+  }
 
   .ac-lamina .dobra-01 {
     background-color: #0050dc;
@@ -49,8 +61,8 @@ section {
     justify-content: space-between;
   }
 
-  .ac-lamina .dobra-01 > article > h1:nth-child(2),
-  .ac-lamina .dobra-01 > article > h2:nth-child(3) {
+  .ac-lamina .dobra-01 > article > h3:nth-child(2),
+  .ac-lamina .dobra-01 > article > h4:nth-child(3) {
     width: 100%;
   }
 
@@ -58,7 +70,7 @@ section {
     grid-area: logo;
   }
 
-  .ac-lamina .dobra-01 > article > h1:nth-child(2) {
+  .ac-lamina .dobra-01 > article > h3:nth-child(2) {
     grid-area: titulo;
     justify-self: end;
     text-align: center;
@@ -68,7 +80,7 @@ section {
     margin-top: -15px;
   }
 
-  .ac-lamina .dobra-01 > article > h2:nth-child(3) {
+  .ac-lamina .dobra-01 > article > h4:nth-child(3) {
     grid-area: sub-titulo;
     justify-self: flex-end;
     text-align: end;
@@ -152,7 +164,7 @@ section {
     justify-self: center;
   }
 
-  .ac-lamina .video > article > div > h2 {
+  .ac-lamina .video > article > div > h4 {
     font-weight: 700;
   }
 
@@ -199,7 +211,7 @@ section {
     max-width: 320px;
   }
 
-  .ac-lamina .banner-imagem > article > div > h2 {
+  .ac-lamina .banner-imagem > article > div > h4 {
     color: #0050dc;
     font-weight: 700;
   }
@@ -239,7 +251,7 @@ section {
     margin-bottom: 10px;
   }
 
-  .ac-lamina .cartoes article div h2 {
+  .ac-lamina .cartoes article div h4 {
     font-size: 18px;
     font-weight: 700;
   }
@@ -320,7 +332,7 @@ section {
     max-width: 300px;
   }
 
-  .ac-lamina .banner-imagem2 > article > div > h2 {
+  .ac-lamina .banner-imagem2 > article > div > h4 {
     color: #0050dc;
     font-weight: 700;
   }
@@ -368,7 +380,7 @@ section {
     justify-self: center;
   }
 
-  .ac-lamina .vantagens > article > div:nth-child(2) > h2 {
+  .ac-lamina .vantagens > article > div:nth-child(2) > h4 {
     font-weight: 700;
     font-size: 36px;
     max-width: 220px;
@@ -405,12 +417,12 @@ section {
     align-self: center;
   }
 
-  .ac-lamina .dobra-01 > article > h1:nth-child(2) {
+  .ac-lamina .dobra-01 > article > h3:nth-child(2) {
     width: fit-content;
     justify-self: center;
   }
 
-  .ac-lamina .dobra-01 > article > h2:nth-child(3) {
+  .ac-lamina .dobra-01 > article > h4:nth-child(3) {
     width: 100%;
     max-width: 530px;
     justify-self: center;
@@ -477,18 +489,18 @@ section {
 }
 
 @media screen and (max-width: 676px) {
-  .ac-lamina .dobra-01 > article > h1:nth-child(2) {
+  .ac-lamina .dobra-01 > article > h3:nth-child(2) {
     font-size: 8rem !important;
     line-height: normal;
   }
 
-  .ac-lamina .dobra-01 > article > h2:nth-child(3),
+  .ac-lamina .dobra-01 > article > h4:nth-child(3),
   .ac-lamina .dobra-01 > article > div:nth-child(5) {
     max-width: 423px;
     margin: 0;
   }
 
-  .ac-lamina .dobra-01 > article > h2:nth-child(3) {
+  .ac-lamina .dobra-01 > article > h4:nth-child(3) {
     margin-bottom: 20px;
     margin-top: 20px;
   }
@@ -587,11 +599,11 @@ section {
 }
 
 @media screen and (max-width: 470px) {
-  .ac-lamina .dobra-01 > article > h1:nth-child(2) {
+  .ac-lamina .dobra-01 > article > h3:nth-child(2) {
     font-size: 6.5rem !important;
   }
 
-  .ac-lamina .dobra-01 > article > h2:nth-child(3),
+  .ac-lamina .dobra-01 > article > h4:nth-child(3),
   .ac-lamina .dobra-01 > article > div:nth-child(5) {
     max-width: 343px;
   }
@@ -602,11 +614,11 @@ section {
 }
 
 @media screen and (max-width: 400px) {
-  .ac-lamina .dobra-01 > article > h1:nth-child(2) {
+  .ac-lamina .dobra-01 > article > h3:nth-child(2) {
     font-size: 5.5rem !important;
   }
 
-  .ac-lamina .dobra-01 > article > h2:nth-child(3),
+  .ac-lamina .dobra-01 > article > h4:nth-child(3),
   .ac-lamina .dobra-01 > article > div:nth-child(5) {
     max-width: 319px;
   }
