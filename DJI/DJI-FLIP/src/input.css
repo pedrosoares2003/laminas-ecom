@@ -1,10 +1,3 @@
-/* RETIRAR */
-body {
-  margin: 0;
-  padding: 0;
-}
-/* /RETIRAR */
-
 /* Reset básico */
   .dji-lamina * {
     margin: 0;
@@ -226,7 +219,7 @@ body {
 
   /* Altura mínima para separar o texto do fundo */
   .dji-lamina .dobra-01 {
-    background: url("./assets/images/dobra-1-dji-flip-banner.png") no-repeat;
+    background: url("https://djibrasil.vteximg.com.br/arquivos/dobra-1-dji-flip-banner.png") no-repeat;
     background-size: cover;
     background-position: center bottom;
     height: 41.953vw;
@@ -318,7 +311,7 @@ body {
   }
 
   .dji-lamina .dobra-03 {
-    background: url("./assets/images/dobra-3-dji-flip-background.png") no-repeat;
+    background: url("https://djibrasil.vteximg.com.br/arquivos/dobra-3-dji-flip-background.png") no-repeat;
     background-size: cover;
     background-position: center top;
     height: 42vw;
@@ -411,7 +404,7 @@ body {
   }
 
   .dji-lamina .dobra-06 {
-    background: url("./assets/images/dobra-6-dji-flip-background.png") no-repeat;
+    background: url("https://djibrasil.vteximg.com.br/arquivos/dobra-6-dji-flip-background.png") no-repeat;
     background-size: cover;
     background-position: center bottom;
     height: 50vw;
@@ -518,7 +511,7 @@ body {
   }
 
   .dji-lamina .dobra-11 {
-    background: url("./assets/images/dobra-11-dji-flip-background.png") no-repeat;
+    background: url("https://djibrasil.vteximg.com.br/arquivos/dobra-11-dji-flip-background.png") no-repeat;
     background-size: cover;
     background-position: center bottom;
     height: 50vw;
