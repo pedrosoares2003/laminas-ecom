@@ -963,6 +963,7 @@ body {
 
     .dji-lamina .dobra-03 > .feature__content > .showcase__gallery-image {
       grid-row: 4/5;
+      grid-column: 1/5;
     }
 
     .dji-lamina .dobra-18--bg > .dobra-18 {
