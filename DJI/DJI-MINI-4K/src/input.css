@@ -925,6 +925,37 @@ body {
   }
 
   @media screen and (max-width: 991px) {
+    .dji-lamina section {
+      padding: 40px 21.8px !important;
+    }
+
+    .dji-lamina section {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      margin-top: 55px !important;
+      margin-bottom: 55px !important;
+    }
+
+    .dji-lamina .dobra-01,
+    .dji-lamina .dobra-10 {
+      margin-top: 0 !important;
+    }
+
+    .dji-lamina .dobra-04 {
+      margin: 0 !important;
+    }
+
+    .dji-lamina .dobra-03,
+    .dji-lamina .dobra-09 {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    .dji-lamina .dobra-05, .dji-lamina .dobra-06, .dji-lamina .dobra-07 {
+      margin-top: 55px !important;
+      margin-bottom: 55px !important;
+    }
+
     .dji-lamina .feature__description {
       font-size: 16px;
       color: #000000A6;
@@ -932,10 +963,6 @@ body {
 
     .dji-lamina .feature__title {
       color: #000000D9;
-    }
-
-    .dji-lamina section {
-      padding: 40px 21.8px !important;
     }
 
     .dji-lamina .feature__title {
@@ -972,6 +999,7 @@ body {
 
     .dji-lamina .dobra-03 > .feature__content {
       grid-template-columns: 1fr;
+      gap: 45px !important;
     }
 
     .dji-lamina .dobra-03 > .feature__content > .text__container {
@@ -996,6 +1024,7 @@ body {
       font-size: 28px;
       padding: 0 21.8px;
       max-width: 350px;
+      margin-bottom: -20px;
     }
 
     .dji-lamina .dobra-03 > .feature__content > .feature__description {
@@ -1085,10 +1114,6 @@ body {
       font-size: 14px !important;
     }
 
-    .dji-lamina .dobra-03 > .feature__content > .feature__title {
-      margin-bottom: -20px;
-    }
-
     .dji-lamina .dobra-04,
     .dji-lamina .dobra-08,
     .dji-lamina .dobra-11,
@@ -1144,11 +1169,11 @@ body {
       grid-area: b;
     }
 
-    .dji-lamina .dobra-05,
+    /* .dji-lamina .dobra-05,
     .dji-lamina .dobra-06,
     .dji-lamina .dobra-07 {
       margin: 40px auto !important;
-    }
+    } */
 
     .dji-lamina .dobra-07 > .showcase__gallery-image video,
     .dji-lamina .dobra-12 > .showcase__gallery-image video {
@@ -1255,27 +1280,6 @@ body {
   }
 
   @media screen and (max-width: 500px) {
-    .dji-lamina section {
-      padding-top: 0 !important;
-      padding-bottom: 0 !important;
-      margin-top: 55px !important;
-      margin-bottom: 55px !important;
-    }
-
-    .dji-lamina .dobra-01 {
-      margin-top: 0 !important;
-    }
-
-    .dji-lamina .dobra-03 {
-      padding-top: 0 !important;
-      padding-bottom: 0 !important;
-    }
-
-    .dji-lamina .dobra-05, .dji-lamina .dobra-06, .dji-lamina .dobra-07 {
-      margin-top: 55px !important;
-      margin-bottom: 55px !important;
-    }
-
     .dji-lamina .dobra-18--bg > .dobra-18 > .showcase__gallery-image {
       width: 110%;
     }
