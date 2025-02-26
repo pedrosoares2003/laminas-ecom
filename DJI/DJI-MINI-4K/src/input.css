@@ -323,7 +323,6 @@ body {
     justify-items: center;
     align-items: center;
     margin: 0;
-    max-width: 1920px;
     width: 100%;
   }
 
@@ -921,6 +920,7 @@ body {
     .dji-lamina .dobra-18--bg > .dobra-18 > .dobra-18--description {
       padding: 21.8px;
       margin-top: 80px;
+      margin-bottom: 80px;
     }
   }
 
@@ -1070,6 +1070,7 @@ body {
 
     .dji-lamina .dobra-18--bg > .dobra-18 > .dobra-18--description {
       justify-self: center;
+      margin-bottom: 0;
     }
   }
 
