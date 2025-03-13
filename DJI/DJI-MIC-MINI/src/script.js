@@ -47,11 +47,8 @@ const videos = [
   {
         selector: ".video-1",
         htmlVideo: `
-        <h4 class="feature__title">
-                Vídeos em 4K/60 fps em HDR
-        </h4>
-        <video autoplay loop class="gallery__image" muted data-js="video">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-2-dji-flip-5-video.mp4" type="video/mp4"/>
+        <video autoplay loop muted class="showcase__gallery-image" data-js="video">
+                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-mic-mini/dobra-06-dji-mic-mini-video.mp4" type="video/mp4"/>
         </video>
         `,
   },
@@ -59,7 +56,7 @@ const videos = [
         selector: ".video-2",
         htmlVideo: `
         <video autoplay loop muted class="showcase__gallery-image" data-js="video">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-4-dji-flip-video.mp4" type="video/webm"/>
+                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-mic-mini/dobra-07-dji-mic-mini-video-1.mp4" type="video/webm"/>
         </video>
         `,
   },
@@ -67,7 +64,7 @@ const videos = [
         selector: ".video-3",
         htmlVideo: `
         <video autoplay loop muted class="showcase__gallery-image" data-js="video">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-7-dji-flip-video.mp4" type="video/webm"/>
+                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-mic-mini/dobra-07-dji-mic-mini-video-2.mp4" type="video/webm"/>
         </video>
         `,
   },
@@ -75,7 +72,7 @@ const videos = [
         selector: ".video-4",
         htmlVideo: `
         <video autoplay loop muted class="showcase__gallery-image" data-js="video">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-8-dji-flip-video-1.mp4" type="video/webm"/>
+                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-mic-mini/dobra-09-dji-mic-mini-video.mp4" type="video/webm"/>
         </video>
         `,
   },
@@ -83,7 +80,7 @@ const videos = [
         selector: ".video-5",
         htmlVideo: `
         <video autoplay loop muted class="showcase__gallery-image" data-js="video">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-8-dji-flip-video-2.mp4" type="video/webm"/>
+                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-mic-mini/dobra-15-dji-mic-mini-video-1.mp4" type="video/webm"/>
         </video>
         `,
   },
@@ -91,114 +88,34 @@ const videos = [
         selector: ".video-6",
         htmlVideo: `
         <video autoplay loop muted class="showcase__gallery--image">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-10-dji-flip-video-1.mp4" type="video/webm"/>
+                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-mic-mini/dobra-15-dji-mic-mini-video-2.mp4" type="video/webm"/>
         </video>
         `,
   },
   {
         selector: ".video-7",
         htmlVideo: `
-        <video autoplay loop muted class="video__play sm:luby-rounded-xl lg:luby-rounded-[34px] luby-overflow-hidden">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-10-dji-flip-video-2.mp4" type="video/webm"/>
+        <video autoplay loop muted class="video__play showcase__gallery--image">
+                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-mic-mini/dobra-15-dji-mic-mini-video-3.mp4" type="video/webm"/>
         </video>
         `,
   },
   {
         selector: ".video-8",
         htmlVideo: `
-        <video autoplay loop muted class="video__play sm:luby-rounded-[22px] luby-overflow-hidden luby-w-full luby-max-w-[1198px]">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-10-dji-flip-video-3.mp4" type="video/webm"/>
+        <video autoplay loop muted class="video__play showcase__gallery--image">
+                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-mic-mini/dobra-16-dji-mic-mini-video.mp4" type="video/webm"/>
         </video>
         `,
   },
   {
         selector: ".video-9",
         htmlVideo: `
-        <video autoplay loop muted class="video__play">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-10-dji-flip-video-4.mp4" type="video/webm"/>
+        <video autoplay loop muted class="video__play showcase__gallery--image">
+                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-mic-mini/dobra-18-dji-mic-mini-video.mp4" type="video/webm"/>
         </video>
         `,
-  },
-  {
-        selector: ".video-10",
-        htmlVideo: `
-        <video autoplay loop muted class="video__play">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-10-dji-flip-video-5.mp4" type="video/webm"/>
-        </video>
-        `,
-  },
-  {
-        selector: ".video-11",
-        htmlVideo: `
-        <video autoplay loop muted class="video__play">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-10-dji-flip-video-6.mp4" type="video/webm"/>
-        </video>
-        `,
-  },
-  {
-        selector: ".video-12",
-        htmlVideo: `
-        <video autoplay loop muted class="showcase__gallery">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-14-dji-flip-video.mp4" type="video/webm"/>
-        </video>
-        `,
-  },
-  {
-        selector: ".video-13",
-        htmlVideo: `
-        <video autoplay loop muted class="showcase__gallery">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-15-dji-flip-video.mp4" type="video/webm"/>
-        </video>
-        `,
-  },
-  {
-        selector: ".video-14",
-        htmlVideo: `
-        <video autoplay loop muted class="showcase__gallery-image showcase__gallery">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-16-dji-flip-video.mp4" type="video/webm"/>
-        </video>
-        `,
-  },
-  {
-        selector: ".video-15",
-        htmlVideo: `
-        <video autoplay loop muted class="showcase__gallery">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-17-dji-flip-video.mp4" type="video/webm"/>
-        </video>
-        `,
-  },
-  {
-        selector: ".video-16",
-        htmlVideo: `
-        <video autoplay loop muted class="video__play">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-18-dji-flip-video-1.mp4" type="video/webm"/>
-        </video>
-        `,
-  },
-  {
-        selector: ".video-17",
-        htmlVideo: `
-        <video autoplay loop muted class="video__play">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-18-dji-flip-video-2.mp4" type="video/webm"/>
-        </video>
-        `,
-  },
-  {
-        selector: ".video-18",
-        htmlVideo: `
-        <video autoplay loop muted class="video__play">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-18-dji-flip-video-3.mp4" type="video/webm"/>
-        </video>
-        `,
-  },
-  {
-        selector: ".video-19",
-        htmlVideo: `
-        <video autoplay loop muted class="video__play">
-                <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-flip/dobra-18-dji-flip-video-4.mp4" type="video/webm"/>
-        </video>
-        `,
-  },
+  }
 ];
 
 videos.forEach((video) => {
