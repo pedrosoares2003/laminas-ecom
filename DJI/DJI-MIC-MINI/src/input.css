@@ -1260,10 +1260,6 @@ body {
       max-width: 350px;
     }
 
-    .dji-lamina .dobra-22--bg > .dobra-22 {
-      align-items: flex-end;
-    }
-
     .dji-lamina .dobra-22--bg > .dobra-22 > .dobra-22--description {
       margin-bottom: 50px;
     }
@@ -1275,7 +1271,7 @@ body {
     .dji-lamina .dobra-22--bg > .dobra-22 {
       flex-direction: column;
       align-items: center;
-      padding-top: 40px;
+      padding-top: 20px;
     }
 
     .dji-lamina .dobra-22--bg > .dobra-22 > .dobra-22--description {
@@ -1335,7 +1331,7 @@ body {
     .dji-lamina .dobra-02 > .gallery__container > div.gallery__image img,
     .dji-lamina .dobra-02 > .gallery__container > div.gallery__image video {
       width: 100%;
-      max-width: 100%;
+      max-width: 294px;
     }
 
     .dji-lamina .dobra-02 .gallery__image-05 > .feature__title {
@@ -1643,7 +1639,7 @@ body {
     }
 
     .dji-lamina .dobra-23 > .package__content > .feature__title {
-      font-size: 24px;
+      font-size: 18px;
     }
 
     .dji-lamina .dobra-23 .package__gallery {
