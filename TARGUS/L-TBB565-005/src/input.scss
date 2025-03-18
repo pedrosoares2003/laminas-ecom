@@ -1,0 +1,415 @@
+// Variaveis
+$color__primary: #4A0a83;
+$color__secondary: #ffffff;
+$background__primary: #f2f2f2;
+
+// Reset Básico
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+h3,
+h4,
+h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+// Textos
+.feature__title {
+    font-size: 40px;
+    font-weight: 700;
+    color: $color__primary;
+}
+
+.feature__description {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.targus-lamina {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    & section {
+        padding: 46px 0;
+    }
+
+    & nav {
+        background-color: $color__primary;
+        display: flex;
+        justify-content: center;
+
+        & .image {
+            max-width: 206px;
+        }
+    }
+
+    & .dobra-01 {
+        background-image: url("./assets/images/dobra-01-l-tbb565-005-banner.png");
+        background-size: auto 110%;
+        background-position: center bottom;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+
+        & * {
+            font-family: "myriad-pro", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        & .feature__content {
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            max-width: 526px;
+            padding-bottom: 85px;
+
+            & .feature__title {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                line-height: 115%;
+                color: $color__secondary;
+                font-weight: 600;
+
+                & span {
+                    font-size: 32px;
+                }
+            }
+
+            & .feature__description {
+                font-weight: 300;
+            }
+        } 
+    }
+
+    & .dobra-02 {
+        background-color: $background__primary;
+
+        & .feature__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 83px;
+            justify-items: center;
+            max-width: 901px;
+            margin: 0 auto;
+
+            & .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 22px;
+                max-width: 300px;
+                text-align: center;
+                min-width: 253px;
+
+                & div {
+                    height: 73px;
+                }
+
+                & .feature__description {
+                    font-size: 20px;
+                }
+            }
+
+            & .card:nth-child(2) {
+                grid-column: 1 / 2;
+            }
+
+            & .card:nth-child(2) {
+                grid-column: 2 / 4;
+                min-width: 0;
+                width: 100%;
+                max-width: 270px;
+            }
+
+            & .card:nth-child(3) {
+                grid-column: 4 / 5;
+                min-width: 0;
+                width: 100%;
+                max-width: 170px;
+                min-width: 180px;
+            }
+
+            & .card:nth-child(4) {
+                grid-column: 1 / 3;
+            }
+
+            & .card:nth-child(5) {
+                grid-column: 3 / 5;
+            }
+        }
+    }
+
+    & .dobra-03 {
+        
+        
+        & .feature__content {
+            display: grid;
+            grid-template-columns: calc(624 / 1119 * 1fr) calc(495 / 1119 * 1fr);
+            ;
+            grid-template-areas: "a a"
+                                 "b c"
+                                 "b d";
+            column-gap: 15px;
+            row-gap: 20px;
+            max-width: calc(624px + 495px + 15px + 40px);
+            padding: 0 20px;
+            margin: 0 auto;
+
+            & .feature__title {
+                grid-area: a;
+            }
+
+            & div:nth-child(2) {
+                grid-area: b;
+                overflow: hidden;
+            }
+
+            & div:nth-child(2) > .image {
+                width: auto;
+                height: 100%;
+            }
+
+            & .image:nth-child(3) {
+                grid-area: c;
+            }
+
+            & .feature__description {
+                grid-area: d;
+                max-width: 490px;
+            }
+        }
+    }
+
+    & .dobra-04 {
+        background-color: $background__primary;
+
+        & .feature__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "a c d"
+                                 "b c d";
+            align-items: flex-end;
+            max-width: 1083px;
+            margin: 0 auto;
+            padding: 0 20px;
+
+            & .text__content {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                max-width: 360px;
+                grid-area: a;
+
+                & .feature__description {
+                    max-width: 335px;
+                }
+            }
+
+            & > p:nth-child(2) {
+                grid-area: b;
+                font-size: 294px;
+                font-weight: 700;
+                color: #fff;
+                line-height: 100%;
+                max-height: 300px;
+            }
+
+            & > p:nth-child(2) > span {
+                font-size: 180px;
+                font-weight: 700;
+            }
+
+            & > .image:nth-child(3) {
+                grid-area: c;
+                max-width: 372px;
+            }
+
+            & > .image:nth-child(4) {
+                grid-area: d;
+            }
+        }
+    }
+
+    & .box__flex_row {
+        .feature__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            max-width: 1040px;
+            padding: 0 20px;
+            margin: 0 auto;
+            gap: 20px;
+
+            & .text__content {
+                max-width: 320px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .image {
+                max-width: 495px;
+            }
+        }
+    }
+
+    & .dobra-06 {
+        padding: 0;
+
+        & .feature__content {
+            grid-template-columns: .8fr 1.2fr;
+            justify-items: normal;
+
+            & .text__content {
+                max-width: 370px;
+            }
+
+            .image {
+                max-width: 599px;
+                width: 100%;
+            }
+        }
+    }
+
+    & .dobra-07 {
+        & .feature__content {
+            & .text__content {
+                max-width: 420px;
+
+                & .feature__description {
+                    max-width: 350px;
+                }
+            }
+        }
+    }
+
+    & .dobra-08 {
+        background-color: $background__primary;
+
+        & .feature__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "a c"
+                                 "a d"
+                                 "b d";
+            max-width: 1035px;
+            align-items: center;
+            column-gap: 30px;
+            margin: 0 auto;
+
+            & .text__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 440px;
+                min-height: 278px;
+
+                & .feature__description {
+                    & span {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            & .card__image {
+                background-color: $color__primary;
+                border-radius: 18px;
+                max-width: 494px;
+                justify-self: end;
+                grid-area: a;
+            } 
+
+            & > .text__content:nth-child(2) {
+                max-width: 600px;
+                justify-self: flex-end;
+                text-align: right;
+                grid-area: b;
+                align-items: flex-end;
+
+                & .feature__description {
+                    max-width: 450px;
+                }
+            }
+
+            & .text__content:nth-child(3) {
+                justify-self: flex-start;
+                grid-area: c;
+            }
+
+            & .image {
+                max-width: 494px;
+                justify-self: start;
+                grid-area: d;
+            }
+        }
+    }
+
+    & .dobra-09 {
+        & .feature__content {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            grid-template-areas: "b a"
+                                 "b c";
+            max-width: 1176px;
+            column-gap: 50px;
+            margin: 0 auto;
+
+            & .feature__title {
+                max-width: 608px;
+                align-self: flex-end;
+                font-size: 45px;
+                color: #000;
+                margin-bottom: 15px;
+                grid-area: a;
+            }
+
+            & .image {
+                max-width: 508px;
+                grid-area: b;
+            }
+
+            & .lista {
+                grid-area: c;
+                max-width: 608px;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                align-self: flex-start;
+
+                & li {
+                    font-size: 24px;
+                    padding: 7.5px 20px;
+                }
+
+                & li:nth-child(odd) {
+                    background-color: $background__primary;
+                }
+            }
+        }
+    }
+}
