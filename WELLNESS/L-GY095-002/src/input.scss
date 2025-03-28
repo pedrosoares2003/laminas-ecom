@@ -91,6 +91,10 @@ body * {
                 font-weight: 900;
                 font-style: italic;
                 font-size: 60px;
+
+                @media screen and (max-width: 767px) {
+                    margin-bottom: 0;
+                }
             }
 
             & .feature__description {

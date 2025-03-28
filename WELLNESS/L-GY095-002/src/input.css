@@ -72,6 +72,11 @@ body * {
   font-style: italic;
   font-size: 60px;
 }
+@media screen and (max-width: 767px) {
+  .wellness-lamina .dobra-01 .feature__content .feature__title {
+    margin-bottom: 0;
+  }
+}
 .wellness-lamina .dobra-01 .feature__content .feature__description {
   color: #1D2D53;
   font-size: 18px;
