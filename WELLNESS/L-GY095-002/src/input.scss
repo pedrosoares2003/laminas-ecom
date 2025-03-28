@@ -24,7 +24,6 @@ body * {
     max-width: 1366px;
     margin: 0 auto;
 
-    
     & h3,
     & h4,
     & h5, & h6, & p {
@@ -53,7 +52,11 @@ body * {
 
     @media screen and (max-width: 768px) {
         & .feature__title {
-            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        & .feature__description {
+            font-size: 18px;
         }
     }
 
@@ -98,7 +101,31 @@ body * {
                 text-transform: uppercase;
                 max-width: 387px;
             }
-        } 
+        }
+
+        @media screen and (max-width: 500px) {
+            background-image: url("./assets/images/dobra-01-l-gy095-002-background-mobile.png");
+            background-size: auto 120%;
+            background-position: center 30%;
+            background-repeat: no-repeat;
+            min-height: 668px;
+            justify-content: flex-start;
+
+            & .feature__content {
+                margin: 0 auto;
+                padding-bottom: 0;
+                padding-top: 60px;
+                text-align: center;
+
+                & .feature__title {
+                    font-size: 40px;
+                }
+
+                & .feature__description {
+                    font-size: 15px;
+                }
+            }
+        }
     }
 
     & .dobra-02 {
@@ -110,7 +137,8 @@ body * {
                                  "b d f";
             gap: 40px;
             justify-items: center;
-            max-width: 1280px;
+            max-width: 1320px;
+            padding: 0 20px;
             margin: 0 auto;
 
             & .card {
@@ -143,24 +171,19 @@ body * {
             }
 
             @media screen and (max-width: 768px) {
-                width: 102.5%;
-                padding: 0 60px;
-                grid-template-columns: 1fr 1fr 1fr;
+                width: 100%;
+                padding: 0 35px;
+                grid-template-columns: 1fr;
+                grid-template-areas: "a"
+                                     "b"
+                                     "c"
+                                     "d"
+                                     "e"
+                                     "f";
 
                 & .card {
-                    min-width: 186px !important;
-                    width: 100%;
-                    max-width: 186px !important;
+                    max-width: 358px;
                 }
-
-                & .card:nth-child(4) {
-                    grid-column: 1 / 3;
-                }
-    
-                & .card:nth-child(5) {
-                    grid-column: 3 / 5;
-                }
-
             }
         }
     }
@@ -169,6 +192,10 @@ body * {
         background-image: url("./assets/images/dobra-03-l-gy095-002-background.png");
         background-size: 100% 100%;
         padding: 0;
+
+        @media screen and (max-width: 1080px) {
+            overflow: hidden;
+        }
         
         & .feature__content {
             display: flex;
@@ -207,20 +234,47 @@ body * {
                 }
             }
 
-            @media screen and (max-width: 768px) {
-                padding: 0 60px;
-                grid-template-columns: 1fr;
-                grid-template-areas: "b"
-                                     "a"
-                                     "d"
-                                     "c";
-                row-gap: 20px;
-                column-gap: 0;
-                text-align: center;
-                justify-items: center;
+            @media screen and (max-width: 1080px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "a a"
+                                     "b c";
+                row-gap: 32px;
+                max-width: 420px;
 
-                & .feature__title {
-                    margin-top: 30px;
+                & .text__content {
+                    grid-area: a;
+                    justify-self: flex-start;
+                    padding-top: 60px;
+                    padding: 60px 24px 0 24px;
+                }              
+
+                & > .image:nth-child(1) {
+                    grid-area: c;
+                    margin: 0;
+                    height: auto;
+                    min-width: 356px;
+
+                    @media screen and (max-width: 600px) {
+                        width: 150%;
+                        max-width: none;
+                        margin-left: -80px;
+                    }
+                }
+
+                & > .image:nth-child(2) {
+                    grid-area: b;
+                    margin: 0;
+                    padding: 0;
+                    justify-self: flex-end;
+                    align-self: flex-start;
+                    max-width: 186px;
+                    min-width: 162px;
+                    padding-left: 24px;
+
+                    @media screen and (max-width: 500px) {
+                        // margin-right: -32%;
+                    }
                 }
             }
         }
@@ -252,43 +306,10 @@ body * {
                 }
             }
 
-            @media screen and (max-width: 768px) {
-                padding: 0 60px;
-                grid-template-columns: 1.3fr .4fr 1.3fr;
-                grid-template-areas: "c d d"
-                                     "a a b";
-
-                & > p:nth-child(2) {
-                    font-size: 242px;
-                    margin-right: -20px;
-                    margin-top: -75px;
-                    margin-bottom: 40px;
-
-                    & span {
-                        font-size: 150.53px;
-                    }
-                }
-
-                & .image:nth-child(3) {
-                    max-width: 311px;
-                }
-
-                & .image:nth-child(4) {
-                    min-width: 115%;
-                }
-
-                & .text__content {
-                    max-width: 500px;
-                    width: 100%;
-
-                    & .feature__description {
-                        max-width: 500px;
-
-                        & br {
-                            display:inline;
-                        }
-                    }
-                }
+            @media screen and (max-width: 1106px) {
+                flex-direction: column-reverse;
+                max-width: 702px;
+                align-items: flex-start;
             }
         }
     }
@@ -307,6 +328,16 @@ body * {
 
             & .text__content {
                 max-width: 550px;
+
+                @media screen and (max-width: 767px) {
+                    & .feature__title {
+                        font-size: 28px;
+                    }
+    
+                    & .feature__description {
+                       font-size: 16px;
+                    }
+                }
             }
 
             & .text__content:nth-child(1) {
@@ -318,6 +349,10 @@ body * {
 
                 & .feature__title {
                     width: 150%;
+
+                    @media screen and (max-width: 991px) {
+                        width: 100%;
+                    }
                 }
 
                 & .feature__description {
@@ -327,6 +362,14 @@ body * {
 
             & .image:nth-child(3) {
                 grid-area: c;
+            }
+
+            @media screen and (max-width: 1106px) {
+                grid-template-columns: 1fr;
+                grid-template-areas: "a"
+                                     "b"
+                                     "c";
+                max-width: 702px;
             }
         }
     }
@@ -352,54 +395,32 @@ body * {
                 max-width: 520px;
                 grid-area: a;
 
+                & .feature__title {
+                    @media screen and (max-width: 767px) {
+                        max-width: 340px;
+                    }
+
+                }
+
                 & .feature__description:nth-child(3) {
                     max-width: 502px;
                 }
             }
 
-            @media screen and (max-width: 768px) {
-                padding: 0 60px;
-                grid-template-columns: 1.3fr .4fr 1.3fr;
-                grid-template-areas: "c d d"
-                                     "a a b";
-
-                & > p:nth-child(2) {
-                    font-size: 242px;
-                    margin-right: -20px;
-                    margin-top: -75px;
-                    margin-bottom: 40px;
-
-                    & span {
-                        font-size: 150.53px;
-                    }
-                }
-
-                & .image:nth-child(3) {
-                    max-width: 311px;
-                }
-
-                & .image:nth-child(4) {
-                    min-width: 115%;
-                }
-
-                & .text__content {
-                    max-width: 500px;
-                    width: 100%;
-
-                    & .feature__description {
-                        max-width: 500px;
-
-                        & br {
-                            display:inline;
-                        }
-                    }
-                }
+            @media screen and (max-width: 1106px) {
+                flex-direction: column-reverse;
+                max-width: 702px;
+                align-items: flex-start;
             }
         }
     }
 
     & .dobra-07 {
         padding-top: 0;
+
+        @media screen and (max-width: 767px) {
+            padding-bottom: 0;
+        }
 
         & .feature__content {
             display: grid;
@@ -424,6 +445,34 @@ body * {
             & .image:nth-child(3) {
                 grid-column: 3 / 5;
             }
+
+            @media screen and (max-width: 1080px) {
+                grid-template-columns: 1fr;
+
+                & * {
+                    grid-column: 1 / 5 !important;
+                }
+
+                & .image {
+                    max-width: 500px;
+                    margin: 0 auto;
+                }
+            }
+            
+            @media screen and (max-width: 500px) {
+                padding: 0 10px;
+
+                & .text__content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    & .feature__description {
+                        max-width: 390px;
+                    }
+                }
+            }
+        
         }
     }
 
@@ -442,6 +491,17 @@ body * {
                 color: #fff;
                 font-weight: 700;
                 font-size: 44px;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 13px;
+                    min-width: 135px;
+                    margin: 0;
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                padding: 14px 24px;
+                align-items: center;
             }
         }
 
@@ -449,6 +509,14 @@ body * {
             display: flex;
             align-items: center;
             gap: 12px;
+
+            @media screen and (max-width: 500px) {
+                gap: 10px;
+
+                & img {
+                    min-width: 41px;
+                }
+            }
 
             & div {
                 display: flex;
