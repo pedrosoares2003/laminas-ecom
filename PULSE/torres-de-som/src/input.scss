@@ -1,0 +1,555 @@
+/* Fonts Import */
+@font-face {
+    font-family: 'Neo Sans Std';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url('./fonts/NeoSansStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Neo Sans Std';
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url('./fonts/NeoSansStd-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Neo Sans Std';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url('./fonts/NeoSansStd-Regular.otf') format('opentype');
+}
+
+// Variaveis
+$color__primary: #FFDB00;
+$color__secondary: #ffffff;
+$yellow__2: #F2CB13;
+$background__primary: #f2f2f2;
+
+// Reset Básico
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.pulse-lamina {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 40px; 
+    background-color: #000;
+
+    & * {
+        font-family: "Neo Sans Std", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        box-sizing: border-box;
+    }
+    
+    & h3,
+    & h4,
+    & h5, & h6, & p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    // Textos
+    & .feature__title {
+        font-size: 48px;
+        font-weight: 700;
+        color: $yellow__2;
+    }
+    
+    & .feature__description {
+        font-size: 24px;
+        font-weight: 400;
+        color: $color__secondary;
+    }
+    
+    & .image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    @media screen and (max-width: 768px) {
+        & .feature__title {
+            font-size: 32px;
+        }
+    }
+
+    & .min-height-470px {
+        min-height: 470px;
+    }
+
+    & .video-youtube {
+        border: none;
+        border-radius: 33px;
+    }
+
+    & section {
+        padding: 46px 0;
+    }
+
+    & .dobra-01 {
+        background-image: url("./assets/images/dobra-01-pulse-torres-de-som-background.png");
+        background-size: cover;
+        background-position: center 60%;
+        background-repeat: no-repeat;
+        min-height: 719px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 0 0 20px 20px;
+
+        & .feature__content {
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 526px;
+            margin: 153px 0 0 76px;
+
+            & .image {
+                max-width: 327px;
+            }
+
+            & .feature__title {
+                display: flex;
+                flex-direction: column;
+                line-height: 115%;
+                color: $color__secondary;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 120%;
+
+                & span:nth-child(2) {
+                    color: $color__primary;
+                    font-weight: 700;
+                }
+            }
+        } 
+    }
+
+    & .dobra-02 {
+        overflow: hidden;
+        padding-bottom: 0;
+
+        & .feature__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            column-gap: 29px;
+            justify-items: center;
+            margin: 0 auto;
+
+            & .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 22px;
+                text-align: center;
+                max-width: 345px;
+                width: 100%;
+                height: 345px;
+
+                & div {
+                    height: 120px;
+                    max-width: 205px;
+                    width: 100%;
+                }
+
+                & .feature__description {
+                    color: $yellow__2;
+                    max-width: 205px;
+                    width: 100%;
+                    font-weight: 700;
+                }
+ 
+            }
+
+            & .card:nth-child(2) {
+                & .feature__description {
+                    max-width: 150px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 102.5%;
+                padding: 0 60px;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                & .card {
+                    min-width: 186px !important;
+                    width: 100%;
+                    max-width: 186px !important;
+                }
+
+                & .card:nth-child(4) {
+                    grid-column: 1 / 3;
+                }
+    
+                & .card:nth-child(5) {
+                    grid-column: 3 / 5;
+                }
+
+            }
+        }
+    }
+
+    & .dobra-03 {
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        & .feature__content {
+            display: flex;
+            flex-direction: column;
+
+            & .text__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                & > * {
+                    max-width: 1204px;
+                }
+
+                & .feature__title {
+                    margin-bottom: 30px;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 0 60px;
+            grid-template-columns: 1fr;
+            grid-template-areas: "b"
+                                    "a"
+                                    "d"
+                                    "c";
+            row-gap: 20px;
+            column-gap: 0;
+            text-align: center;
+            justify-items: center;
+
+            & .feature__title {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    & .dobra-04 {
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+
+        & .feature__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & .text__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                max-width: 807px;
+                grid-area: a;
+                text-align: center;
+            }
+
+            & > .image {
+                margin-bottom: 30px;
+            }
+
+            & .cards__image {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 0 60px;
+                grid-template-columns: 1.3fr .4fr 1.3fr;
+                grid-template-areas: "c d d"
+                                     "a a b";
+
+                & > p:nth-child(2) {
+                    font-size: 242px;
+                    margin-right: -20px;
+                    margin-top: -75px;
+                    margin-bottom: 40px;
+
+                    & span {
+                        font-size: 150.53px;
+                    }
+                }
+
+                & .image:nth-child(3) {
+                    max-width: 311px;
+                }
+
+                & .image:nth-child(4) {
+                    min-width: 115%;
+                }
+
+                & .text__content {
+                    max-width: 500px;
+                    width: 100%;
+
+                    & .feature__description {
+                        max-width: 500px;
+
+                        & br {
+                            display:inline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .dobra-05 {
+        padding-top: 0;
+        padding-bottom: 0;
+        & .feature__content {
+
+            & > .text__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                text-align: center;
+
+                & > * {
+                    max-width: 807px;
+                } 
+            }
+
+            & .videos__content {
+                display: flex;
+                flex-direction: column;
+
+                & .video__content {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    & .text__content {
+                        min-height: 263px;
+                        display: flex;
+                        align-items: center;
+
+                        & .feature__title {
+                            font-size: 24px;
+                            color: #fff;
+                            margin-left: 265px;
+                        }
+                    }
+                }
+
+                & .video__content:nth-child(1) {
+                    & > .text__content {
+                        background-image: url("./assets/images/dobra-05-pulse-torres-de-som-background-1.png");
+                        background-size: cover;
+                    }
+                }
+
+                
+                & .video__content:nth-child(2) {
+                    margin: 30px auto;
+
+                    & > .text__content {
+                        background-image: url("./assets/images/dobra-05-pulse-torres-de-som-background-2.png");
+                        background-size: cover;
+                    }
+                }
+
+                
+                & .video__content:nth-child(3) {
+                    & > .text__content {
+                        background-image: url("./assets/images/dobra-05-pulse-torres-de-som-background-3.png");
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    } 
+
+    & .dobra-06 {
+        margin: 30px 0;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        & .feature__content {
+            & > .image {
+                width: 100%;
+            }
+        }
+    }
+
+    & .dobra-07 {
+        margin: 30px 0;
+        padding: 2.5% 56px;
+        background-color: $color__primary;
+        border-radius: 30px;
+        
+        & .feature__content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            & > .image {
+                max-width: 269px;
+                height: 47px;
+            }
+
+            & > .text__content {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                & > .line {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    & > .feature__description {
+                        color: #000;
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    & .dobra-08 {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        & .feature__content {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 30px;
+            padding: 42px;
+            border-collapse: separate;
+            border-spacing: 10px;
+
+            & .line__table {
+                height: 100%;
+                max-height: 210px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+                & td {
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+                    // justify-content: center;
+                    text-align: center;
+                    width: 250px;
+                    background-color: #F9F9F9;
+                    color: #717171;
+                    padding: 0 60px;
+
+                    & .image {
+                        width: fit-content;
+                        max-width: 175px;
+                    }
+                }
+
+                & td:nth-child(1) {
+                    background-color: #EAEAEA;
+                    color: #000;
+                    width: 186px;
+                    padding: 0;
+
+                    & p {
+                        margin-top: 10px;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            & .line__table:nth-child(1) {
+                height: 40px;
+                background-color: #C7C3C3;
+
+                & th:nth-child(1) {
+                    background-color: #fff;
+                }
+
+                & th {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    & .dobra-09 {
+        & .feature__content {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            grid-template-areas: "b a"
+                                 "b c";
+            max-width: 1176px;
+            column-gap: 50px;
+            margin: 0 auto;
+
+            & .feature__title {
+                max-width: 608px;
+                align-self: flex-end;
+                font-size: 45px;
+                color: #000;
+                margin-bottom: 15px;
+                grid-area: a;
+            }
+
+            & .image {
+                max-width: 508px;
+                grid-area: b;
+            }
+
+            & .lista {
+                grid-area: c;
+                max-width: 608px;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                align-self: flex-start;
+
+                & li {
+                    font-size: 24px;
+                    padding: 7.5px 20px;
+                }
+
+                & li:nth-child(odd) {
+                    
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
+                grid-template-areas: "a"
+                                     "b"
+                                     "c";
+                justify-items: center;
+                padding: 0 60px;
+            }
+        }
+    }
+}
