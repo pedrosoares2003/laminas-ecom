@@ -31,8 +31,12 @@ body {
 .pulse-lamina {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 40px;
   background-color: #000;
+  display: grid;
+}
+.pulse-lamina section {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .pulse-lamina * {
   font-family: "Neo Sans Std", sans-serif;
@@ -49,10 +53,29 @@ body {
   font-weight: 700;
   color: #F2CB13;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .feature__title {
+    font-size: 24px;
+    margin-bottom: 7px !important;
+  }
+}
 .pulse-lamina .feature__description {
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .feature__description {
+    font-size: 14px;
+  }
+}
+.pulse-lamina .card-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .card-mobile {
+    display: inline;
+  }
 }
 .pulse-lamina .image {
   width: 100%;
@@ -60,19 +83,35 @@ body {
   max-width: 100%;
 }
 @media screen and (max-width: 768px) {
-  .pulse-lamina .feature__title {
-    font-size: 32px;
+  .pulse-lamina .image {
+    border-radius: 5px !important;
   }
 }
-.pulse-lamina .min-height-470px {
+.pulse-lamina .min-height-text {
   min-height: 470px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .min-height-text {
+    min-height: 184px;
+  }
 }
 .pulse-lamina .video-youtube {
   border: none;
   border-radius: 33px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .video-youtube {
+    max-height: 358px;
+    border-radius: 5px !important;
+  }
+}
 .pulse-lamina section {
   padding: 46px 0;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina section {
+    margin: 0 11px;
+  }
 }
 .pulse-lamina .dobra-01 {
   background-image: url("./assets/images/dobra-01-pulse-torres-de-som-background.png");
@@ -94,8 +133,21 @@ body {
   max-width: 526px;
   margin: 153px 0 0 76px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-01 .feature__content {
+    max-width: 320px;
+    gap: 0;
+    margin: 0;
+    margin-top: 45px;
+  }
+}
 .pulse-lamina .dobra-01 .feature__content .image {
   max-width: 327px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-01 .feature__content .image {
+    max-width: 102px;
+  }
 }
 .pulse-lamina .dobra-01 .feature__content .feature__title {
   display: flex;
@@ -106,13 +158,32 @@ body {
   font-weight: 700;
   line-height: 120%;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-01 .feature__content .feature__title {
+    font-size: 24px;
+  }
+}
 .pulse-lamina .dobra-01 .feature__content .feature__title span:nth-child(2) {
   color: #FFDB00;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-01 {
+    margin: 0;
+    min-height: 400px;
+    background-image: url("./assets/images/dobra-01-pulse-torres-de-som-background-mobile.png");
+    background-size: auto 100%;
+    align-items: center;
+  }
+}
 .pulse-lamina .dobra-02 {
   overflow: hidden;
   padding-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 {
+    padding-bottom: 46px;
+  }
 }
 .pulse-lamina .dobra-02 .feature__content {
   display: grid;
@@ -121,6 +192,13 @@ body {
        column-gap: 29px;
   justify-items: center;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    max-width: 320px;
+  }
 }
 .pulse-lamina .dobra-02 .feature__content .card {
   display: flex;
@@ -133,10 +211,26 @@ body {
   width: 100%;
   height: 345px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card {
+    height: auto;
+    width: 100%;
+  }
+}
 .pulse-lamina .dobra-02 .feature__content .card div {
   height: 120px;
   max-width: 205px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card div {
+    height: auto;
+    max-height: 64px;
+    max-width: 76px;
+  }
+  .pulse-lamina .dobra-02 .feature__content .card div img {
+    width: 80%;
+  }
 }
 .pulse-lamina .dobra-02 .feature__content .card .feature__description {
   color: #F2CB13;
@@ -144,25 +238,25 @@ body {
   width: 100%;
   font-weight: 700;
 }
+.pulse-lamina .dobra-02 .feature__content .card:nth-child(1) div img {
+  width: 76.45px;
+}
+.pulse-lamina .dobra-02 .feature__content .card:nth-child(2) div img {
+  width: 54.21px;
+}
 .pulse-lamina .dobra-02 .feature__content .card:nth-child(2) .feature__description {
   max-width: 150px;
 }
+.pulse-lamina .dobra-02 .feature__content .card:nth-child(3) div img {
+  width: 58.53px;
+}
+.pulse-lamina .dobra-02 .feature__content .card:nth-child(4) div img {
+  width: auto;
+  height: 55.45px;
+}
 @media screen and (max-width: 768px) {
-  .pulse-lamina .dobra-02 .feature__content {
-    width: 102.5%;
-    padding: 0 60px;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .pulse-lamina .dobra-02 .feature__content .card {
-    min-width: 186px !important;
-    width: 100%;
-    max-width: 186px !important;
-  }
-  .pulse-lamina .dobra-02 .feature__content .card:nth-child(4) {
-    grid-column: 1/3;
-  }
-  .pulse-lamina .dobra-02 .feature__content .card:nth-child(5) {
-    grid-column: 3/5;
+  .pulse-lamina .dobra-02 .feature__content .card:last-child {
+    display: none;
   }
 }
 .pulse-lamina .dobra-03 {
@@ -173,12 +267,23 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-03 .feature__content {
+    max-width: 320px;
+  }
+}
 .pulse-lamina .dobra-03 .feature__content .text__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-03 .feature__content .text__content {
+    text-align: left;
+    align-items: flex-start;
+  }
 }
 .pulse-lamina .dobra-03 .feature__content .text__content > * {
   max-width: 1204px;
@@ -188,17 +293,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .pulse-lamina .dobra-03 {
-    padding: 0 60px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "b" "a" "d" "c";
-    row-gap: 20px;
-    -moz-column-gap: 0;
-         column-gap: 0;
-    text-align: center;
-    justify-items: center;
-  }
-  .pulse-lamina .dobra-03 .feature__title {
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
   }
 }
 .pulse-lamina .dobra-04 {
@@ -220,48 +316,80 @@ body {
   grid-area: a;
   text-align: center;
 }
-.pulse-lamina .dobra-04 .feature__content > .image {
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 .feature__content .text__content {
+    align-items: flex-start;
+    gap: 0;
+    text-align: left;
+  }
+}
+.pulse-lamina .dobra-04 .feature__content > div:nth-child(2) {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 .feature__content > div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .pulse-lamina .dobra-04 .feature__content > div:nth-child(2) .image {
+    width: 225%;
+    max-width: none;
+    margin-right: -20px;
+  }
+  .pulse-lamina .dobra-04 .feature__content > div:nth-child(2) .image::after {
+    content: url("./assets/videos/dobra-04-pulse-torres-de-som-video-mobile.mp4");
+    width: 100%;
+  }
+}
+.pulse-lamina .dobra-04 .feature__content > div:nth-child(2) .image {
+  border-radius: 33px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 .feature__content > div:nth-child(3) {
+    border-radius: 20px;
+    max-height: 357px;
+    width: 100%;
+  }
+  .pulse-lamina .dobra-04 .feature__content > div:nth-child(3) .image {
+    width: 100%;
+    max-width: none;
+    content: url("./assets/images/dobra-04-pulse-torres-de-som-image-2-mobile.png");
+  }
 }
 .pulse-lamina .dobra-04 .feature__content .cards__image {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 @media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 .feature__content .cards__image {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    padding-top: 46px;
+  }
+}
+@media screen and (max-width: 768px) {
   .pulse-lamina .dobra-04 .feature__content {
-    padding: 0 60px;
-    grid-template-columns: 1.3fr 0.4fr 1.3fr;
-    grid-template-areas: "c d d" "a a b";
-  }
-  .pulse-lamina .dobra-04 .feature__content > p:nth-child(2) {
-    font-size: 242px;
-    margin-right: -20px;
-    margin-top: -75px;
-    margin-bottom: 40px;
-  }
-  .pulse-lamina .dobra-04 .feature__content > p:nth-child(2) span {
-    font-size: 150.53px;
-  }
-  .pulse-lamina .dobra-04 .feature__content .image:nth-child(3) {
-    max-width: 311px;
-  }
-  .pulse-lamina .dobra-04 .feature__content .image:nth-child(4) {
-    min-width: 115%;
-  }
-  .pulse-lamina .dobra-04 .feature__content .text__content {
-    max-width: 500px;
-    width: 100%;
-  }
-  .pulse-lamina .dobra-04 .feature__content .text__content .feature__description {
-    max-width: 500px;
-  }
-  .pulse-lamina .dobra-04 .feature__content .text__content .feature__description br {
-    display: inline;
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 .pulse-lamina .dobra-05 {
   padding-top: 0;
   padding-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 {
+    display: flex;
+    justify-content: center;
+    padding: 46px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 .feature__content {
+    max-width: 320px;
+  }
 }
 .pulse-lamina .dobra-05 .feature__content > .text__content {
   display: flex;
@@ -271,8 +399,20 @@ body {
   gap: 30px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 .feature__content > .text__content {
+    text-align: left;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
 .pulse-lamina .dobra-05 .feature__content > .text__content > * {
   max-width: 807px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 .feature__content > .text__content > * {
+    margin: 0 !important;
+  }
 }
 .pulse-lamina .dobra-05 .feature__content .videos__content {
   display: flex;
@@ -288,10 +428,27 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 .feature__content .videos__content .video__content .text__content {
+    min-height: 0;
+    background-image: none !important;
+  }
+}
 .pulse-lamina .dobra-05 .feature__content .videos__content .video__content .text__content .feature__title {
   font-size: 24px;
   color: #fff;
   margin-left: 265px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 .feature__content .videos__content .video__content .text__content .feature__title {
+    font-size: 12px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 .feature__content .videos__content .video__content:nth-child(1) {
+    margin-top: 30px;
+  }
 }
 .pulse-lamina .dobra-05 .feature__content .videos__content .video__content:nth-child(1) > .text__content {
   background-image: url("./assets/images/dobra-05-pulse-torres-de-som-background-1.png");
@@ -304,23 +461,54 @@ body {
   background-image: url("./assets/images/dobra-05-pulse-torres-de-som-background-2.png");
   background-size: cover;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 .feature__content .videos__content .video__content:nth-child(3) {
+    margin-bottom: 30px;
+  }
+}
 .pulse-lamina .dobra-05 .feature__content .videos__content .video__content:nth-child(3) > .text__content {
   background-image: url("./assets/images/dobra-05-pulse-torres-de-som-background-3.png");
   background-size: cover;
 }
 .pulse-lamina .dobra-06 {
-  margin: 30px 0;
+  margin: 30px 40px;
   padding-top: 0;
   padding-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-06 {
+    margin: 30px 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-06 .feature__content {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 .pulse-lamina .dobra-06 .feature__content > .image {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-06 .feature__content > .image {
+    content: url("./assets/images/dobra-06-pulse-torres-de-som-mobile.png");
+  }
+}
 .pulse-lamina .dobra-07 {
-  margin: 30px 0;
+  margin: 30px 40px;
   padding: 2.5% 56px;
   background-color: #FFDB00;
   border-radius: 30px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 {
+    margin: 30px 11px;
+    border-radius: 10px;
+    padding: 12px 13px;
+    width: 100%;
+    max-width: 320px;
+    justify-self: center;
+  }
 }
 .pulse-lamina .dobra-07 .feature__content {
   display: flex;
@@ -331,33 +519,77 @@ body {
 .pulse-lamina .dobra-07 .feature__content > .image {
   max-width: 269px;
   height: 47px;
+  border-radius: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content > .image {
+    max-width: 69px;
+    height: auto;
+  }
 }
 .pulse-lamina .dobra-07 .feature__content > .text__content {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content > .text__content {
+    gap: 4px;
+  }
+}
 .pulse-lamina .dobra-07 .feature__content > .text__content > .line {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content > .text__content > .line > .image {
+    width: 14px;
+    border-radius: 0 !important;
+  }
 }
 .pulse-lamina .dobra-07 .feature__content > .text__content > .line > .feature__description {
   color: #000;
   font-weight: 700;
   font-size: 24px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content > .text__content > .line > .feature__description {
+    font-size: 10px;
+  }
+}
 .pulse-lamina .dobra-08 {
   padding-top: 0;
   padding-bottom: 0;
+  background-color: #fff;
+  border-radius: 30px;
+}
+@media screen and (max-width: 1430px) {
+  .pulse-lamina .dobra-08 {
+    overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 {
+    border-radius: 5px;
+    max-width: 320px;
+    justify-self: center;
+    overflow-x: hidden;
+  }
 }
 .pulse-lamina .dobra-08 .feature__content {
   width: 100%;
-  background-color: #fff;
-  border-radius: 30px;
   padding: 42px;
   border-collapse: separate;
   border-spacing: 10px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content {
+    padding: 0px;
+    border-collapse: separate;
+    border-spacing: 4px;
+    transform: scale(1.02);
+  }
 }
 .pulse-lamina .dobra-08 .feature__content .line__table {
   height: 100%;
@@ -365,12 +597,29 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content .line__table {
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}
 .pulse-lamina .dobra-08 .feature__content .line__table td {
   text-align: center;
   width: 250px;
   background-color: #F9F9F9;
   color: #717171;
   padding: 0 60px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content .line__table td {
+    width: 74px;
+    padding: 0 5px;
+    font-size: 8px;
+  }
+  .pulse-lamina .dobra-08 .feature__content .line__table td:nth-child(n+2) {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
 }
 .pulse-lamina .dobra-08 .feature__content .line__table td .image {
   width: -moz-fit-content;
@@ -383,10 +632,29 @@ body {
   width: 186px;
   padding: 0;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content .line__table td:nth-child(1) {
+    width: 36px;
+    max-width: 36px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content .line__table td:nth-child(1) .image {
+    display: none;
+  }
+}
 .pulse-lamina .dobra-08 .feature__content .line__table td:nth-child(1) p {
   margin-top: 10px;
   font-size: 20px;
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content .line__table td:nth-child(1) p {
+    margin-top: 0;
+    font-size: 8px;
+    padding: 5px;
+  }
 }
 .pulse-lamina .dobra-08 .feature__content .line__table:nth-child(1) {
   height: 40px;
@@ -399,45 +667,8 @@ body {
   font-weight: 700;
   font-size: 20px;
 }
-.pulse-lamina .dobra-09 .feature__content {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  grid-template-areas: "b a" "b c";
-  max-width: 1176px;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  margin: 0 auto;
-}
-.pulse-lamina .dobra-09 .feature__content .feature__title {
-  max-width: 608px;
-  align-self: flex-end;
-  font-size: 45px;
-  color: #000;
-  margin-bottom: 15px;
-  grid-area: a;
-}
-.pulse-lamina .dobra-09 .feature__content .image {
-  max-width: 508px;
-  grid-area: b;
-}
-.pulse-lamina .dobra-09 .feature__content .lista {
-  grid-area: c;
-  max-width: 608px;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  align-self: flex-start;
-}
-.pulse-lamina .dobra-09 .feature__content .lista li {
-  font-size: 24px;
-  padding: 7.5px 20px;
-}
 @media screen and (max-width: 768px) {
-  .pulse-lamina .dobra-09 .feature__content {
-    grid-template-columns: 1fr;
-    grid-template-areas: "a" "b" "c";
-    justify-items: center;
-    padding: 0 60px;
+  .pulse-lamina .dobra-08 .feature__content .line__table:nth-child(1) th {
+    font-size: 8px;
   }
 }/*# sourceMappingURL=input.css.map */
