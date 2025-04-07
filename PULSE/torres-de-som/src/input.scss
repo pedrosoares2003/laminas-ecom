@@ -257,17 +257,21 @@ body {
             }
 
             & .card:nth-child(1) {
-                & div {
-                    & img {
-                        width: 76.45px;
+                @media screen and (max-width: 768px) {
+                    & div {
+                        & img {
+                            width: 76.45px;
+                        }
                     }
                 }
             }
 
             & .card:nth-child(2) {
-                & div {
-                    & img {
-                        width: 54.21px;
+                @media screen and (max-width: 768px) {
+                    & div {
+                        & img {
+                            width: 54.21px;
+                        }
                     }
                 }
 
@@ -277,18 +281,22 @@ body {
             }
 
             & .card:nth-child(3) {
-                & div {
-                    & img {
-                        width: 58.53px;
+                @media screen and (max-width: 768px) {
+                    & div {
+                        & img {
+                            width: 58.53px;
+                        }
                     }
                 }
             }
 
             & .card:nth-child(4) {
-                & div {
-                    & img {
-                        width: auto;
-                        height: 55.45px;
+                @media screen and (max-width: 768px) {
+                    & div {
+                        & img {
+                            width: auto;
+                            height: 55.45px;
+                        }
                     }
                 }
             }

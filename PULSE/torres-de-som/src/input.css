@@ -238,21 +238,29 @@ body {
   width: 100%;
   font-weight: 700;
 }
-.pulse-lamina .dobra-02 .feature__content .card:nth-child(1) div img {
-  width: 76.45px;
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card:nth-child(1) div img {
+    width: 76.45px;
+  }
 }
-.pulse-lamina .dobra-02 .feature__content .card:nth-child(2) div img {
-  width: 54.21px;
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card:nth-child(2) div img {
+    width: 54.21px;
+  }
 }
 .pulse-lamina .dobra-02 .feature__content .card:nth-child(2) .feature__description {
   max-width: 150px;
 }
-.pulse-lamina .dobra-02 .feature__content .card:nth-child(3) div img {
-  width: 58.53px;
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card:nth-child(3) div img {
+    width: 58.53px;
+  }
 }
-.pulse-lamina .dobra-02 .feature__content .card:nth-child(4) div img {
-  width: auto;
-  height: 55.45px;
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card:nth-child(4) div img {
+    width: auto;
+    height: 55.45px;
+  }
 }
 @media screen and (max-width: 768px) {
   .pulse-lamina .dobra-02 .feature__content .card:last-child {
