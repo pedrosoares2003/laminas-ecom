@@ -104,11 +104,6 @@ body {
     max-width: 320px;
   }
 }
-@media screen and (max-width: 340px) {
-  .pulse-lamina section {
-    margin: 0 10px;
-  }
-}
 .pulse-lamina .dobra-01 {
   padding: 0 40px;
   margin-top: 40px;
