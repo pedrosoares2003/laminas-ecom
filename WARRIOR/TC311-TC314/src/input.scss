@@ -69,7 +69,8 @@ body {
         border-radius: 36px;
         
         @media screen and (max-width: 768px) {
-            min-height: 184px;
+            background-color: transparent;
+            min-height: 0;
         }
     }
 
@@ -110,9 +111,9 @@ body {
         }
 
         @media screen and (max-width: 768px) {
-            padding: 0;
+            padding: 0 10px;
             margin: 0 auto;
-            max-width: 300px;
+            max-width: 320px;
         }
 
         @media screen and (max-width: 340px) {
@@ -124,10 +125,9 @@ body {
         padding: 0 40px;
         margin-top: 40px;
 
-        @media screen and (min-width: 769px) {
-        }
-
         @media screen and (max-width: 768px) {
+            padding: 0 10px;
+            margin: 0 auto;
         }
 
         @media screen and (max-width: 340px) {
@@ -141,6 +141,7 @@ body {
             & .image {
 
                 @media screen and (max-width: 768px) {
+                    content: url("./assets/images/dobra-01-tc311-tc314-banner-mobile.png");
                 }
             }
         }
@@ -152,6 +153,8 @@ body {
         @media screen and (max-width: 991px) {
             padding-top: 46px;
             padding-bottom: 46px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         & .feature__content {
@@ -163,7 +166,7 @@ body {
 
             @media screen and (max-width: 991px) {
                 grid-template-columns: 1fr 1fr;
-                row-gap: 40px;
+                gap: 10px;
                 max-width: 320px;
             }
 
@@ -183,6 +186,9 @@ body {
                 @media screen and (max-width: 991px) {
                     height: auto;
                     width: 100%;
+                    height: 145px;
+                    width: 145px;
+                    gap: 10px;
                 }
 
                 & div {
@@ -199,7 +205,8 @@ body {
                         max-width: 76px;
 
                         & img {
-                            width: 80%;
+                            width: 100%;
+                            max-width: 55px;
                         }
                     }
                 }
@@ -211,73 +218,53 @@ body {
                     font-weight: 700;
                     text-align: center;
                     font-size: 25px;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 14px;
+                    }
                 }
  
             }
 
             & .card:nth-child(1) {
-                @media screen and (max-width: 991px) {
-                    & div {
-                        & img {
-                            width: 51px;
-                        }
-                    }
-                }
 
                 & .feature__description {
                     max-width: 170px;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: 88px;
+                    }
                 }
             }
 
             & .card:nth-child(2) {
-                @media screen and (max-width: 991px) {
-                    & div {
-                        & img {
-                            width: 38px;
-                        }
-                    }
-
-                    & .feature__description {
-                        max-width: 130px;
-                    }
-                }
-
                 & .feature__description {
                     max-width: 180px;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: 88px;
+                    }
                 }
             }
 
             & .card:nth-child(3) {
-                @media screen and (max-width: 991px) {
-                    & div {
-                        & img {
-                            width: 48px;
-                        }
-                    }
-
-                    & .feature__description {
-                        max-width: 80px;
-                    }
-                }
-
                 & .feature__description {
                     max-width: 300px;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: 120px;
+                    }
                 }
             }
 
             & .card:nth-child(4) {
-                @media screen and (max-width: 991px) {
-                    & div {
-                        & img {
-                            width: auto;
-                            height: 55.45px;
-                        }
-                    }
-                }
-
                 & .feature__description {
                     max-width: 230px;
-                } 
+
+                    @media screen and (max-width: 991px) {
+                        max-width: 120px;
+                    }
+                }
             }
 
             & .card:last-child {
@@ -361,10 +348,19 @@ body {
         & .feature__content {
             overflow-x: clip;
 
+            @media screen and (max-width: 768px) {
+                overflow-x: auto;
+                max-width: none;
+            }
+
             & .text__content {
 
                 & .feature__description {
                     max-width: 1200px;
+                }
+
+                @media screen and (min-width: 768px) {
+                    padding: 0 40px;
                 }
             }
 
@@ -375,12 +371,28 @@ body {
                 justify-content: center;
                 // overflow-y: hidden;
 
+                @media screen and (max-width: 768px) {
+                    max-height: 358px;
+                    overflow: hidden;
+                    align-items: center;
+                    border-radius: 5px;
+                }
+
                 & .image {
                     width: 120%;
                     max-width: none;
                     height: fit-content;
                     margin-bottom: -11.2%;
                     border-radius: 60px;
+
+                    @media screen and (max-width: 768px) {
+                        transform: scale(1.2);
+                        max-width: none;
+                        margin-bottom: 100px;
+                        height: auto;
+                        max-height: none;
+                        content: url("./assets/images/dobra-03-tc311-tc314-mobile.png");
+                    }
                 }
             }
         }
@@ -393,11 +405,24 @@ body {
             background-color: $black;
             border-radius: 36px;
 
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
+                background-color: transparent;
+                gap: 30px;
+                padding-top: 46px;
+                padding-bottom: 46px;
+            }
+
             & .text__content {
                 display: flex;
                 align-items: center;
-                padding-left: 100px;
+                padding: 60px 100px;
                 background-image: url("./assets/images/dobra-04-tc311-tc314-ponto-de-luz.png");
+
+                @media screen and (max-width: 768px) {
+                    background-image: none;
+                    padding: 0;
+                }
 
                 & .box__text {
                     max-width: 700px;
@@ -407,20 +432,73 @@ body {
                         max-width: 650px;
                     }
 
-                    // & .feature__description {
-                    // }
+                    & .feature__description {
+                        @media screen and (max-width: 768px) {
+                            max-width: 300px;
+                        }
+                    }
                 }
             }
+            
+            & .box__image {
+
+                @media screen and (max-width: 768px) {
+                    background-color: $black;
+                    border-radius: 5px;
+                    max-height: 358px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                
+                & > .image {
+                    @media screen and (max-width: 768px) {
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+            } 
         }
     }
 
     & .dobra-05 {
+
         & .feature__content {
+            @media screen and (max-width: 768px) {
+                max-width: 300px;
+                width: 100%;
+            }
 
             & .text__content {
 
+                @media screen and (min-width: 768px) {
+                    padding: 0 40px;
+                }
+
                 & .feature__description {
                     max-width: 1460px;
+                }
+            }
+
+            & .box__video {
+
+                @media screen and (max-width: 768px) {
+                    border-radius: 5px;
+                    min-height: 358px;
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                }
+                
+
+                & .video {
+
+                    @media screen and (max-width: 768px) {
+                        width: auto;
+                        height: 100%;
+                    }
                 }
             }
         }
@@ -436,41 +514,149 @@ body {
             background-size: cover;
             border-radius: 36px;
             display: grid;
-            grid-template-columns: .4fr 1.6fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-areas: "a a"
-                                 "b c"
-                                 "d d";
+                                 "b b"
+                                 "c c";
+
+            @media screen and (max-width: 1540px) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 46px 0;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas: "a"
+                                     "c"
+                                     "b";
+                background-color: transparent;
+                background-image: none;
+            }
 
             & .text__content {
                 grid-area: a;
                 align-items: flex-start;
                 text-align: left;
+                width: 110%;
+
+                @media screen and (max-width: 1540px) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 768px) {
+                    grid-column: 1 / 5;
+                    margin-bottom: -20px;
+                }
+
+                & .feature__title {
+                    max-width: none;
+                }
 
                 & .feature__description {
                     max-width: 700px;
                 }
             }
 
-            & .image:nth-child(2) {
+            & .box__image {
                 grid-area: b;
-                align-self: flex-end;
-                max-width: 286px;
-            }
+                background-color: transparent;
+                display: flex;
+                margin-left: -3%;
+                min-height: 500px;
+                margin-bottom: -18%;
 
-            & .image:nth-child(3) {
-                grid-area: c;
-                margin-top: -20%;
-                margin-bottom: -140px;
-                margin-left: -100px;
-                z-index: 10;
-                width: 110%;
-                max-width: none;
+                @media screen and (max-width: 1540px) {
+                    min-height: 0;
+                    margin-bottom: 0;
+                }
+
+                @media screen and (max-width: 768px) {
+                    grid-column: 1 / 5;
+                    background-color: $black;
+                    border-radius: 5px;
+                    height: 358px;
+                    overflow: hidden;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    background-image: url("./assets/images/dobra-06-tc311-tc314-ponto-de-luz-mobile.png");
+                    background-repeat: no-repeat;
+                    background-position: 40%;
+                    max-width: 300px;
+                    justify-self: center;
+                }
+
+
+                & .image:nth-child(1) {
+                    align-self: flex-end;
+                    max-width: 286px;
+                    margin-bottom: 20px;
+                    width: 100%;
+
+                    @media screen and (max-width: 1540px) {
+                        min-width: 128px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        max-width: 128px;
+                        margin-top: 5px;
+                        margin-left: 5px;
+                        align-self: flex-start;
+                    }
+                }
+    
+                & .image:nth-child(2) {
+                    margin-top: -25%;
+                    margin-bottom: -240px;
+                    margin-left: -50px;
+                    z-index: 10;
+                    width: 120%;
+                    max-width: 1523px;
+                    height: fit-content;
+    
+                    @media screen and (max-width: 1540px) {
+                        width: 80%;
+                        margin-left: 0%;
+                        margin-top: -10%;
+                        margin-bottom: 0;
+                        max-width: none;
+                        // min-width: 900px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        width: 145%;
+                        margin-top: -130px;
+                        margin-left: -35px;
+                        transform: rotate(-12deg);
+                    }
+                }
+                
+
+                @media screen and (max-width: 768px) {
+                    
+                }
             }
 
             & > .feature__description {
                 grid-area: d;
                 justify-self: flex-end;
                 margin-top: -6%;
+                margin-top: 20px;
+                margin-bottom: 90px;
+
+                @media screen and (max-width: 1540px) {
+                    margin-top: 0;
+                }
+
+                @media screen and (max-width: 768px) {
+                    grid-column: 1 / 5;
+                    grid-area: c;
+                    justify-self: flex-start;
+                    margin-bottom: -15px;
+                    font-size: 9px;
+                }
             }
         }
     }
@@ -479,66 +665,49 @@ body {
         
         & .feature__content {
             @media screen and (max-width: 768px) {
-                
+                max-width: 300px;
+                width: 100%;
             }
 
             & .text__content {
 
-                @media screen and (max-width: 768px) {
-                    text-align: left;
-                    align-items: flex-start;
-                }
-
                 & .feature__description {
-                    // max-width: 820px;
-                    max-width: 1560px;
+                    max-width: 1460px;
                 }
             }
-        }
 
-        @media screen and (max-width: 768px) {
-            display: flex;
-            justify-content: center;
+            & .box__video {
+
+                @media screen and (max-width: 768px) {
+                    border-radius: 5px;
+                    min-height: 358px;
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                }
+                
+
+                & .video {
+
+                    @media screen and (max-width: 768px) {
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+            }
+
+            & iframe {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
         }
     }
 
     & .dobra-08 {
 
         @media screen and (max-width: 768px) {
-        }
-        
-        & .feature__content {
-
-            & > .image {
-
-                @media screen and (max-width: 768px) {
-                    
-                }
-            }
-
-            & > .text__content {
-                
-
-                @media screen and (max-width: 768px) {
-                    
-                }
-
-                & > .line {
-
-                    & > .image {
-                        @media screen and (max-width: 768px) {
-                            
-                        }
-                    }
-
-                    & > .feature__description {
-
-                        @media screen and (max-width: 768px) {
-
-                        }
-                    }
-                }
-            }
+            margin-top: 46px;
         }
     }
 }
