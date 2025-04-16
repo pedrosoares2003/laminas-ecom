@@ -709,5 +709,14 @@ body {
         @media screen and (max-width: 768px) {
             margin-top: 46px;
         }
+
+        & .feature__content {
+
+            & .image {
+                @media screen and (max-width: 768px) {
+                    content: url("./assets/images/dobra-08-tc311-tc314-mobile.png");
+                }
+            }
+        }
     }
 }

@@ -618,4 +618,9 @@ body {
   .pulse-lamina .dobra-08 {
     margin-top: 46px;
   }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content .image {
+    content: url("./assets/images/dobra-08-tc311-tc314-mobile.png");
+  }
 }/*# sourceMappingURL=input.css.map */
