@@ -1,0 +1,393 @@
+// Variaveis
+$color__primary: #FFDB00;
+$color__secondary: #ffffff;
+$yellow__2: #F2CB13;
+$black: #000000;
+$background__primary: #f2f2f2;
+
+// Reset Básico
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.pulse-lamina {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+
+    & * {
+        font-family: "Elza", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        box-sizing: border-box;
+    }
+    
+    & h3,
+    & h4,
+    & h5, & h6, & p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    // Textos
+    & .text__content {
+    }
+
+    & .feature__title {
+        font-size: 46px;
+        font-weight: 700;
+        color: $black;
+        margin: 0;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+            margin-bottom: 7px !important;
+        }
+    }
+    
+    & .feature__description {
+        font-size: 24px;
+        font-weight: 400;
+        color: $black;
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    & .card-mobile {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: inline;
+        }
+    }
+    
+    & .image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+
+        @media screen and (max-width: 768px) {
+            border-radius: 5px !important;
+        }
+    }
+
+    & .min-height-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 15px;
+        row-gap: 40px;
+        min-height: 470px;
+        
+        @media screen and (max-width: 768px) {
+            min-height: 184px;
+        }
+    }
+
+    & section {
+
+        @media screen and (max-width: 768px) {
+            margin: 0 11px;
+        }
+    }
+
+    & .dobra-01 {
+
+        & .feature__content {
+
+            @media screen and (max-width: 768px) {
+                
+            }
+
+            & .image {
+                width: 100%;
+
+                @media screen and (max-width: 768px) {
+                    
+                }
+            }
+
+            & .feature__title {
+                display: flex;
+                flex-direction: column;
+                line-height: 115%;
+                color: $color__secondary;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 120%;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 24px;
+                }
+
+                & span:nth-child(2) {
+                    color: $color__primary;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            margin: 0;
+            min-height: 400px;
+            background-image: url("./assets/images/dobra-01-pulse-torres-de-som-background-mobile.png");
+            background-size: auto 100%;
+            align-items: center;
+        }
+    }
+
+    & .dobra-02 {
+
+        @media screen and (max-width: 768px) {
+            padding-bottom: 46px;
+        }
+
+        & .feature__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & .text__content {
+                max-width: 1030px;
+            }
+
+            @media screen and (max-width: 768px) {
+                
+            }
+
+            
+        }
+    }
+
+    & .dobra-03 {
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        & .feature__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+                max-width: 320px;
+            }
+
+            & .text__content {
+                max-width: 900px;
+
+                @media screen and (max-width: 768px) {
+                }
+
+                & > * {
+                }
+
+                & .feature__title {
+                }
+
+                & .feature__description {
+                    max-width: 650px;
+
+                    @media screen and (max-width: 768px) {
+                        
+                    }
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+        }
+    }
+
+    & .dobra-grid-two-columns {
+        margin: 20px 0;
+
+        & .feature__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            & .text__content {
+                text-align: start;
+                align-items: flex-start;
+                padding-left: 117px;
+                padding-right: 60px;
+
+                & .feature__title {
+                    text-align: start;
+                }
+
+
+                & .feature__description {
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    & .dobra-04 {
+        
+
+        & .feature__content {
+            overflow: hidden;
+
+
+            & .text__content {
+                max-width: 620px;
+
+
+                & .feature__title {
+                    max-width: 340px;
+                }
+
+                & .feature__description {
+                }
+
+                & div:nth-child(3) {
+                    display: flex;
+                    align-items: center;
+                    margin-left: -30px;
+
+                    & .image {
+                        max-width: 150px;
+                    }
+
+                    & .feature__description {
+                        max-width: 170px;
+                        
+                        
+                        & span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .dobra-05 {
+        
+
+        & .feature__content {
+
+
+            & .text__content {
+                max-width: 620px;
+
+                & .feature__title {
+                    max-width: 340px;
+                }
+
+                & .feature__description {
+                }
+            }
+        }
+    }
+
+    & .dobra-06 {
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        & .feature__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+                max-width: 320px;
+            }
+
+            & .text__content {
+                // max-width: 900px;
+
+                @media screen and (max-width: 768px) {
+                }
+
+                & > * {
+                }
+
+                & .feature__title {
+                    max-width: 1100px;
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+
+    & .dobra-07 {
+        
+
+        & .feature__content {
+
+
+            & .text__content {
+                max-width: 900px;
+
+                & .feature__title {
+                    max-width: 600px;
+                }
+
+                & .feature__description {
+                    max-width: 440px;
+                }
+            }
+        }
+    }
+
+    & .dobra-08 {
+        
+
+        & .feature__content {
+
+
+            & .text__content {
+                max-width: 900px;
+
+                & .feature__title {
+                    max-width: 280px;
+                }
+
+                & .feature__description {
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+
+    & .dobra-09 {
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        & .feature__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+                max-width: 320px;
+            }
+
+            & .text__content {
+                max-width: 1050px;
+
+                & .feature__title {
+                    text-align: center;
+                }
+
+                & .feature__description {
+                    max-width: 650px;
+
+                    @media screen and (max-width: 768px) {
+                        
+                    }
+                }
+            }
+
+        }
+    }
+}
