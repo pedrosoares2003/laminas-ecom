@@ -27,7 +27,6 @@ body {
 @media screen and (max-width: 768px) {
   .pulse-lamina .feature__title {
     font-size: 24px;
-    margin-bottom: 7px !important;
   }
 }
 .pulse-lamina .feature__description {
@@ -38,7 +37,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .pulse-lamina .feature__description {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .pulse-lamina .card-mobile {
@@ -71,46 +70,15 @@ body {
 @media screen and (max-width: 768px) {
   .pulse-lamina .min-height-text {
     min-height: 184px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .pulse-lamina section {
-    margin: 0 11px;
+    row-gap: 20px;
   }
 }
 .pulse-lamina .dobra-01 .feature__content .image {
   width: 100%;
 }
-.pulse-lamina .dobra-01 .feature__content .feature__title {
-  display: flex;
-  flex-direction: column;
-  line-height: 115%;
-  color: #ffffff;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 120%;
-}
-@media screen and (max-width: 768px) {
-  .pulse-lamina .dobra-01 .feature__content .feature__title {
-    font-size: 24px;
-  }
-}
-.pulse-lamina .dobra-01 .feature__content .feature__title span:nth-child(2) {
-  color: #FFDB00;
-  font-weight: 700;
-}
-@media screen and (max-width: 768px) {
-  .pulse-lamina .dobra-01 {
-    margin: 0;
-    min-height: 400px;
-    background-image: url("./assets/images/dobra-01-pulse-torres-de-som-background-mobile.png");
-    background-size: auto 100%;
-    align-items: center;
-  }
-}
 @media screen and (max-width: 768px) {
   .pulse-lamina .dobra-02 {
-    padding-bottom: 46px;
+    margin-top: 30px;
   }
 }
 .pulse-lamina .dobra-02 .feature__content {
@@ -125,21 +93,32 @@ body {
   padding-top: 0;
   padding-bottom: 0;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-03 {
+    margin-top: 30px;
+  }
+}
 .pulse-lamina .dobra-03 .feature__content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
-  .pulse-lamina .dobra-03 .feature__content {
-    max-width: 320px;
-  }
-}
 .pulse-lamina .dobra-03 .feature__content .text__content {
   max-width: 900px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-03 .feature__content .text__content .feature__title {
+    text-align: center;
+    max-width: 300px;
+  }
+}
 .pulse-lamina .dobra-03 .feature__content .text__content .feature__description {
   max-width: 650px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-03 .feature__content .text__content .feature__description {
+    max-width: 300px;
+  }
 }
 .pulse-lamina .dobra-grid-two-columns {
   margin: 20px 0;
@@ -148,17 +127,49 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-grid-two-columns .feature__content {
+    grid-template-areas: "a a" "b b";
+    justify-items: center;
+  }
+}
 .pulse-lamina .dobra-grid-two-columns .feature__content .text__content {
   text-align: start;
   align-items: flex-start;
   padding-left: 117px;
   padding-right: 60px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-grid-two-columns .feature__content .text__content {
+    grid-area: a;
+    padding: 30px 15px;
+    width: 100%;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
 .pulse-lamina .dobra-grid-two-columns .feature__content .text__content .feature__title {
   text-align: start;
+  max-width: none;
 }
-.pulse-lamina .dobra-grid-two-columns .feature__content .text__content .feature__description {
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-grid-two-columns .feature__content .text__content .feature__title {
+    text-align: center;
+  }
+}
+.pulse-lamina .dobra-grid-two-columns .feature__content .text__content > .feature__description {
   text-align: start;
+  max-width: none;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-grid-two-columns .feature__content .text__content > .feature__description {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-grid-two-columns .feature__content .image {
+    grid-area: b;
+  }
 }
 .pulse-lamina .dobra-04 .feature__content {
   overflow: hidden;
@@ -169,16 +180,44 @@ body {
 .pulse-lamina .dobra-04 .feature__content .text__content .feature__title {
   max-width: 340px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 .feature__content .text__content .feature__title {
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 .feature__content .text__content .feature__description {
+    max-width: 300px;
+  }
+}
 .pulse-lamina .dobra-04 .feature__content .text__content div:nth-child(3) {
   display: flex;
   align-items: center;
   margin-left: -30px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 .feature__content .text__content div:nth-child(3) {
+    margin: 0;
+  }
+}
 .pulse-lamina .dobra-04 .feature__content .text__content div:nth-child(3) .image {
   max-width: 150px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 .feature__content .text__content div:nth-child(3) .image {
+    max-width: 130px;
+    margin-bottom: -10px;
+  }
+}
 .pulse-lamina .dobra-04 .feature__content .text__content div:nth-child(3) .feature__description {
   max-width: 170px;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 .feature__content .text__content div:nth-child(3) .feature__description {
+    max-width: 160px;
+    font-size: 24px;
+  }
 }
 .pulse-lamina .dobra-04 .feature__content .text__content div:nth-child(3) .feature__description span {
   font-weight: 700;
@@ -188,6 +227,16 @@ body {
 }
 .pulse-lamina .dobra-05 .feature__content .text__content .feature__title {
   max-width: 340px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 .feature__content .text__content .feature__title {
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 .feature__content .text__content .feature__description {
+    max-width: 320px;
+  }
 }
 .pulse-lamina .dobra-06 {
   padding-top: 0;
@@ -199,8 +248,8 @@ body {
   align-items: center;
 }
 @media screen and (max-width: 768px) {
-  .pulse-lamina .dobra-06 .feature__content {
-    max-width: 320px;
+  .pulse-lamina .dobra-06 .feature__content .text__content {
+    max-width: 340px;
   }
 }
 .pulse-lamina .dobra-06 .feature__content .text__content .feature__title {
@@ -213,8 +262,18 @@ body {
 .pulse-lamina .dobra-07 .feature__content .text__content .feature__title {
   max-width: 600px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content .text__content .feature__title {
+    max-width: 300px;
+  }
+}
 .pulse-lamina .dobra-07 .feature__content .text__content .feature__description {
   max-width: 440px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content .text__content .feature__description {
+    max-width: 300px;
+  }
 }
 .pulse-lamina .dobra-08 .feature__content .text__content {
   max-width: 900px;
@@ -222,8 +281,18 @@ body {
 .pulse-lamina .dobra-08 .feature__content .text__content .feature__title {
   max-width: 280px;
 }
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content .text__content .feature__title {
+    max-width: 150px;
+  }
+}
 .pulse-lamina .dobra-08 .feature__content .text__content .feature__description {
   max-width: 400px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content .text__content .feature__description {
+    max-width: 300px;
+  }
 }
 .pulse-lamina .dobra-09 {
   padding-top: 0;
@@ -234,16 +303,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
-  .pulse-lamina .dobra-09 .feature__content {
-    max-width: 320px;
-  }
-}
 .pulse-lamina .dobra-09 .feature__content .text__content {
   max-width: 1050px;
 }
 .pulse-lamina .dobra-09 .feature__content .text__content .feature__title {
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-09 .feature__content .text__content .feature__title {
+    max-width: 300px;
+  }
 }
 .pulse-lamina .dobra-09 .feature__content .text__content .feature__description {
   max-width: 650px;
