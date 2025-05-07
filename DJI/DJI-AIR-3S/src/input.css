@@ -1,27 +1,2149 @@
-/* Reset básico */
-* {
+/* OUTPUT 3 */
+/*
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+.lamina-dji *,
+.lamina-dji ::before,
+.lamina-dji ::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+.lamina-dji ::before,
+.lamina-dji ::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+.lamina-dji html,
+.lamina-dji :host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+.lamina-dji body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+.lamina-dji hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+.lamina-dji abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+.lamina-dji h1,
+.lamina-dji h2,
+.lamina-dji h3,
+.lamina-dji h4,
+.lamina-dji h5,
+.lamina-dji h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+.lamina-dji a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+.lamina-dji b,
+.lamina-dji strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+.lamina-dji code,
+.lamina-dji kbd,
+.lamina-dji samp,
+.lamina-dji pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+.lamina-dji small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+.lamina-dji sub,
+.lamina-dji sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.lamina-dji sub {
+  bottom: -0.25em;
+}
+
+.lamina-dji sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+.lamina-dji table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+.lamina-dji button,
+.lamina-dji input,
+.lamina-dji optgroup,
+.lamina-dji select,
+.lamina-dji textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+.lamina-dji button,
+.lamina-dji select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+.lamina-dji button,
+.lamina-dji [type='button'],
+.lamina-dji [type='reset'],
+.lamina-dji [type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+.lamina-dji :-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+.lamina-dji :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+.lamina-dji progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+.lamina-dji ::-webkit-inner-spin-button,
+.lamina-dji ::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.lamina-dji [type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+.lamina-dji ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.lamina-dji ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+.lamina-dji summary {
+  display: list-item;
+}
+
+.lamina-dji blockquote,
+.lamina-dji dl,
+.lamina-dji dd,
+.lamina-dji h1,
+.lamina-dji h2,
+.lamina-dji h3,
+.lamina-dji h4,
+.lamina-dji h5,
+.lamina-dji h6,
+.lamina-dji hr,
+.lamina-dji figure,
+.lamina-dji p,
+.lamina-dji pre {
+  margin: 0;
+}
+
+.lamina-dji fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.lamina-dji legend {
+  padding: 0;
+}
+
+.lamina-dji ol,
+.lamina-dji ul,
+.lamina-dji menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lamina-dji dialog {
+  padding: 0;
+}
+
+.lamina-dji textarea {
+  resize: vertical;
+}
+
+.lamina-dji input::-moz-placeholder, .lamina-dji textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+.lamina-dji input::placeholder,
+.lamina-dji textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+.lamina-dji button,
+.lamina-dji [role="button"] {
+  cursor: pointer;
+}
+
+.lamina-dji :disabled {
+  cursor: default;
+}
+
+.lamina-dji img,
+.lamina-dji svg,
+.lamina-dji video,
+.lamina-dji canvas,
+.lamina-dji audio,
+.lamina-dji iframe,
+.lamina-dji embed,
+.lamina-dji object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+.lamina-dji img,
+.lamina-dji video {
+  max-width: 100%;
+  height: auto;
+}
+
+.lamina-dji [hidden] {
+  display: none;
+}
+
+.lamina-dji *,
+.lamina-dji ::before,
+.lamina-dji ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
+
+.lamina-dji ::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
+
+.lamina-dji .invisible {
+  visibility: hidden;
+}
+
+.lamina-dji .absolute {
+  position: absolute;
+}
+
+.lamina-dji .relative {
+  position: relative;
+}
+
+.lamina-dji .-left-\[30\%\] {
+  left: -30%;
+}
+
+.lamina-dji .bottom-0 {
+  bottom: 0px;
+}
+
+.lamina-dji .right-0 {
+  right: 0px;
+}
+
+.lamina-dji .top-0 {
+  top: 0px;
+}
+
+.lamina-dji .z-0 {
+  z-index: 0;
+}
+
+.lamina-dji .z-10 {
+  z-index: 10;
+}
+
+.lamina-dji .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lamina-dji .mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.lamina-dji .mb-16 {
+  margin-bottom: 4rem;
+}
+
+.lamina-dji .mb-20 {
+  margin-bottom: 5rem;
+}
+
+.lamina-dji .mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+
+.lamina-dji .mb-3\.5 {
+  margin-bottom: 0.875rem;
+}
+
+.lamina-dji .mb-4 {
+  margin-bottom: 1rem;
+}
+
+.lamina-dji .mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.lamina-dji .mb-8 {
+  margin-bottom: 2rem;
+}
+
+.lamina-dji .mb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.lamina-dji .-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.lamina-dji .flex {
+  display: flex;
+}
+
+.lamina-dji .hidden {
+  display: none;
+}
+
+.lamina-dji .h-96 {
+  height: 24rem;
+}
+
+.lamina-dji .h-\[498px\] {
+  height: 498px;
+}
+
+.lamina-dji .h-full {
+  height: 100%;
+}
+
+.lamina-dji .w-64 {
+  width: 16rem;
+}
+
+.lamina-dji .w-full {
+  width: 100%;
+}
+
+.lamina-dji .max-w-\[1585px\] {
+  max-width: 1585px;
+}
+
+.lamina-dji .max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.lamina-dji .max-w-\[250px\] {
+  max-width: 250px;
+}
+
+.lamina-dji .max-w-\[508px\] {
+  max-width: 508px;
+}
+
+.lamina-dji .max-w-\[980px\] {
+  max-width: 980px;
+}
+
+.lamina-dji .max-w-md {
+  max-width: 28rem;
+}
+
+.lamina-dji .flex-1 {
+  flex: 1 1 0%;
+}
+
+.lamina-dji .flex-col {
+  flex-direction: column;
+}
+
+.lamina-dji .flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.lamina-dji .items-center {
+  align-items: center;
+}
+
+.lamina-dji .justify-center {
+  justify-content: center;
+}
+
+.lamina-dji .justify-between {
+  justify-content: space-between;
+}
+
+.lamina-dji .gap-8 {
+  gap: 2rem;
+}
+
+.lamina-dji .gap-9 {
+  gap: 2.25rem;
+}
+
+.lamina-dji .gap-\[10px\] {
+  gap: 10px;
+}
+
+.lamina-dji .gap-x-9 {
+  -moz-column-gap: 2.25rem;
+       column-gap: 2.25rem;
+}
+
+.lamina-dji .space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.lamina-dji .self-start {
+  align-self: flex-start;
+}
+
+.lamina-dji .overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.lamina-dji .whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.lamina-dji .rounded-full {
+  border-radius: 9999px;
+}
+
+.lamina-dji .bg-\[\#F04E6E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 78 110 / var(--tw-bg-opacity));
+}
+
+.lamina-dji .bg-\[\#FFEFDD\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 239 221 / var(--tw-bg-opacity));
+}
+
+.lamina-dji .bg-\[\#FFF1E2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 241 226 / var(--tw-bg-opacity));
+}
+
+.lamina-dji .object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.lamina-dji .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.lamina-dji .px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.lamina-dji .py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.lamina-dji .px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.lamina-dji .px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.lamina-dji .pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.lamina-dji .pb-16 {
+  padding-bottom: 4rem;
+}
+
+.lamina-dji .pr-4 {
+  padding-right: 1rem;
+}
+
+.lamina-dji .pt-14 {
+  padding-top: 3.5rem;
+}
+
+.lamina-dji .pt-24 {
+  padding-top: 6rem;
+}
+
+.lamina-dji .text-left {
+  text-align: left;
+}
+
+.lamina-dji .text-center {
+  text-align: center;
+}
+
+.lamina-dji .text-right {
+  text-align: right;
+}
+
+.lamina-dji .font-montserrat {
+  font-family: Montserrat;
+}
+
+.lamina-dji .text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.lamina-dji .text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.lamina-dji .text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.lamina-dji .text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.lamina-dji .text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.lamina-dji .font-black {
+  font-weight: 900;
+}
+
+.lamina-dji .font-bold {
+  font-weight: 700;
+}
+
+.lamina-dji .font-light {
+  font-weight: 300;
+}
+
+.lamina-dji .font-medium {
+  font-weight: 500;
+}
+
+.lamina-dji .font-normal {
+  font-weight: 400;
+}
+
+.lamina-dji .uppercase {
+  text-transform: uppercase;
+}
+
+.lamina-dji .leading-\[110\.345\%\] {
+  line-height: 110.345%;
+}
+
+.lamina-dji .leading-\[111\.111\%\] {
+  line-height: 111.111%;
+}
+
+.lamina-dji .leading-\[117\.391\%\] {
+  line-height: 117.391%;
+}
+
+.lamina-dji .leading-\[81\%\] {
+  line-height: 81%;
+}
+
+.lamina-dji .text-\[\#726DA3\] {
+  --tw-text-opacity: 1;
+  color: rgb(114 109 163 / var(--tw-text-opacity));
+}
+
+.lamina-dji .text-\[\#F8E620\] {
+  --tw-text-opacity: 1;
+  color: rgb(248 230 32 / var(--tw-text-opacity));
+}
+
+.lamina-dji .text-\[\#FFEFDD\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 239 221 / var(--tw-text-opacity));
+}
+
+.lamina-dji .text-\[\#FFF1E2\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 241 226 / var(--tw-text-opacity));
+}
+
+.lamina-dji .text-white {
+  --tw-text-opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .lamina-dji .md\:w-auto {
+    width: auto;
+  }
+
+  .lamina-dji .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lamina-dji .lg\:visible {
+    visibility: visible;
+  }
+
+  .lamina-dji .lg\:absolute {
+    position: absolute;
+  }
+
+  .lamina-dji .lg\:-left-\[15\.5\%\] {
+    left: -15.5%;
+  }
+
+  .lamina-dji .lg\:-right-\[20\%\] {
+    right: -20%;
+  }
+
+  .lamina-dji .lg\:top-0 {
+    top: 0px;
+  }
+
+  .lamina-dji .lg\:ml-\[151px\] {
+    margin-left: 151px;
+  }
+
+  .lamina-dji .lg\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .lamina-dji .lg\:block {
+    display: block;
+  }
+
+  .lamina-dji .lg\:h-\[1091px\] {
+    height: 1091px;
+  }
+
+  .lamina-dji .lg\:h-\[653px\] {
+    height: 653px;
+  }
+
+  .lamina-dji .lg\:h-auto {
+    height: auto;
+  }
+
+  .lamina-dji .lg\:h-full {
+    height: 100%;
+  }
+
+  .lamina-dji .lg\:h-\[553px\] {
+    height: 553px;
+  }
+
+  .lamina-dji .lg\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .lamina-dji .lg\:h-\[554px\] {
+    height: 554px;
+  }
+
+  .lamina-dji .lg\:h-\[1000px\] {
+    height: 1000px;
+  }
+
+  .lamina-dji .lg\:h-\[800px\] {
+    height: 800px;
+  }
+
+  .lamina-dji .lg\:h-\[900px\] {
+    height: 900px;
+  }
+
+  .lamina-dji .lg\:w-\[498px\] {
+    width: 498px;
+  }
+
+  .lamina-dji .lg\:w-\[65\%\] {
+    width: 65%;
+  }
+
+  .lamina-dji .lg\:w-full {
+    width: 100%;
+  }
+
+  .lamina-dji .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lamina-dji .lg\:items-end {
+    align-items: flex-end;
+  }
+
+  .lamina-dji .lg\:gap-12 {
+    gap: 3rem;
+  }
+
+  .lamina-dji .lg\:self-start {
+    align-self: flex-start;
+  }
+
+  .lamina-dji .lg\:object-contain {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .lamina-dji .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lamina-dji .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .lamina-dji .lg\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .lamina-dji .lg\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  .lamina-dji .lg\:text-left {
+    text-align: left;
+  }
+
+  .lamina-dji .lg\:text-right {
+    text-align: right;
+  }
+
+  .lamina-dji .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lamina-dji .lg\:text-\[200px\] {
+    font-size: 200px;
+  }
+
+  .lamina-dji .lg\:text-\[23px\] {
+    font-size: 23px;
+  }
+
+  .lamina-dji .lg\:text-\[29px\] {
+    font-size: 29px;
+  }
+
+  .lamina-dji .lg\:text-\[45px\] {
+    font-size: 45px;
+  }
+
+  .lamina-dji .lg\:text-\[55px\]\/\[154\.545\%\] {
+    font-size: 55px;
+    line-height: 154.545%;
+  }
+
+  .lamina-dji .lg\:text-\[65px\] {
+    font-size: 65px;
+  }
+
+  .lamina-dji .lg\:text-\[80px\]\/\[85px\] {
+    font-size: 80px;
+    line-height: 85px;
+  }
+
+  .lamina-dji .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .lamina-dji .full-hd\:w-auto {
+    width: auto;
+  }
+
+  .lamina-dji .full-hd\:pt-20 {
+    padding-top: 5rem;
+  }
+  
+}
+
+
+.lamina-dji .showcase__paragraph{
+  z-index: 2;
+}
+
+/* OUTPUT 7 */
+
+.dji-lamina *,
+.dji-lamina ::before,
+.dji-lamina ::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+.dji-lamina ::before,
+.dji-lamina ::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+.dji-lamina html,
+.dji-lamina :host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+.dji-lamina body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+.dji-lamina hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+.dji-lamina abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+/* .dji-lamina h1,
+.dji-lamina h2,
+.dji-lamina h3,
+.dji-lamina h4,
+.dji-lamina h5,
+.dji-lamina h6 {
+  font-size: inherit;
+  font-weight: inherit;
+} */
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+.dji-lamina a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+.dji-lamina b,
+.dji-lamina strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+.dji-lamina code,
+.dji-lamina kbd,
+.dji-lamina samp,
+.dji-lamina pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+.dji-lamina small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+.dji-lamina sub,
+.dji-lamina sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.dji-lamina sub {
+  bottom: -0.25em;
+}
+
+.dji-lamina sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+.dji-lamina table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+.dji-lamina button,
+.dji-lamina input,
+.dji-lamina optgroup,
+.dji-lamina select,
+.dji-lamina textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+.dji-lamina button,
+.dji-lamina select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+.dji-lamina button,
+.dji-lamina [type='button'],
+.dji-lamina [type='reset'],
+.dji-lamina [type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+.dji-lamina :-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+.dji-lamina :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+.dji-lamina progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+.dji-lamina ::-webkit-inner-spin-button,
+.dji-lamina ::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.dji-lamina [type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+.dji-lamina ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.dji-lamina ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+.dji-lamina summary {
+  display: list-item;
+}
+
+.dji-lamina blockquote,
+.dji-lamina dl,
+.dji-lamina dd,
+.dji-lamina h1,
+.dji-lamina h2,
+.dji-lamina h3,
+.dji-lamina h4,
+.dji-lamina h5,
+.dji-lamina h6,
+.dji-lamina hr,
+.dji-lamina figure,
+.dji-lamina p,
+.dji-lamina pre {
+  margin: 0;
+}
+
+.dji-lamina fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.dji-lamina legend {
+  padding: 0;
+}
+
+.dji-lamina ol,
+.dji-lamina ul,
+.dji-lamina menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dji-lamina dialog {
+  padding: 0;
+}
+
+.dji-lamina textarea {
+  resize: vertical;
+}
+
+.dji-lamina input::-moz-placeholder, .dji-lamina textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+.dji-lamina input::placeholder,
+.dji-lamina textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+.dji-lamina button,
+.dji-lamina [role="button"] {
+  cursor: pointer;
+}
+
+.dji-lamina :disabled {
+  cursor: default;
+}
+
+.dji-lamina video{
+  max-width: 100%;
+}
+
+.dji-lamina img,
+.dji-lamina svg,
+.dji-lamina video,
+.dji-lamina canvas,
+.dji-lamina audio,
+.dji-lamina iframe,
+.dji-lamina embed,
+.dji-lamina object {
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+.dji-lamina img,
+.dji-lamina video {
+  max-width: 100%;
+  height: auto;
+}
+
+.dji-lamina [hidden] {
+  display: none;
+}
+
+.dji-lamina *,
+.dji-lamina ::before,
+.dji-lamina ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
+
+.dji-lamina ::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
+
+.dji-lamina .invisible {
+  visibility: hidden;
+}
+
+.dji-lamina .absolute {
+  position: absolute;
+}
+
+.dji-lamina .relative {
+  position: relative;
+}
+
+.dji-lamina .-left-\[30\%\] {
+  left: -30%;
+}
+
+.dji-lamina .bottom-0 {
+  bottom: 0px;
+}
+
+.dji-lamina .right-0 {
+  right: 0px;
+}
+
+.dji-lamina .top-0 {
+  top: 0px;
+}
+
+.dji-lamina .z-0 {
+  z-index: 0;
+}
+
+.dji-lamina .z-10 {
+  z-index: 10;
+}
+
+.dji-lamina .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dji-lamina .mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.dji-lamina .mb-16 {
+  margin-bottom: 4rem;
+}
+
+.dji-lamina .mb-20 {
+  margin-bottom: 5rem;
+}
+
+.dji-lamina .mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+
+.dji-lamina .mb-3\.5 {
+  margin-bottom: 0.875rem;
+}
+
+.dji-lamina .mb-4 {
+  margin-bottom: 1rem;
+}
+
+.dji-lamina .mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.dji-lamina .mb-8 {
+  margin-bottom: 2rem;
+}
+
+.dji-lamina .mb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.dji-lamina .-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.dji-lamina .flex {
+  display: flex;
+}
+
+.dji-lamina .hidden {
+  display: none;
+}
+
+.dji-lamina .h-96 {
+  height: 24rem;
+}
+
+.dji-lamina .h-\[498px\] {
+  height: 498px;
+}
+
+.dji-lamina .h-full {
+  height: 100%;
+}
+
+.dji-lamina .w-64 {
+  width: 16rem;
+}
+
+.dji-lamina .w-full {
+  width: 100%;
+}
+
+.dji-lamina .max-w-\[1585px\] {
+  max-width: 1585px;
+}
+
+.dji-lamina .max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.dji-lamina .max-w-\[250px\] {
+  max-width: 250px;
+}
+
+.dji-lamina .max-w-\[508px\] {
+  max-width: 508px;
+}
+
+.dji-lamina .max-w-\[980px\] {
+  max-width: 980px;
+}
+
+.dji-lamina .max-w-md {
+  max-width: 28rem;
+}
+
+.dji-lamina .flex-1 {
+  flex: 1 1 0%;
+}
+
+.dji-lamina .flex-col {
+  flex-direction: column;
+}
+
+.dji-lamina .flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.dji-lamina .items-center {
+  align-items: center;
+}
+
+.dji-lamina .justify-center {
+  justify-content: center;
+}
+
+.dji-lamina .justify-between {
+  justify-content: space-between;
+}
+
+.dji-lamina .gap-8 {
+  gap: 2rem;
+}
+
+.dji-lamina .gap-9 {
+  gap: 2.25rem;
+}
+
+.dji-lamina .gap-\[10px\] {
+  gap: 10px;
+}
+
+.dji-lamina .gap-x-9 {
+  -moz-column-gap: 2.25rem;
+       column-gap: 2.25rem;
+}
+
+.dji-lamina .space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.dji-lamina .self-start {
+  align-self: flex-start;
+}
+
+.dji-lamina .overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.dji-lamina .whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.dji-lamina .rounded-full {
+  border-radius: 9999px;
+}
+
+.dji-lamina .bg-\[\#F04E6E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 78 110 / var(--tw-bg-opacity));
+}
+
+.dji-lamina .bg-\[\#FFEFDD\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 239 221 / var(--tw-bg-opacity));
+}
+
+.dji-lamina .bg-\[\#FFF1E2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 241 226 / var(--tw-bg-opacity));
+}
+
+.dji-lamina .object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.dji-lamina .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dji-lamina .px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.dji-lamina .py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.dji-lamina .px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.dji-lamina .px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.dji-lamina .pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.dji-lamina .pb-16 {
+  padding-bottom: 4rem;
+}
+
+.dji-lamina .pr-4 {
+  padding-right: 1rem;
+}
+
+.dji-lamina .pt-14 {
+  padding-top: 3.5rem;
+}
+
+.dji-lamina .pt-24 {
+  padding-top: 6rem;
+}
+
+.dji-lamina .text-left {
+  text-align: left;
+}
+
+.dji-lamina .text-center {
+  text-align: center;
+}
+
+.dji-lamina .text-right {
+  text-align: right;
+}
+
+.dji-lamina .font-montserrat {
+  font-family: Montserrat;
+}
+
+.dji-lamina .text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.dji-lamina .text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.dji-lamina .text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.dji-lamina .text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.dji-lamina .text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.dji-lamina .font-black {
+  font-weight: 900;
+}
+
+.dji-lamina .font-bold {
+  font-weight: 700;
+}
+
+.dji-lamina .font-light {
+  font-weight: 300;
+}
+
+.dji-lamina .font-medium {
+  font-weight: 500;
+}
+
+.dji-lamina .font-normal {
+  font-weight: 400;
+}
+
+.dji-lamina .uppercase {
+  text-transform: uppercase;
+}
+
+.dji-lamina .leading-\[110\.345\%\] {
+  line-height: 110.345%;
+}
+
+.dji-lamina .leading-\[111\.111\%\] {
+  line-height: 111.111%;
+}
+
+.dji-lamina .leading-\[117\.391\%\] {
+  line-height: 117.391%;
+}
+
+.dji-lamina .leading-\[81\%\] {
+  line-height: 81%;
+}
+
+.dji-lamina .text-\[\#726DA3\] {
+  --tw-text-opacity: 1;
+  color: rgb(114 109 163 / var(--tw-text-opacity));
+}
+
+.dji-lamina .text-\[\#F8E620\] {
+  --tw-text-opacity: 1;
+  color: rgb(248 230 32 / var(--tw-text-opacity));
+}
+
+.dji-lamina .text-\[\#FFEFDD\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 239 221 / var(--tw-text-opacity));
+}
+
+.dji-lamina .text-\[\#FFF1E2\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 241 226 / var(--tw-text-opacity));
+}
+
+.dji-lamina .text-white {
+  --tw-text-opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .dji-lamina .md\:w-auto {
+    width: auto;
+  }
+
+  .dji-lamina .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dji-lamina .lg\:visible {
+    visibility: visible;
+  }
+
+  .dji-lamina .lg\:absolute {
+    position: absolute;
+  }
+
+  .dji-lamina .lg\:-left-\[15\.5\%\] {
+    left: -15.5%;
+  }
+
+  .dji-lamina .lg\:-right-\[20\%\] {
+    right: -20%;
+  }
+
+  .dji-lamina .lg\:top-0 {
+    top: 0px;
+  }
+
+  .dji-lamina .lg\:ml-\[151px\] {
+    margin-left: 151px;
+  }
+
+  .dji-lamina .lg\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .dji-lamina .lg\:block {
+    display: block;
+  }
+
+  .dji-lamina .lg\:h-\[1091px\] {
+    height: 1091px;
+  }
+
+  .dji-lamina .lg\:h-\[653px\] {
+    height: 653px;
+  }
+
+  .dji-lamina .lg\:h-auto {
+    height: auto;
+  }
+
+  .dji-lamina .lg\:h-full {
+    height: 100%;
+  }
+
+  .dji-lamina .lg\:h-\[553px\] {
+    height: 553px;
+  }
+
+  .dji-lamina .lg\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .dji-lamina .lg\:h-\[554px\] {
+    height: 554px;
+  }
+
+  .dji-lamina .lg\:h-\[1000px\] {
+    height: 1000px;
+  }
+
+  .dji-lamina .lg\:h-\[800px\] {
+    height: 800px;
+  }
+
+  .dji-lamina .lg\:h-\[900px\] {
+    height: 900px;
+  }
+
+  .dji-lamina .lg\:w-\[498px\] {
+    width: 498px;
+  }
+
+  .dji-lamina .lg\:w-\[65\%\] {
+    width: 65%;
+  }
+
+  .dji-lamina .lg\:w-full {
+    width: 100%;
+  }
+
+  .dji-lamina .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .dji-lamina .lg\:items-end {
+    align-items: flex-end;
+  }
+
+  .dji-lamina .lg\:gap-12 {
+    gap: 3rem;
+  }
+
+  .dji-lamina .lg\:self-start {
+    align-self: flex-start;
+  }
+
+  .dji-lamina .lg\:object-contain {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .dji-lamina .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .dji-lamina .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .dji-lamina .lg\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .dji-lamina .lg\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  .dji-lamina .lg\:text-left {
+    text-align: left;
+  }
+
+  .dji-lamina .lg\:text-right {
+    text-align: right;
+  }
+
+  .dji-lamina .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .dji-lamina .lg\:text-\[200px\] {
+    font-size: 200px;
+  }
+
+  .dji-lamina .lg\:text-\[23px\] {
+    font-size: 23px;
+  }
+
+  .dji-lamina .lg\:text-\[29px\] {
+    font-size: 29px;
+  }
+
+  .dji-lamina .lg\:text-\[45px\] {
+    font-size: 45px;
+  }
+
+  .dji-lamina .lg\:text-\[55px\]\/\[154\.545\%\] {
+    font-size: 55px;
+    line-height: 154.545%;
+  }
+
+  .dji-lamina .lg\:text-\[65px\] {
+    font-size: 65px;
+  }
+
+  .dji-lamina .lg\:text-\[80px\]\/\[85px\] {
+    font-size: 80px;
+    line-height: 85px;
+  }
+
+  .dji-lamina .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .dji-lamina .full-hd\:w-auto {
+    width: auto;
+  }
+
+  .dji-lamina .full-hd\:pt-20 {
+    padding-top: 5rem;
+  }
+  
+}
+
+/* INDEX 15 */
+
+@font-face {
+  font-family: DJIBold;
+  src: url('https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/Dji-Bold_0.ttf');
+}
+
+@font-face {
+  font-family: DJILight;
+  src: url('https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/Dji-Light_0.ttf');
+}
+
+
+.dji-lamina {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", serif;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
   }
   
-  body {
-    font-family: Arial, sans-serif;
+  .dji-lamina {
     color: #fff;
     background-color: #000;
     line-height: 1.6;
   }
   
-  section {
+  .dji-lamina section {
     text-align: center;
   }
   
-  h3, h4, h5 {
+  .dji-lamina h3, .dji-lamina h4, .dji-lamina h5 {
     margin-bottom: 15px;
   }
   
-  p {
+  .dji-lamina p {
     margin-bottom: 20px;
   }
   
@@ -33,17 +2155,17 @@
   
   .gallery__container {
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    gap: 16px; 
-    justify-content: space-between;
-    max-width: 1024px;
-    margin: 0 auto;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 16px; 
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
   }
 
   .gallery__image-01 { grid-area: 1 / 1 / 2 / 2; }
-  .gallery__image-02 { grid-area: 1 / 2 / 3 / 3; }
   .gallery__image-03 { grid-area: 2 / 1 / 3 / 2; }
+  .gallery__image-02 { grid-area: 1 / 2 / 3 / 3; }
   .gallery__image-04 { grid-area: 3 / 1 / 4 / 3; }
   .gallery__image-05 { grid-area: 4 / 1 / 5 / 2; }
   .gallery__image-06 { grid-area: 4 / 2 / 5 / 3; }
@@ -64,6 +2186,7 @@
   .tracking__feature-image, 
   .package__image {
     max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
   }
@@ -73,7 +2196,7 @@
     margin-bottom: 20px;
   }
   
-  /* Botões */
+  /* BotÃĩes */
   .showcase__buttons, 
   .features-list__button, 
   .return-home__button {
@@ -127,7 +2250,7 @@
   
   .package__gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
     gap: 10px;
   }
 
@@ -140,11 +2263,36 @@
   }
 
   .dobra-02{
-    padding: 32px 0px;
+    padding: 32px;
+  }
+
+
+  .lidar__image--mobile{
+    display: none;
+  }
+
+  .dobra-02 .gallery__image-02{
+    position: relative;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+
+  .dobra-02 .gallery__image-02 .description{
+    position: absolute;
+  }
+
+  .dobra-02 .gallery__image-02 h6{
+    font-size: 24px;
+  }
+
+  .dobra-02 .gallery__image-02 h3{
+    font-size: 32px;
+    font-weight: 600;
   }
 
   .dobra-03{
-    background: url("./assets/images/dobra-03.png") no-repeat;
+    background: url("https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/images/dobra-03.png") no-repeat;
     background-size: contain;
     background-position: top;
     height: 58vw;
@@ -155,20 +2303,28 @@
   }
 
   .dobra-09{
-    background: url("./assets/images/dobra-09.png") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 30vw;
+    height: 56vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin-bottom: 64px;
+  }
+
+  .dobra-09 .dji-videos-style-full{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
   }
   
   .dobra-white{
-    background: url("./assets/images/dobra-13.png") no-repeat;
+    background: url("https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/images/dobra-13.png") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 30vw;
+    height: 50vw;
     display: flex;
     justify-content: center;
     padding-top: 64px;
@@ -192,11 +2348,29 @@
     flex-direction: column;
   }
 
+  .dobra-11 .dobra-04{
+    margin-top: 48px;
+  }
+
 
   .dobra-13, .dobra-14{
     background: #fff;
     color: #000;
   }
+
+  .dobra-01 .feature__title{
+    font-family: DJILight;
+    font-size: 64px;
+    margin-bottom: 0px;
+    color: #fff;
+    line-height: 1em;
+  }
+
+  .dobra-01  .feature__subtitle{
+    font-size: 30px;
+    color: #fff;
+  }
+
   
 
   .feature__title{
@@ -222,6 +2396,7 @@
   .dobra-05, .dobra-07{
     display: flex;
     flex-direction: column;
+    padding-top: 64px;
   }
 
   .dobra-05 .camera__content,
@@ -238,16 +2413,32 @@
   .tracking__title, 
   .camera__title, 
   .telephoto__title, 
-  .safety__title{
+  .features-list__title,
+  .return-home__title {
     font-size: 38px;
     max-width: 720px;
     text-align: center;
+    font-weight: 600;
   }
+
+
+  .safety__title{
+    font-size: 64px;
+    font-weight: 600;
+    z-index: 2;
+  }
+
+  .video-11 .dji-videos-style-full{
+    z-index: 0;
+  }
+
 
   .dobra-12{
     flex-direction: column;
     display: flex;
     align-items: center;
+    padding-top: 64px;
+
     justify-content: center;
   }
 
@@ -259,15 +2450,37 @@
   }
 
 
+  .dobra-13 .feature--01 .dji-videos-style ,.dobra-13 .feature--02 .dji-videos-style{
+    max-width: 600px;
+  }
+
   .dobra-13 .tracking__details-01, .dobra-13 .tracking__details-02, .dobra-13 .tracking__details-03{
    display: flex;
    flex-direction: column; 
   }
 
-  .dobra-13 .feature--01, .dobra-13 .feature--02, .dobra-13 .feature--03{
+  .dobra-13 .tracking__details-01, .dobra-13 .tracking__details-02{
+    padding: 64px 0px;
+  }
+
+  .dobra-13 .feature--01, .dobra-13 .feature--02{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 64px;
+  }
+
+  .dobra-13 .feature--01 .tracking__feature-image, .dobra-13 .feature--02 .tracking__feature-image{
+    max-width: 540px;
+  }
+
+  .dobra-13 .feature--03{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 64px;
   }
 
   .dobra-13 .feature--02{
@@ -279,13 +2492,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 32px;
+    padding-top: 64px;
   }
 
   .dobra-15{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     width: 100%;
     max-width: 1024px;
@@ -297,18 +2510,20 @@
     align-items: start;
     flex-direction: column;
     text-align: start;
+    margin-top: 24px;
     color: #a6a6a6;
     max-width: 420px;
   }
 
   .dobra-15--description h3{
-    font-size: 28px;
+    font-size: 38px;
     color: #fff;
   }
 
   .dobra-10, .dobra-12{
     max-width: 1024px;
     margin: 0 auto;
+    padding-bottom: 64px;
   }
 
 
@@ -322,12 +2537,19 @@
     font-size: 38px;
   }
 
+  .dobra-14 .package__title strong{
+    font-weight: 500;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 42px;
+  }
+
   .dobra-14{
     padding: 64px 0px;
   }
 
   .dobra-14 .package__subtitle{
     font-size: 24px;
+    font-weight: 500;
   }
 
   .dobra-14 .package__content{
@@ -336,7 +2558,7 @@
 
 
   .feature__description{
-    max-width: 642px;
+    max-width: 672px;
     color: #a6a6a6;
     margin: 0 auto;
   }
@@ -345,17 +2567,34 @@
   .dobra-04 .showcase__gallery{
     display: flex;
     flex-direction: row;
+    max-width: 968px;
   }
 
+  .dobra-04 .desktop{
+    max-width: 920px;
+  }
+
+
+  .dobra-04 .showcase{
+    width: 100%;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dobra-04 .showcase__gallery{
+    gap: 16px;
+  }
   
   .showcase__gallery img {
-    margin: 5px;
+    max-width: 416px;
+    
+    width: 100%;
     transition: transform 0.2s;
   }
   
-  .showcase__gallery img:hover {
-    transform: scale(1.025);
-  }
+
   
   .button-container {
     display: flex;
@@ -364,7 +2603,7 @@
     margin-top: 20px;
   }
   
-  button {
+  .dji-lamina button {
     font-size: 16px;
     padding: 12px;
     cursor: pointer;
@@ -374,7 +2613,7 @@
     transition: background-color 0.3s ease;
   }
   
-  button:hover {
+  .dji-lamina button:hover {
     background-color: #555;
   }
 
@@ -394,9 +2633,1316 @@
     background-color: #555;
   }
   
-  /* Botão ativo */
+  /* BotÃĢo ativo */
   .category-button.active {
     border-bottom: 1px solid #fff;
   }
   
   
+  .panorama__description{
+    max-width: 720px;
+    color: #a6a6a6;
+  }
+
+  .dobra-08{
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+
+  .dobra-09{
+    margin-bottom: 64px;
+  }
+
+  .dobra-13 .feature--02{
+    margin-top: 64px;
+  }
+  video{
+    border-radius: 8px;
+  }
+
+  .tracking__feature-title{
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .gallery__image-04--mobile{
+    display: none !important;
+  }
+
+  .gallery__image-04--desktop{
+    display: block;
+  }
+
+  .bg-grey{
+    background-color: #F7F7F7;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 64px;
+  }
+
+
+.showcase-paragraph img{
+  max-width: 1024px;
+}
+
+.dobra-06, .dobra-11{
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+
+  .showcase-paragraph{
+    position: relative;
+    width: 100%;
+    margin-bottom: 124px;
+  }
+
+  .gradient--text{
+    background: linear-gradient(90deg, #8BCEFF 0%, #FFD5BB 100%);
+    background-clip: text;
+    font-size: 51px;
+    font-weight: 500;
+    line-height: 1.2em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .assistance__description{
+    max-width: 720px;
+    color: #a6a6a6;
+    margin-top: 32px;
+
+  }
+/* 
+  @media (max-width: 2560px){
+    .showcase__paragraph{
+      right: 36%;
+    }
+  }
+
+
+  @media (max-width: 1920px){
+    .showcase__paragraph{
+      right: 35%;
+    }
+  }
+
+  @media (max-width: 1440px){
+    .showcase__paragraph{
+      right: 30%;
+    }
+  }
+
+  @media (max-width: 1366px){
+    .showcase__paragraph{
+      right: 28%;
+    }
+  }
+
+  @media (max-width: 1166px){
+    .showcase__paragraph{
+      right: 22%;
+    }
+  } */
+
+
+  @media (max-width: 1024px) {
+    .dobra-03{
+      height: 70vw;
+    }
+
+    .dobra-05, .dobra-07, .dobra-12, .dobra-13, .dobra-14{
+      padding: 32px;
+    }
+
+    .dobra-10{
+      padding: 0px;
+    }
+
+    .dobra-10  .lidar__title, .dobra-10 .lidar__description{
+      margin: 0 32px;
+    }
+
+    .dobra-08{
+      padding: 0px;
+    }
+
+    .dobra-08 .panorama__description{
+      padding: 0 32px;
+    }
+
+     .dobra-15{
+      padding: 32px 32px 0px 32px;
+     }
+    .dobra-05 .camera__content,
+    .dobra-07 .telephoto__content{
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    
+
+    .showcase__paragraph{
+      max-width: fit-content;
+      right: 0px;
+    }
+
+    .dobra-13 .feature--01, .dobra-13 .feature--02{
+      gap: 32px;
+    }
+  }
+
+
+  @media (max-width: 976px) {
+    .showcase__gallery img{
+      
+    }
+    .gallery__container{
+      display: flex;
+      flex-direction: column;
+    }
+    .dobra-04 .desktop{
+      display: none;
+    }
+    .dobra-04 .mobile{
+      display: flex !important;
+    }
+
+    .lidar__image{
+      margin-top: -8px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .feature__description, .camera__description, .showcase__paragraph, .telephoto__description, .panorama__description, .lidar__description, .assistance__description, .dobra-15--description p{
+      font-size: 12px !important;
+    }
+
+    .dobra-01{
+      height: 100vw;
+    }
+
+    .dobra-13{
+      padding: 0px 16px;
+    }
+
+    .dobra-13 .tracking__feature--description{
+      padding: 0 16px;
+    }
+
+    .dobra-04 .showcase__gallery{
+      flex-direction: column;
+    }
+    .dobra-13 .feature--01, .dobra-13 .feature--02{
+      flex-direction: column;
+
+    }
+
+    .dobra-15{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 48px 48px 0px 48px;
+    }
+
+    .dobra-15 img{
+      max-width: 248px;
+    }
+
+    .dobra-15--description h3{
+      font-size: 32px;
+    }
+
+    /* .showcase__gallery img{
+      max-width: 280px;
+    } */
+
+    .button-container{
+      gap: 16px;
+    }
+    
+    .dobra-02{
+      padding: 0px;
+    }
+
+    .category-button{
+      padding: 8px;
+      font-size: 12px;
+    }
+
+    .dobra-15--bg{
+      padding-top: 0px
+    }
+
+    .showcase-paragraph{
+      margin-bottom: 164px;
+    }
+
+    .showcase__paragraph{
+      font-size: 14px;
+      padding: 0 16px;
+    }
+
+
+    .feature__title,
+    .panorama__title, .lidar__title, .assistance__title, .tracking__title, .camera__title, .telephoto__title, .safety__title, .features-list__title, .return-home__title{
+      font-size: 28px;
+    }
+
+    .dobra-03{
+      padding: 32px;
+      height: 150vw;
+      background-size: 180%;
+    }
+
+    .dobra-white{
+      height: 100vw;
+    }
+
+    
+    .tracking__title{
+      font-size: 28px;
+      max-width: 380px;
+      font-weight: 500;
+      margin-top: -28px;
+    }
+
+    .tracking__feature-title{
+      font-size: 24px;
+    }
+    
+    .package__title{
+      text-align: start;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .lidar__image--desktop{
+      display: none;
+    }
+
+    .lidar__image--mobile{
+      display: block;
+    }
+    .dobra-01 .feature__title{
+      font-size: 42px;
+    }
+    .dobra-01 .feature__subtitle{
+      font-size: 16px;
+      margin-top: 4px;
+      margin-bottom: 0px;
+    }
+
+    .dobra-01{
+      background: url("https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/images/dobra-01--mobile.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 120vw;
+      padding-top: 42px;
+    }
+
+
+
+    .dobra-03{
+      background: url("https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/images/dobra-03--mobile.png") no-repeat;
+      height: 140vw;
+        background-position: center;
+        background-size: 100%;
+    }
+    
+    .lidar__description{
+      font-size: 14px;
+    }
+    
+  .gallery__image-04--desktop{
+    display: none;
+  }
+
+  .gallery__image-04--mobile{
+    display: block !important;
+  }
+
+
+  .dobra-11 h3{
+    padding: 0 16px;
+  }
+  }
+
+
+  .dobra-04 .mobile{
+    display: none;
+  }
+
+
+
+
+  .camera__description, .telephoto__description{
+    color: #a6a6a6;
+    max-width: 440px;
+    font-size: 18px;
+  }
+
+
+  .lidar__description{
+    color: #a6a6a6;
+    z-index: 1;
+    max-width: 670px;
+  }
+
+
+  .feature--01 .tracking__feature-description, .feature--02 .tracking__feature-description{
+    margin-bottom: 0px;
+    font-size: 16px;
+    max-width: 320px;
+  }
+
+  .feature--03 .tracking__feature-description{
+    max-width: 720px;
+  }
+
+  .feature--03 .tracking__feature-title{
+    font-size: 38px;
+  }
+
+
+
+
+   .dji-videos-style{
+    max-width: 968px;
+    width: 100%;
+  }
+
+  .dji-videos-style video{
+    width: 100%;
+  }
+
+
+  .video-12{
+    position: relative;
+  }
+
+  /* INDEX 13 */
+  @font-face {
+    font-family: DJIBold;
+    src: url('https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/Dji-Bold_0.ttf');
+  }
+  
+  @font-face {
+    font-family: DJILight;
+    src: url('https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/Dji-Light_0.ttf');
+  }
+  
+  
+  .dji-lamina {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 400;
+    }
+    
+    .dji-lamina {
+      color: #fff;
+      background-color: #000;
+      line-height: 1.6;
+    }
+    
+    .dji-lamina section {
+      text-align: center;
+    }
+    
+    .dji-lamina h3, .dji-lamina h4, .dji-lamina h5 {
+      margin-bottom: 15px;
+    }
+    
+    .dji-lamina p {
+      margin-bottom: 20px;
+    }
+    
+    /* Banners e imagens */
+    .banner__image {
+      width: 100%;
+      height: auto;
+    }
+    
+    .gallery__container {
+      display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 16px; 
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+    }
+  
+    .gallery__image-01 { grid-area: 1 / 1 / 2 / 2; }
+    .gallery__image-03 { grid-area: 2 / 1 / 3 / 2; }
+    .gallery__image-02 { grid-area: 1 / 2 / 3 / 3; }
+    .gallery__image-04 { grid-area: 3 / 1 / 4 / 3; }
+    .gallery__image-05 { grid-area: 4 / 1 / 5 / 2; }
+    .gallery__image-06 { grid-area: 4 / 2 / 5 / 3; }
+  
+    .gallery__image{
+      width: 100%;
+    }
+    
+    .gallery__image,
+    .showcase__gallery-image, 
+    .camera__image, 
+    .features-list__image, 
+    .telephoto__image, 
+    .panorama__image, 
+    .lidar__image, 
+    .return-home__image, 
+    .assistance__image, 
+    .tracking__feature-image, 
+    .package__image {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+    .showcase__image {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    /* BotÃĩes */
+    .showcase__buttons, 
+    .features-list__button, 
+    .return-home__button {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .showcase__button, 
+    .features-list__button, 
+    .return-home__button {
+      background: #444;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .showcase__button:hover, 
+    .features-list__button:hover, 
+    .return-home__button:hover {
+      background: #555;
+    }
+    
+    /* Estrutura geral */
+    .feature__content, 
+    .camera__content, 
+    .features-list__content, 
+    .telephoto__content, 
+    .tracking__details, 
+    .package__content {
+      text-align: start;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    
+    .features-list__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .tracking__details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+    
+    .package__gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
+      gap: 10px;
+    }
+  
+    .dobra-01{
+      background: url("./assets/images/dobra-01.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 30vw;
+      padding-top: 32px;
+    }
+  
+    .dobra-02{
+      padding: 32px;
+    }
+  
+  
+    .lidar__image--mobile{
+      display: none;
+    }
+  
+    .dobra-02 .gallery__image-02{
+      position: relative;
+      display: flex;
+          align-items: center;
+          justify-content: center;
+    }
+  
+    .dobra-02 .gallery__image-02 .description{
+      position: absolute;
+    }
+  
+    .dobra-02 .gallery__image-02 h6{
+      font-size: 24px;
+    }
+  
+    .dobra-02 .gallery__image-02 h3{
+      font-size: 32px;
+      font-weight: 600;
+    }
+  
+    .dobra-03{
+      background: url("https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/images/dobra-03.png") no-repeat;
+      background-size: contain;
+      background-position: top;
+      height: 58vw;
+      padding: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .dobra-09{
+      background-size: cover;
+      background-position: center;
+      height: 56vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 64px;
+    }
+  
+    .dobra-09 .dji-videos-style-full{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .dobra-white{
+      background: url("https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/images/dobra-13.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 50vw;
+      display: flex;
+      justify-content: center;
+      padding-top: 64px;
+    }
+  
+    
+    .dobra-02, 
+    .dobra-04, 
+    .dobra-05, 
+    .dobra-06, 
+    .dobra-07, 
+    .dobra-08, 
+    .dobra-10, 
+    .dobra-11, 
+    .dobra-12,
+    .dobra-15 {
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .dobra-11 .dobra-04{
+      margin-top: 48px;
+    }
+  
+  
+    .dobra-13, .dobra-14{
+      background: #fff;
+      color: #000;
+    }
+  
+    .dobra-01 .feature__title{
+      font-family: DJILight;
+      font-size: 64px;
+      margin-bottom: 0px;
+      color: #fff;
+      line-height: 1em;
+    }
+  
+    .dobra-01  .feature__subtitle{
+      font-size: 30px;
+      color: #fff;
+    }
+  
+    
+  
+    .feature__title{
+      font-size: 38px;
+      margin-bottom: 0px;
+      line-height: 1em;
+    }
+  
+    .feature__subtitle{
+      font-size: 30px;
+    }
+    
+  
+    .dobra-03 .feature__content{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      text-align: center;
+    }
+  
+  
+    .dobra-05, .dobra-07{
+      display: flex;
+      flex-direction: column;
+      padding-top: 64px;
+    }
+  
+    .dobra-05 .camera__content,
+    .dobra-07 .telephoto__content{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .panorama__title, 
+    .lidar__title, 
+    .assistance__title, 
+    .tracking__title, 
+    .camera__title, 
+    .telephoto__title, 
+    .features-list__title,
+    .return-home__title {
+      font-size: 38px;
+      max-width: 720px;
+      text-align: center;
+      font-weight: 600;
+    }
+  
+  
+    .safety__title{
+      font-size: 64px;
+      font-weight: 600;
+    }
+  
+  
+    .dobra-12{
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      padding-top: 64px;
+  
+      justify-content: center;
+    }
+  
+  
+    .dobra-13{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  
+    .dobra-13 .feature--01 .dji-videos-style ,.dobra-13 .feature--02 .dji-videos-style{
+      max-width: 600px;
+    }
+  
+    .dobra-13 .tracking__details-01, .dobra-13 .tracking__details-02, .dobra-13 .tracking__details-03{
+     display: flex;
+     flex-direction: column; 
+    }
+  
+    .dobra-13 .tracking__details-01, .dobra-13 .tracking__details-02{
+      padding: 64px 0px;
+    }
+  
+    .dobra-13 .feature--01, .dobra-13 .feature--02{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 64px;
+    }
+  
+    .dobra-13 .feature--01 .tracking__feature-image, .dobra-13 .feature--02 .tracking__feature-image{
+      max-width: 540px;
+    }
+  
+    .dobra-13 .feature--03{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 64px;
+    }
+  
+    .dobra-13 .feature--02{
+      flex-direction: row-reverse;
+    }
+  
+    .dobra-15--bg{
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 64px;
+    }
+  
+    .dobra-15{
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+  
+    .dobra-15--description{
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      text-align: start;
+      margin-top: 24px;
+      color: #a6a6a6;
+      max-width: 420px;
+    }
+  
+    .dobra-15--description h3{
+      font-size: 38px;
+      color: #fff;
+    }
+  
+    .dobra-10, .dobra-12{
+      max-width: 1024px;
+      margin: 0 auto;
+      padding-bottom: 64px;
+    }
+  
+  
+    .tracking__feature--description{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .dobra-14 .package__title{
+      font-size: 38px;
+    }
+  
+    .dobra-14 .package__title strong{
+      font-weight: 500;
+      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 42px;
+    }
+  
+    .dobra-14{
+      padding: 64px 0px;
+    }
+  
+    .dobra-14 .package__subtitle{
+      font-size: 24px;
+      font-weight: 500;
+    }
+  
+    .dobra-14 .package__content{
+      margin-bottom: 32px;
+    }
+  
+  
+    .feature__description{
+      max-width: 672px;
+      color: #a6a6a6;
+      margin: 0 auto;
+    }
+  
+  
+    .dobra-04 .showcase__gallery{
+      display: flex;
+      flex-direction: row;
+      max-width: 968px;
+    }
+  
+    .dobra-04 .desktop{
+      max-width: 920px;
+    }
+  
+  
+    .dobra-04 .showcase{
+      width: 100%;
+      gap: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .dobra-04 .showcase__gallery{
+      gap: 16px;
+    }
+    
+    .showcase__gallery img {
+      max-width: 416px;
+      
+      width: 100%;
+      transition: transform 0.2s;
+    }
+    
+  
+    
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      margin-top: 20px;
+    }
+    
+    .dji-lamina button {
+      font-size: 16px;
+      padding: 12px;
+      cursor: pointer;
+      border: none;
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      transition: background-color 0.3s ease;
+    }
+    
+    .dji-lamina button:hover {
+      background-color: #555;
+    }
+  
+    .category-button {
+      font-size: 16px;
+      padding: 12px;
+      cursor: pointer;
+      border: none;
+      color: #fff;
+      background: #000;
+      transition: 200ms ease;
+      transition: background-color 0.3s ease;
+    }
+    
+    /* Estilo ao passar o mouse */
+    .category-button:hover {
+      background-color: #555;
+    }
+    
+    /* BotÃĢo ativo */
+    .category-button.active {
+      border-bottom: 1px solid #fff;
+    }
+    
+    
+    .panorama__description{
+      max-width: 720px;
+      color: #a6a6a6;
+    }
+  
+    .dobra-08{
+      gap: 32px;
+      margin-bottom: 64px;
+    }
+  
+    .dobra-09{
+      margin-bottom: 64px;
+    }
+  
+    .dobra-13 .feature--02{
+      margin-top: 64px;
+    }
+    video{
+      border-radius: 8px;
+    }
+  
+    .tracking__feature-title{
+      font-size: 28px;
+      font-weight: 500;
+    }
+  
+    .gallery__image-04--mobile{
+      display: none !important;
+    }
+  
+    .gallery__image-04--desktop{
+      display: block;
+    }
+  
+    .bg-grey{
+      background-color: #F7F7F7;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 64px;
+    }
+  
+  
+  .showcase-paragraph img{
+    max-width: 1024px;
+  }
+  
+  .dobra-06, .dobra-11{
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+  
+  
+    .showcase-paragraph{
+      position: relative;
+      width: 100%;
+      margin-bottom: 124px;
+    }
+  
+    .showcase__paragraph {
+      position: relative;
+      max-width: 600px;
+      color: #ADADAD;
+      text-align: center;
+      margin-top: 20px !important;
+      margin-bottom: 0px;
+      display: none;
+    }
+
+    .showcase__paragraph.active {
+      display: block;
+    }
+  
+    .gradient--text{
+      background: linear-gradient(90deg, #8BCEFF 0%, #FFD5BB 100%);
+      background-clip: text;
+      font-size: 51px;
+      font-weight: 500;
+      line-height: 1.2em;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    .assistance__description{
+      max-width: 720px;
+      color: #a6a6a6;
+      margin-top: 32px;
+  
+    }
+  /* 
+    @media (max-width: 2560px){
+      .showcase__paragraph{
+        right: 36%;
+      }
+    }
+  
+  
+    @media (max-width: 1920px){
+      .showcase__paragraph{
+        right: 35%;
+      }
+    }
+  
+    @media (max-width: 1440px){
+      .showcase__paragraph{
+        right: 30%;
+      }
+    }
+  
+    @media (max-width: 1366px){
+      .showcase__paragraph{
+        right: 28%;
+      }
+    }
+  
+    @media (max-width: 1166px){
+      .showcase__paragraph{
+        right: 22%;
+      }
+    } */
+  
+  
+    @media (max-width: 1024px) {
+      .dobra-03{
+        height: 70vw;
+      }
+  
+      .dobra-05, .dobra-07, .dobra-12, .dobra-13, .dobra-14{
+        padding: 32px;
+      }
+  
+      .dobra-10{
+        padding: 0px;
+      }
+  
+      .dobra-10  .lidar__title, .dobra-10 .lidar__description{
+        margin: 0 32px;
+      }
+  
+      .dobra-08{
+        padding: 0px;
+      }
+  
+      .dobra-08 .panorama__description{
+        padding: 0 32px;
+      }
+  
+       .dobra-15{
+        padding: 32px 32px 0px 32px;
+       }
+      .dobra-05 .camera__content,
+      .dobra-07 .telephoto__content{
+        flex-direction: column-reverse;
+        text-align: center;
+      }      
+  
+      .showcase__paragraph{
+        max-width: fit-content;
+        right: 0px;
+      }
+  
+      .dobra-13 .feature--01, .dobra-13 .feature--02{
+        gap: 32px;
+      }
+    }
+  
+  
+    @media (max-width: 976px) {
+      .showcase__gallery img{
+        
+      }
+      .gallery__container{
+        display: flex;
+        flex-direction: column;
+      }
+      .dobra-04 .desktop{
+        display: none;
+      }
+      .dobra-04 .mobile{
+        display: flex !important;
+      }
+  
+      .lidar__image{
+        margin-top: -8px;
+      }
+    }
+  
+    @media (max-width: 800px) {
+      .feature__description, .camera__description, .showcase__paragraph, .telephoto__description, .panorama__description, .lidar__description, .assistance__description, .dobra-15--description p{
+        font-size: 12px !important;
+      }
+  
+      .dobra-01{
+        height: 100vw;
+      }
+  
+      .dobra-13{
+        padding: 0px 16px;
+      }
+  
+      .dobra-13 .tracking__feature--description{
+        padding: 0 16px;
+      }
+  
+      .dobra-04 .showcase__gallery{
+        flex-direction: column;
+      }
+      .dobra-13 .feature--01, .dobra-13 .feature--02{
+        flex-direction: column;
+  
+      }
+  
+      .dobra-15{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 48px 48px 0px 48px;
+      }
+  
+      .dobra-15 img{
+        max-width: 248px;
+      }
+  
+      .dobra-15--description h3{
+        font-size: 32px;
+      }
+  
+      /* .showcase__gallery img{
+        max-width: 280px;
+      } */
+  
+      .button-container{
+        gap: 16px;
+      }
+      
+      .dobra-02{
+        padding: 0px;
+      }
+  
+      .category-button{
+        padding: 8px;
+        font-size: 12px;
+      }
+  
+      .dobra-15--bg{
+        padding-top: 0px
+      }
+  
+      .showcase-paragraph{
+        margin-bottom: 164px;
+      }
+  
+      .showcase__paragraph{
+        font-size: 14px;
+        padding: 0 16px;
+      }
+  
+  
+      .feature__title,
+      .panorama__title, .lidar__title, .assistance__title, .tracking__title, .camera__title, .telephoto__title, .safety__title, .features-list__title, .return-home__title{
+        font-size: 28px;
+      }
+  
+      .dobra-03{
+        padding: 32px;
+        height: 150vw;
+        background-size: 180%;
+      }
+  
+      .dobra-white{
+        height: 100vw;
+      }
+  
+      
+      .tracking__title{
+        font-size: 28px;
+        max-width: 380px;
+        font-weight: 500;
+        margin-top: -28px;
+      }
+  
+      .tracking__feature-title{
+        font-size: 24px;
+      }
+      
+      .package__title{
+        text-align: start;
+        font-size: 28px;
+        font-weight: bold;
+      }
+  
+      .lidar__image--desktop{
+        display: none;
+      }
+  
+      .lidar__image--mobile{
+        display: block;
+      }
+      .dobra-01 .feature__title{
+        font-size: 42px;
+      }
+      .dobra-01 .feature__subtitle{
+        font-size: 16px;
+        margin-top: 4px;
+        margin-bottom: 0px;
+      }
+  
+      .dobra-01{
+        background: url("https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/images/dobra-01--mobile.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 120vw;
+        padding-top: 42px;
+      }
+  
+  
+  
+      .dobra-03{
+        background: url("https://mkt.multilaser.com.br/emkt/mkt/2025/laminas-html/DJI-AIR-3S/src/assets/images/dobra-03--mobile.png") no-repeat;
+        height: 140vw;
+          background-position: center;
+          background-size: 100%;
+      }
+      
+      .lidar__description{
+        font-size: 14px;
+      }
+      
+    .gallery__image-04--desktop{
+      display: none;
+    }
+  
+    .gallery__image-04--mobile{
+      display: block !important;
+    }
+  
+  
+    .dobra-11 h3{
+      padding: 0 16px;
+    }
+    }
+  
+  
+    .dobra-04 .mobile{
+      display: none;
+    }
+  
+  
+  
+  
+    .camera__description, .telephoto__description{
+      color: #a6a6a6;
+      max-width: 440px;
+      font-size: 18px;
+    }
+  
+  
+    .lidar__description{
+      color: #a6a6a6;
+      z-index: 1;
+      max-width: 670px;
+    }
+  
+  
+    .feature--01 .tracking__feature-description, .feature--02 .tracking__feature-description{
+      margin-bottom: 0px;
+      font-size: 16px;
+      max-width: 320px;
+    }
+  
+    .feature--03 .tracking__feature-description{
+      max-width: 720px;
+    }
+  
+    .feature--03 .tracking__feature-title{
+      font-size: 38px;
+    }
+  
+  
+  
+  
+    .dji-videos-style{
+      max-width: 968px;
+      width: 100%;
+    }
+  
+    .dji-videos-style video{
+      width: 100%;
+    }
+  
+  
+    .video-12{
+      position: relative;
+    }
