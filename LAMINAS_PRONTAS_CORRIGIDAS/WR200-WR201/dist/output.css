@@ -1354,3 +1354,17 @@ video {
     padding-right: 7rem;
   }
 }
+
+/* Alterações taks: https://multilaserbrasil.atlassian.net/jira/software/c/projects/SITES/boards/138?assignee=712020%3A5dd7b89f-cd81-4812-90b4-817d97711369&selectedIssue=SITES-1287 */
+
+/* .dobra-02 {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0px , 1fr));
+} */
+
+/* @media (max-width: 1024px) {
+  .dobra-02 {
+    grid-template-columns: repeat(2, minmax(0px , 1fr));
+    grid-template-rows: repeat(3, 1fr);
+  }
+} */
