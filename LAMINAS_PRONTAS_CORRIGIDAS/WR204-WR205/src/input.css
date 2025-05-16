@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+        font-family: "Elza";
+        src: url("../src/assets/fonts/Elza/Elza-Black.woff") format("woff");
+        font-weight: 900;
+}
+
+@font-face {
+        font-family: "Elza";
+        src: url("../src/assets/fonts/Elza/Elza-Bold.woff") format("woff");
+        font-weight: 700;
+}
+
+@font-face {
+        font-family: "Elza";
+        src: url("../src/assets/fonts/Elza/Elza-Medium.woff") format("woff");
+        font-weight: 500;
+}
+
+@font-face {
+        font-family: "Elza";
+        src: url("../src/assets/fonts/Elza/Elza-Regular.woff") format("woff");
+        font-weight: 400;
+}
+
+@font-face {
+        font-family: "Elza";
+        src: url("../src/assets/fonts/Elza/Elza-Light.woff") format("woff");
+        font-weight: 300;
+}
+
+
+@font-face {
+        font-family: "Elza";
+        src: url("../src/assets/fonts/Elza/Elza-Extralight.woff") format("woff");
+        font-weight: 200;
+}
