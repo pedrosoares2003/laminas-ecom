@@ -198,7 +198,7 @@ html, body, body * {
     cursor: pointer;
     border: none;
     color: #00000060;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid #00000017;
     transition: 200ms ease;
     display: flex;
     justify-content: center;
@@ -2151,30 +2151,19 @@ html, body, body * {
       width: 100%;
     }
 
-    .dji-lamina .button-container > span {
-      color: #000;
-      padding: 8px 10px;
-    }
-
     .dji-lamina .dobra-02 {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
+      padding-left: 25px !important;
+      padding-right: 25px !important;
     }
 
-    .dji-lamina .dobra-02 > .gallery__container > div.gallery__image,
-    .dji-lamina .dobra-02 > .gallery__container > div.video-1 {
-      max-width: 500px;
+    .dji-lamina .dobra-02 > .text__container > .feature__description {
+      font-weight: 600;
+      line-height: 135%;
+      letter-spacing: -0.64px;
     }
 
-    .dji-lamina .dobra-03 {
-      background-size: auto 100%;
-      background-position: 50%;
-      min-height: 473px;
-      margin-top: 40px;
-    }
-
-    .dji-lamina .dobra-03 > .feature__content > .gallery__container > .gallery__image > .gallery__image {
-      aspect-ratio: 4 / 4;
+    .dji-lamina .dobra-14 > .button-container > .category-button {
+      padding: 12px 20px;
     }
 
     .dji-lamina .dobra-19 {
