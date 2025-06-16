@@ -62,7 +62,7 @@
             selector: ".video-08",
             htmlVideo: `
                   <video autoplay loop muted class="dji-videos-style luby-rounded-[9px] sm:luby-rounded-[22px] luby-overflow-hidden lg:luby-w-[65%] 2xl:luby-w-full luby-max-w-[240.276px] sm:luby-max-w-[590px]">
-                          <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-osmo-mobile-7/dobra-11-dji-osmo-mobile-7-showcase-video-2.mp4" type="video/webm"/>
+                          <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-osmo-mobile-7/dobra-11-dji-osmo-mobile-7-showcase-video-2-att.mp4" type="video/webm"/>
                   </video>
                   `,
           },
@@ -70,7 +70,7 @@
             selector: ".video-09",
             htmlVideo: `
                   <video autoplay loop muted class="dji-videos-style luby-rounded-[9px] sm:luby-rounded-[22px] luby-overflow-hidden luby-max-w-[1194px] luby-w-full">
-                          <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-osmo-mobile-7/dobra-11-dji-osmo-mobile-7-showcase-video-3.mp4" type="video/webm"/>
+                          <source src="https://mkt.multilaser.com.br/emkt/mkt/2025/dji-videos/videos-dji-osmo-mobile-7/dobra-11-dji-osmo-mobile-7-showcase-video-4.mp4" type="video/webm"/>
                   </video>
                   `,
           },
@@ -171,10 +171,65 @@ const showGallery = (dobra) => {
                         buttonContainer = dobra.children[i];
                 }
 
+                if (dobra.children[i].classList.value == 'swiper button-container') {
+                        buttonContainer = dobra.children[i];
+                }
+
                 if (dobra.children[i].classList.value == 'description-container') {
                         descriptionContainer = dobra.children[i];
                 }
         };
+        var buttonWithSwipper = buttonContainer.children[0];
+
+        // Caso Buttons tenham Swipper
+        if (buttonWithSwipper) {
+                buttonWithSwipper.childNodes.forEach((button) => {
+
+                        button.addEventListener('click', () => {
+                                var number = button.classList[2].slice(18, 19);
+
+                                // SHOWCASE
+                                showcaseDobra.childNodes.forEach((showcase) => {
+                                        if (showcase.classList != undefined) {
+                                                // Retirando todos os showcases
+                                                showcase.setAttribute('style', 'display: none;');
+                                                
+                                                // Mostrando o showcase do botão clicado de acordo com o número
+                                                if (showcase.className.includes(number)) {
+                                                        showcase.removeAttribute('style');
+
+                                                }
+                                        }
+                                });
+
+                                // BUTTONS
+                                        // Retirando todos os buttons ativos
+                                for (let i = 0; i < buttonWithSwipper.childNodes.length; i++) {
+                                        if (buttonWithSwipper.children[i] != undefined) {
+                                                buttonWithSwipper.children[i].classList.remove('active');
+                                        }
+                                }
+
+                                        // Adicionando a classe active no botão clicado
+                                if (button.className.includes(number)) {
+                                        button.className = button.className + " active";
+                                }
+
+                                // DESCRIPTION
+                                descriptionContainer.childNodes.forEach((description) => {
+                                        if (description.classList != undefined) {
+                                                // Retirando todos os descriptions
+                                                description.classList.remove('active');
+
+                                                // Mostrando o description do botão clicado de acordo com o número
+                                                if (description.className.includes(number)) {
+                                                        description.className = description.className + " active";
+                                                }
+                                        }
+                                });
+                        });
+                });
+        }
 
         buttonContainer.childNodes.forEach((button) => {
 
@@ -226,4 +281,20 @@ const showGallery = (dobra) => {
 
 divShowcase.forEach((showcase) => {
         showGallery(showcase);
+});
+
+// Carrossel
+var swiper = new Swiper(".dobra-11 .button-container", {
+        breakpoints: {
+                767: {
+                        slidesPerView: 3
+                },
+                500: {
+                        slidesPerView: 2.3
+                }
+        },
+        spaceBetween: 0,
+        slidesPerView: 1.7,
+        freeMode: true,
+        watchSlidesProgress: true 
 });
