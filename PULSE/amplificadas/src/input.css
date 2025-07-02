@@ -1,0 +1,725 @@
+/* Fonts Import */
+@font-face {
+  font-family: "Neo Sans Std";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("./fonts/NeoSansStd-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Neo Sans Std";
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("./fonts/NeoSansStd-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Neo Sans Std";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("./fonts/NeoSansStd-Regular.otf") format("opentype");
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.pulse-lamina {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #000;
+  display: grid;
+}
+.pulse-lamina section {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.pulse-lamina * {
+  font-family: "Neo Sans Std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+.pulse-lamina h3, .pulse-lamina h4, .pulse-lamina h5, .pulse-lamina h6, .pulse-lamina p {
+  margin: 0;
+  padding: 0;
+}
+.pulse-lamina .feature__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #F2CB13;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .feature__title {
+    font-size: 24px;
+    margin-bottom: 7px !important;
+  }
+}
+.pulse-lamina .feature__description {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .feature__description {
+    font-size: 14px;
+  }
+}
+.pulse-lamina .card-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .card-mobile {
+    display: inline;
+  }
+}
+.pulse-lamina .mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .mobile {
+    display: block;
+  }
+}
+.pulse-lamina .desktop {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .desktop {
+    display: none;
+  }
+}
+.pulse-lamina .image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .image {
+    border-radius: 5px !important;
+  }
+}
+.pulse-lamina .min-height-text {
+  min-height: 470px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .min-height-text {
+    min-height: 184px;
+  }
+}
+.pulse-lamina .video-youtube {
+  border: none;
+  border-radius: 33px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .video-youtube {
+    max-height: 358px;
+    border-radius: 5px !important;
+  }
+}
+.pulse-lamina .video {
+  border: none;
+  border-radius: 33px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .video {
+    border-radius: 5px !important;
+  }
+}
+.pulse-lamina section {
+  padding: 46px 0;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina section {
+    margin: 0 11px;
+  }
+}
+.pulse-lamina .dobra-flex-column {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.pulse-lamina .dobra-flex-column .feature__content {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-flex-column .feature__content {
+    max-width: 320px;
+  }
+}
+.pulse-lamina .dobra-flex-column .feature__content .text__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-flex-column .feature__content .text__content {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+.pulse-lamina .dobra-flex-column .feature__content .text__content > * {
+  max-width: 1204px;
+}
+.pulse-lamina .dobra-flex-column .feature__content .text__content .feature__title {
+  margin-bottom: 30px;
+}
+.pulse-lamina .dobra-flex-column .feature__content .text__content .feature__description {
+  max-width: 1100px;
+}
+.pulse-lamina .dobra-flex-column .feature__content .text__content .feature__description span {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-flex-column .feature__content .text__content .feature__description span {
+    font-size: 8px;
+  }
+}
+.pulse-lamina .dobra-flex-column .feature__content .image {
+  border-radius: 30px;
+}
+.pulse-lamina .dobra-flex-column .feature__content .video {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-flex-column .feature__content .video:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-flex-column {
+    display: flex;
+    justify-content: center;
+  }
+}
+.pulse-lamina .dobra-01 {
+  background-image: url("./assets/images/dobra-01-pulse-caixas-amplificadas-background.png");
+  background-size: cover;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  min-height: 719px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 0 0 20px 20px;
+}
+.pulse-lamina .dobra-01 .feature__content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 526px;
+  margin: 153px 0 0 76px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-01 .feature__content {
+    max-width: 320px;
+    gap: 0;
+    margin: 0;
+    margin-top: 45px;
+  }
+}
+.pulse-lamina .dobra-01 .feature__content .image {
+  max-width: 327px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-01 .feature__content .image {
+    max-width: 102px;
+  }
+}
+.pulse-lamina .dobra-01 .feature__content .feature__title {
+  display: flex;
+  flex-direction: column;
+  line-height: 115%;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120%;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-01 .feature__content .feature__title {
+    font-size: 24px;
+  }
+}
+.pulse-lamina .dobra-01 .feature__content .feature__title span:nth-child(2) {
+  color: #FFDB00;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-01 {
+    margin: 0;
+    min-height: 400px;
+    background-image: url("./assets/images/dobra-01-pulse-caixas-amplificadas-background-mobile.png");
+    background-size: auto 100%;
+    align-items: center;
+  }
+}
+.pulse-lamina .dobra-02 {
+  overflow: hidden;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 {
+    padding-bottom: 46px;
+  }
+}
+.pulse-lamina .dobra-02 .feature__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+  justify-items: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    max-width: 320px;
+  }
+}
+.pulse-lamina .dobra-02 .feature__content .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  text-align: center;
+  max-width: 345px;
+  width: 100%;
+  height: 345px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card {
+    height: auto;
+    width: 100%;
+  }
+}
+.pulse-lamina .dobra-02 .feature__content .card div {
+  height: 120px;
+  max-width: 205px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card div {
+    height: auto;
+    max-height: 64px;
+    max-width: 76px;
+  }
+  .pulse-lamina .dobra-02 .feature__content .card div img {
+    width: 80%;
+  }
+}
+.pulse-lamina .dobra-02 .feature__content .card .feature__description {
+  color: #F2CB13;
+  max-width: 205px;
+  width: 100%;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card:nth-child(1) div img {
+    width: 76.45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card:nth-child(2) div img {
+    width: 54.21px;
+  }
+}
+.pulse-lamina .dobra-02 .feature__content .card:nth-child(2) .feature__description {
+  max-width: 150px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card:nth-child(3) div img {
+    width: 58.53px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card:nth-child(4) div img {
+    width: auto;
+    height: 55.45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-02 .feature__content .card:last-child {
+    display: none;
+  }
+}
+.pulse-lamina .dobra-03 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.pulse-lamina .dobra-03 .feature__content {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-03 .feature__content {
+    max-width: 320px;
+  }
+}
+.pulse-lamina .dobra-03 .feature__content .text__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-03 .feature__content .text__content {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+.pulse-lamina .dobra-03 .feature__content .text__content > * {
+  max-width: 1204px;
+}
+.pulse-lamina .dobra-03 .feature__content .text__content .feature__title {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-03 {
+    display: flex;
+    justify-content: center;
+  }
+}
+.pulse-lamina .dobra-04 {
+  padding-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-04 .feature__content {
+    max-width: 320px;
+  }
+}
+.pulse-lamina .dobra-04 .feature__content .text__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 0;
+}
+.pulse-lamina .dobra-04 .feature__content .text__container .text__content > .feature__description > span {
+  font-size: 8px;
+}
+.pulse-lamina .dobra-05 .feature__content .text__content .feature__title {
+  margin-bottom: 30px;
+  max-width: 1400px;
+}
+.pulse-lamina .dobra-05 .feature__content .text__content .feature__description {
+  max-width: 1300px;
+}
+.pulse-lamina .dobra-05 .feature__content .image {
+  content: url("./assets/images/dobra-05-pulse-caixas-amplificadas-mobile.png");
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 {
+    display: flex;
+    justify-content: center;
+  }
+}
+.pulse-lamina .dobra-06 .feature__content .text__content .feature__description {
+  max-width: 1300px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-06 {
+    display: flex;
+    justify-content: center;
+  }
+}
+.pulse-lamina .dobra-07 {
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.pulse-lamina .dobra-07 .feature__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pulse-lamina .dobra-07 .feature__content .text__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  max-width: 807px;
+  grid-area: a;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content .text__content {
+    align-items: flex-start;
+    gap: 0;
+    text-align: left;
+  }
+}
+.pulse-lamina .dobra-07 .feature__content > div:nth-child(2) {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content > div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .pulse-lamina .dobra-07 .feature__content > div:nth-child(2) .image {
+    width: 225%;
+    max-width: none;
+    margin-right: -20px;
+  }
+}
+.pulse-lamina .dobra-07 .feature__content > div:nth-child(2) .image {
+  border-radius: 33px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content > div:nth-child(3) {
+    border-radius: 20px;
+    max-height: 357px;
+    width: 100%;
+  }
+  .pulse-lamina .dobra-07 .feature__content > div:nth-child(3) .image {
+    width: 100%;
+    max-width: none;
+  }
+}
+.pulse-lamina .dobra-07 .feature__content .cards__image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content .cards__image {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    padding-top: 46px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-07 .feature__content {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+.pulse-lamina .dobra-08 {
+  margin: 30px 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 {
+    margin: 30px 11px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+.pulse-lamina .dobra-08 .feature__content > .image {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-08 .feature__content > .image {
+    content: url("./assets/images/dobra-08-pulse-caixas-amplificadas-mobile.png");
+  }
+}
+.pulse-lamina .dobra-09 {
+  margin: 30px 40px;
+  padding: 2.5% 56px;
+  background-color: #FFDB00;
+  border-radius: 30px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-09 {
+    margin: 18px 11px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    padding: 12px 13px;
+    width: 100%;
+    max-width: 320px;
+    justify-self: center;
+  }
+}
+.pulse-lamina .dobra-09 .feature__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.pulse-lamina .dobra-09 .feature__content > .image {
+  max-width: 269px;
+  height: 47px;
+  border-radius: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-09 .feature__content > .image {
+    max-width: 69px;
+    height: auto;
+  }
+}
+.pulse-lamina .dobra-09 .feature__content > .text__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-09 .feature__content > .text__content {
+    gap: 4px;
+  }
+}
+.pulse-lamina .dobra-09 .feature__content > .text__content > .line {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-09 .feature__content > .text__content > .line > .image {
+    width: 14px;
+    border-radius: 0 !important;
+  }
+}
+.pulse-lamina .dobra-09 .feature__content > .text__content > .line > .feature__description {
+  color: #000;
+  font-weight: 700;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-09 .feature__content > .text__content > .line > .feature__description {
+    font-size: 10px;
+  }
+}
+.pulse-lamina .dobra-10 {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fff;
+  border-radius: 30px;
+}
+@media screen and (max-width: 1430px) {
+  .pulse-lamina .dobra-10 {
+    overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-10 {
+    border-radius: 5px;
+    max-width: 320px;
+    justify-self: center;
+    overflow-x: hidden;
+  }
+}
+.pulse-lamina .dobra-10 .feature__content {
+  width: 100%;
+  padding: 42px;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-10 .feature__content {
+    padding: 0px;
+    border-collapse: separate;
+    border-spacing: 4px;
+    transform: scale(1.02);
+  }
+}
+.pulse-lamina .dobra-10 .feature__content .line__table {
+  height: 100%;
+  max-height: 210px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-10 .feature__content .line__table {
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}
+.pulse-lamina .dobra-10 .feature__content .line__table td {
+  text-align: center;
+  width: 250px;
+  background-color: #F9F9F9;
+  color: #717171;
+  padding: 0px 53px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-10 .feature__content .line__table td {
+    width: 74px;
+    padding: 0 5px !important;
+    font-size: 8px;
+  }
+  .pulse-lamina .dobra-10 .feature__content .line__table td:nth-child(n+2) {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+.pulse-lamina .dobra-10 .feature__content .line__table td .image {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 175px;
+}
+.pulse-lamina .dobra-10 .feature__content .line__table td:nth-child(1) {
+  background-color: #EAEAEA;
+  color: #000;
+  width: 186px;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-10 .feature__content .line__table td:nth-child(1) {
+    width: 36px;
+    max-width: 36px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-10 .feature__content .line__table td:nth-child(1) .image {
+    display: none;
+  }
+}
+.pulse-lamina .dobra-10 .feature__content .line__table td:nth-child(1) p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-10 .feature__content .line__table td:nth-child(1) p {
+    margin-top: 0;
+    font-size: 8px;
+    padding: 5px;
+    margin-left: -5px;
+  }
+}
+.pulse-lamina .dobra-10 .feature__content .line__table td:nth-child(3) {
+  padding: 0 30px;
+}
+.pulse-lamina .dobra-10 .feature__content .line__table:nth-child(1) {
+  height: 40px;
+  background-color: #C7C3C3;
+}
+.pulse-lamina .dobra-10 .feature__content .line__table:nth-child(1) th:nth-child(1) {
+  background-color: #fff;
+}
+.pulse-lamina .dobra-10 .feature__content .line__table:nth-child(1) th {
+  font-weight: 700;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-10 .feature__content .line__table:nth-child(1) th {
+    font-size: 8px;
+  }
+}
+.pulse-lamina .dobra-10 .feature__content .line__table:nth-child(5) td:nth-child(3) {
+  padding: 0 60px;
+}/*# sourceMappingURL=input.css.map */

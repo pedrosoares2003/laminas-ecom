@@ -1,0 +1,840 @@
+/* Fonts Import */
+@font-face {
+    font-family: 'Neo Sans Std';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url('./fonts/NeoSansStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Neo Sans Std';
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url('./fonts/NeoSansStd-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Neo Sans Std';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url('./fonts/NeoSansStd-Regular.otf') format('opentype');
+}
+
+// Variaveis
+$color__primary: #FFDB00;
+$color__secondary: #ffffff;
+$yellow__2: #F2CB13;
+$background__primary: #f2f2f2;
+
+// Reset Básico
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.pulse-lamina {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #000;
+    display: grid;
+
+    & section {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    & * {
+        font-family: "Neo Sans Std", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        box-sizing: border-box;
+    }
+    
+    & h3,
+    & h4,
+    & h5, & h6, & p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    // Textos
+    & .feature__title {
+        font-size: 48px;
+        font-weight: 700;
+        color: $yellow__2;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+            margin-bottom: 7px !important;
+        }
+    }
+    
+    & .feature__description {
+        font-size: 24px;
+        font-weight: 400;
+        color: $color__secondary;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    & .card-mobile {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: inline;
+        }
+    }
+
+    & .mobile {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    & .desktop {
+        display: block;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    
+    & .image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+
+        @media screen and (max-width: 768px) {
+            border-radius: 5px !important;
+        }
+    }
+
+    & .min-height-text {
+        min-height: 470px;
+        
+        @media screen and (max-width: 768px) {
+            min-height: 184px;
+        }
+    }
+
+    & .video-youtube {
+        border: none;
+        border-radius: 33px;
+
+        @media screen and (max-width: 768px) {
+            max-height: 358px;
+            border-radius: 5px !important;
+        }
+    }
+
+    & .video {
+        border: none;
+        border-radius: 33px;
+
+        @media screen and (max-width: 768px) {
+            border-radius: 5px !important;
+        }
+    }
+
+    & section {
+        padding: 46px 0;
+
+        @media screen and (max-width: 768px) {
+            margin: 0 11px;
+        }
+    }
+
+    & .dobra-flex-column {
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        & .feature__content {
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 768px) {
+                max-width: 320px;
+            }
+
+            & .text__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                @media screen and (max-width: 768px) {
+                    text-align: left;
+                    align-items: flex-start;
+                }
+
+                & > * {
+                    max-width: 1204px;
+                }
+
+                & .feature__title {
+                    margin-bottom: 30px;
+                }
+
+                & .feature__description {
+                    max-width: 1100px;
+
+                    & span {
+                        font-size: 18px;
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+
+            & .image {
+                border-radius: 30px;
+            }
+
+            & .video {
+                width: 100%;
+            }
+
+            & .video:nth-child(2) {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    & .dobra-01 {
+        background-image: url("./assets/images/dobra-01-pulse-caixas-amplificadas-background.png");
+        background-size: cover;
+        background-position: center 60%;
+        background-repeat: no-repeat;
+        min-height: 719px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 0 0 20px 20px;
+
+        & .feature__content {
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 526px;
+            margin: 153px 0 0 76px;
+
+            @media screen and (max-width: 768px) {
+                max-width: 320px;
+                gap: 0;
+                margin: 0;
+                margin-top: 45px;
+            }
+
+            & .image {
+                max-width: 327px;
+
+                @media screen and (max-width: 768px) {
+                    max-width: 102px;
+                }
+            }
+
+            & .feature__title {
+                display: flex;
+                flex-direction: column;
+                line-height: 115%;
+                color: $color__secondary;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 120%;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 24px;
+                }
+
+                & span:nth-child(2) {
+                    color: $color__primary;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            margin: 0;
+            min-height: 400px;
+            background-image: url("./assets/images/dobra-01-pulse-caixas-amplificadas-background-mobile.png");
+            background-size: auto 100%;
+            align-items: center;
+        }
+    }
+
+    & .dobra-02 {
+        overflow: hidden;
+        padding-bottom: 0;
+
+        @media screen and (max-width: 768px) {
+            padding-bottom: 46px;
+            
+        }
+
+        & .feature__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            column-gap: 29px;
+            justify-items: center;
+            margin: 0 auto;
+
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+                row-gap: 40px;
+                max-width: 320px;
+            }
+
+            & .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 22px;
+                text-align: center;
+                max-width: 345px;
+                width: 100%;
+                height: 345px;
+
+                @media screen and (max-width: 768px) {
+                    height: auto;
+                    width: 100%;
+                }
+
+                & div {
+                    height: 120px;
+                    max-width: 205px;
+                    width: 100%;
+                    
+                    @media screen and (max-width: 768px) {
+                        height: auto;
+                        max-height: 64px;
+                        max-width: 76px;
+
+                        & img {
+                            width: 80%;
+                        }
+                    }
+                }
+
+                & .feature__description {
+                    color: $yellow__2;
+                    max-width: 205px;
+                    width: 100%;
+                    font-weight: 700;
+                }
+ 
+            }
+
+            & .card:nth-child(1) {
+                @media screen and (max-width: 768px) {
+                    & div {
+                        & img {
+                            width: 76.45px;
+                        }
+                    }
+                }
+            }
+
+            & .card:nth-child(2) {
+                @media screen and (max-width: 768px) {
+                    & div {
+                        & img {
+                            width: 54.21px;
+                        }
+                    }
+                }
+
+                & .feature__description {
+                    max-width: 150px;
+                }
+            }
+
+            & .card:nth-child(3) {
+                @media screen and (max-width: 768px) {
+                    & div {
+                        & img {
+                            width: 58.53px;
+                        }
+                    }
+                }
+            }
+
+            & .card:nth-child(4) {
+                @media screen and (max-width: 768px) {
+                    & div {
+                        & img {
+                            width: auto;
+                            height: 55.45px;
+                        }
+                    }
+                }
+            }
+
+            & .card:last-child {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    & .dobra-03 {
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        & .feature__content {
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 768px) {
+                max-width: 320px;
+            }
+
+            & .text__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                @media screen and (max-width: 768px) {
+                    text-align: left;
+                    align-items: flex-start;
+                }
+
+                & > * {
+                    max-width: 1204px;
+                }
+
+                & .feature__title {
+                    margin-bottom: 30px;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    & .dobra-04 {
+        padding-bottom: 0;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+
+        & .feature__content {
+            @media screen and (max-width: 768px) {
+                max-width: 320px;
+            }
+
+            & .text__container {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin: 30px 0;
+
+                & .text__content {
+                    & > .feature__description {
+                        & > span {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .dobra-05 {
+        
+        & .feature__content {
+
+            & .text__content {
+
+
+                & .feature__title {
+                    margin-bottom: 30px;
+                    max-width: 1400px;
+                }
+
+                & .feature__description {
+                    max-width: 1300px;
+                }
+            }
+
+            & .image {
+                content: url("./assets/images/dobra-05-pulse-caixas-amplificadas-mobile.png");
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    & .dobra-06 {
+        
+        & .feature__content {
+
+            & .text__content {
+
+                & .feature__description {
+                    max-width: 1300px;
+                }
+            }
+
+            
+            // & .video:nth-child(2) {
+            //     @media screen and (max-width: 768px) {
+            //         display: block;
+            //     }
+            // }
+        }
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    & .dobra-07 {
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+
+        & .feature__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & .text__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                max-width: 807px;
+                grid-area: a;
+                text-align: center;
+
+                @media screen and (max-width: 768px) {
+                    align-items: flex-start;
+                    gap: 0;
+                    text-align: left;
+                }
+            }
+
+            & > div:nth-child(2) {
+                margin-bottom: 30px;
+
+                @media screen and (max-width: 768px) {
+                    display: flex;
+                    justify-content: flex-end;
+                    overflow: hidden;
+                    border-radius: 5px;
+
+                    & .image {
+                        width: 225%;
+                        max-width: none;
+                        margin-right: -20px;
+                    }
+
+                    // & .image::after {
+                    //     content: url("./assets/videos/dobra-04-pulse-torres-de-som-video-mobile.mp4");
+                    //     width: 100%;
+                    // }
+                }
+
+                & .image {
+                    border-radius: 33px;
+                }
+            }
+
+            & > div:nth-child(3) {
+                @media screen and (max-width: 768px) {
+                    border-radius: 20px;
+                    max-height: 357px;
+                    width: 100%;
+
+                    & .image {
+                        width: 100%;
+                        max-width: none;
+                        // content: url("./assets/images/dobra-04-pulse-torres-de-som-image-2-mobile.png");
+                    }
+                }
+            }
+
+            & .cards__image {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                    row-gap: 20px;
+                    padding-top: 46px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+               max-width: 320px;
+               margin: 0 auto;
+            }
+        }
+    }
+
+    & .dobra-08 {
+        margin: 30px 40px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        @media screen and (max-width: 768px) {
+            margin: 30px 11px;
+            margin-bottom: 0;
+        }
+
+        & .feature__content {
+
+            @media screen and (max-width: 768px) {
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
+            & > .image {
+                width: 100%;
+
+                @media screen and (max-width: 768px) {
+                    content: url("./assets/images/dobra-08-pulse-caixas-amplificadas-mobile.png");
+                }
+            }
+        }
+    }
+
+    & .dobra-09 {
+        margin: 30px 40px;
+        padding: 2.5% 56px;
+        background-color: $color__primary;
+        border-radius: 30px;
+
+        @media screen and (max-width: 768px) {
+            margin: 18px 11px;
+            margin-bottom: 70px;
+            border-radius: 10px;
+            padding: 12px 13px;
+            width: 100%;
+            max-width: 320px;
+            justify-self: center;
+        }
+        
+        & .feature__content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            & > .image {
+                max-width: 269px;
+                height: 47px;
+                border-radius: 0 !important;
+
+                @media screen and (max-width: 768px) {
+                    max-width: 69px;
+                    height: auto;
+                }
+            }
+
+            & > .text__content {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                @media screen and (max-width: 768px) {
+                    gap: 4px;
+                }
+
+                & > .line {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    & > .image {
+                        @media screen and (max-width: 768px) {
+                            width: 14px;
+                            border-radius: 0 !important;
+                        }
+                    }
+
+                    & > .feature__description {
+                        color: #000;
+                        font-weight: 700;
+                        font-size: 24px;
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .dobra-10 {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: #fff;
+        border-radius: 30px;
+
+        @media screen and (max-width: 1430px) {
+            overflow-x: scroll;
+        }
+
+        @media screen and (max-width: 768px) {
+            border-radius: 5px;
+            max-width: 320px;
+            justify-self: center;
+            overflow-x: hidden;
+        }
+
+        & .feature__content {
+            width: 100%;
+            padding: 42px;
+            border-collapse: separate;
+            border-spacing: 10px;
+
+            @media screen and (max-width: 768px) {
+                padding: 0px;
+                border-collapse: separate;
+                border-spacing: 4px;
+                transform: scale(1.02);
+            }
+
+            & .line__table {
+                height: 100%;
+                max-height: 210px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+                @media screen and (max-width: 768px) {
+                    // display: flex;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                }
+
+                & td {
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+                    // justify-content: center;
+                    text-align: center;
+                    width: 250px;
+                    background-color: #F9F9F9;
+                    color: #717171;
+                    padding: 0px 53px;
+
+                    @media screen and (max-width: 768px) {
+                        width: 74px;
+                        padding: 0 5px !important;
+                        font-size: 8px;
+
+                        &:nth-child(n+2) {
+                            padding-left: 3px;
+                            padding-right: 3px;
+                          }
+                    }
+
+                    & .image {
+                        width: fit-content;
+                        max-width: 175px;
+                    }
+                }
+
+                & td:nth-child(1) {
+                    background-color: #EAEAEA;
+                    color: #000;
+                    width: 186px;
+                    padding: 0;
+
+                    @media screen and (max-width: 768px) {
+                        width: 36px;
+                        max-width: 36px;
+                        height: 60px;
+                    }
+
+                    & .image {
+                        @media screen and (max-width: 768px) {
+                            display: none;
+                        }
+                    }
+
+                    & p {
+                        margin-top: 10px;
+                        font-size: 20px;
+                        font-weight: 700;
+                        
+                        @media screen and (max-width: 768px) {
+                            margin-top: 0;
+                            font-size: 8px;
+                            padding: 5px;
+                            margin-left: -5px;
+                        }
+                    }
+                }
+
+                & td:nth-child(3) {
+                    padding: 0 30px;
+                }
+            }
+
+            & .line__table:nth-child(1) {
+                height: 40px;
+                background-color: #C7C3C3;
+
+                & th:nth-child(1) {
+                    background-color: #fff;
+                }
+
+                & th {
+                    font-weight: 700;
+                    font-size: 20px;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 8px;
+                    }
+                }
+            }
+
+            & .line__table:nth-child(5) {
+                & td:nth-child(3) {
+                    padding: 0 60px;
+                }
+            }
+        }
+    }
+}
