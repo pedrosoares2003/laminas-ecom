@@ -425,8 +425,10 @@ body {
 .pulse-lamina .dobra-05 .feature__content .text__content .feature__description {
   max-width: 1300px;
 }
-.pulse-lamina .dobra-05 .feature__content .image {
-  content: url("./assets/images/dobra-05-pulse-caixas-amplificadas-mobile.png");
+@media screen and (max-width: 768px) {
+  .pulse-lamina .dobra-05 .feature__content .image {
+    content: url("./assets/images/dobra-05-pulse-caixas-amplificadas-mobile.png");
+  }
 }
 @media screen and (max-width: 768px) {
   .pulse-lamina .dobra-05 {

@@ -493,7 +493,9 @@ body {
             }
 
             & .image {
-                content: url("./assets/images/dobra-05-pulse-caixas-amplificadas-mobile.png");
+                @media screen and (max-width: 768px) {
+                    content: url("./assets/images/dobra-05-pulse-caixas-amplificadas-mobile.png");
+                }
             }
 
         }
