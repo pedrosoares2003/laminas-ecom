@@ -1,0 +1,227 @@
+/* RETIRAR RESET */
+ html,
+ body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+/* Reset básico */
+  .tv-lamina * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "myriad-pro", sans-serif;
+  }
+  
+  .tv-lamina {
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .tv-lamina section {
+    text-align: center;
+  }
+
+  .tv-lamina .banner {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+  }
+
+  .tv-lamina .p-relative {
+    position: relative;
+  }
+
+  .tv-lamina .p-absolute {
+    position: absolute;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .tv-lamina .banner img {
+    width: 100%;
+    margin-bottom: -10px;
+  }
+
+  .tv-lamina .banner > .textoBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 122px 0;
+  }
+
+  .tv-lamina .banner > .textoBanner > h3,
+  .tv-lamina .banner > .textoBanner > p {
+    padding: 0 30px;
+  }
+
+  .tv-lamina .banner > .textoBanner > h3 {
+    font-size: 70px;
+    font-weight: 600;
+  }
+
+  .tv-lamina .banner > .textoBanner > p {
+    font-size: 25.81px;
+    max-width: 1450px;
+  }
+
+  .tv-lamina .dobra-02 {
+    background-color: #090D16;
+  }
+
+  .tv-lamina .dobra-02 > .textoBanner > p {
+    max-width: 1100px;
+  }
+
+  .tv-lamina .dobra-03 {
+    background-color: #000002;
+  }
+
+  .tv-lamina .dobra-03 > .textoBanner > p {
+    max-width: 1150px;
+  }
+
+  .tv-lamina .dobra-04 {
+    background-color: #000002;
+  }
+
+  .tv-lamina .dobra-04 > .textoBanner > p {
+    max-width: 1230px;
+  }
+
+  .tv-lamina .dobra-05 {
+    background-color: #000002;
+  }
+
+  .tv-lamina .dobra-05 > .textoBanner > h3,
+  .tv-lamina .dobra-05 > .textoBanner > p {
+    color: #fff;
+  }
+
+  .tv-lamina .dobra-05 > .textoBanner > h3 {
+    max-width: 1400px;
+  }
+
+  .tv-lamina .dobra-05 > .textoBanner > p {
+    max-width: 1230px;
+  }
+
+  .tv-lamina .dobra-06 {
+    background-color: #979DA9;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .tv-lamina .dobra-06 > .textoBanner > h3,
+  .tv-lamina .dobra-06 > .textoBanner > p {
+    color: #fff;
+  }
+
+  .tv-lamina .dobra-06 > .textoBanner > p {
+    max-width: 1400px;
+  }
+
+
+  .tv-lamina .dobra-07 {
+    background-color: #000;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .tv-lamina .dobra-07 > .textoBanner > p {
+    max-width: 1500px;
+  }
+
+  .tv-lamina .dobra-08 {
+    background-color: #000;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .tv-lamina .dobra-08 > .textoBanner > h3 {
+    max-width: 1200px;
+  }
+
+  .tv-lamina .dobra-08 > .textoBanner > p {
+    max-width: 1200px;
+  }
+
+  /* Responsividade das fontes */
+
+  
+  @media screen and (max-width: 768px) {
+    .tv-lamina .banner > .textoBanner > h3 {
+      font-size: 44px;
+    }
+  
+    .tv-lamina .banner > .textoBanner > p {
+      font-size: 20px;
+    }
+
+    .tv-lamina .dobra-03 > .textoBanner > h3 {
+      max-width: 700px;
+    }
+
+    .tv-lamina .dobra-03 > .p-relative > .p-absolute {
+      font-size: 8px;
+      margin-bottom: 21px;
+    }
+
+    .tv-lamina .dobra-03 > .textoBanner > h3,
+    .tv-lamina .dobra-04 > .textoBanner > h3,
+    .tv-lamina .dobra-07 > .textoBanner > h3 {
+      max-width: 700px;
+    }
+
+    .tv-lamina .dobra-08 > .textoBanner > h3 {
+      max-width: 550px;
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    .tv-lamina .banner > .textoBanner {
+      padding: 40px 0;
+      gap: 15px;
+    }
+
+    .tv-lamina .banner > .textoBanner > h3 {
+      font-size: 28px;
+    }
+  
+    .tv-lamina .banner > .textoBanner > p {
+      font-size: 14px;
+    }
+
+    .tv-lamina .dobra-02 > .textoBanner > p,
+    .tv-lamina .dobra-03 > .textoBanner > p {
+      max-width: 345px;
+    }
+
+    .tv-lamina .dobra-04 > .textoBanner > p {
+      max-width: 400px;
+    }
+
+    .tv-lamina .dobra-05 > .textoBanner > p {
+      max-width: 320px;
+    }
+
+    .tv-lamina .dobra-06 > .textoBanner > p {
+      max-width: 360px;
+    }
+
+    .tv-lamina .dobra-07 > .textoBanner > p {
+      max-width: 360px;
+    }
+  }
