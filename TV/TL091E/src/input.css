@@ -1,0 +1,279 @@
+/* RETIRAR RESET */
+ html,
+ body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+/* Reset básico */
+  .tv-lamina * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "elza", sans-serif;
+    font-weight: 400;
+  }
+  
+  .tv-lamina {
+    color: #000;
+  }
+  
+  .tv-lamina section {
+    text-align: center;
+  }
+
+  .tv-lamina .banner {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tv-lamina .banner img {
+    width: 100%;
+    margin-bottom: -10px;
+  }
+
+  .tv-lamina .banner > .textoBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 200px 0;
+  }
+
+  .tv-lamina .banner > .textoBanner > h3,
+  .tv-lamina .banner > .textoBanner > p {
+    padding: 0 30px;
+  }
+
+  .tv-lamina .banner > .textoBanner > h3 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .tv-lamina .banner > .textoBanner > p,
+  .tv-lamina .feature__description {
+    font-size: 36px;
+    max-width: 1450px;
+  }
+
+  .tv-lamina .banner > .textoBanner > p > span {
+    font-weight: 700;
+  }
+
+  .tv-lamina .dobra-03 > .textoBanner > p {
+    max-width: 1300px;
+  }
+
+  .tv-lamina .dobra-04 > .textoBanner > p {
+    max-width: 750px;
+  }
+
+  .tv-lamina .dobra-05 > .textoBanner > p {
+    max-width: 800px;
+  }
+
+  .tv-lamina .dobra-06 > .textoBanner > p {
+    max-width: 800px;
+  }
+
+  .tv-lamina .dobra-07 > .textoBanner > p {
+    max-width: 1050px;
+  }
+
+  .tv-lamina .dobra-08 > .textoBanner > p {
+    max-width: 1200px;
+  }
+
+  /* Responsividade das fontes */
+
+  
+  @media screen and (max-width: 768px) {
+    .tv-lamina .dobra-03 > .textoBanner > h3 {
+      max-width: 700px;
+    }
+
+    .tv-lamina .banner > .textoBanner {
+      padding: 70px 0;
+      gap: 15px;
+    }
+
+    .tv-lamina .banner > .textoBanner > h3 {
+      font-size: 32px;
+    }
+  
+    .tv-lamina .banner > .textoBanner > p {
+      font-size: 24px;
+    }
+
+    .tv-lamina .dobra-03 > .textoBanner > h3,
+    .tv-lamina .dobra-03 > .textoBanner > p {
+      max-width: 380px;
+    }
+
+    .tv-lamina .dobra-04 > .textoBanner > p {
+      max-width: 380px;
+    }
+
+    .tv-lamina .dobra-05 > .textoBanner > p {
+      max-width: 400px;
+    }
+
+    .tv-lamina .dobra-06 > .textoBanner > p {
+      max-width: 400px;
+    }
+
+    .tv-lamina .dobra-07 > .textoBanner > p {
+      max-width: 360px;
+    }
+
+    .tv-lamina .dobra-08 > .textoBanner > p {
+      max-width: 400px;
+    }
+  }
+
+  /* DOBRA 02 */
+  .tv-lamina .dobra-02 {
+    overflow: hidden;
+    padding-bottom: 0;
+    padding-top: 95px;
+  }
+
+  @media screen and (max-width: 991px) {
+    .tv-lamina .dobra-02 {
+      padding-top: 46px;
+      padding-bottom: 46px;
+    }
+  }
+
+  .tv-lamina .dobra-02 .feature__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 29px;
+    column-gap: 29px;
+    justify-items: center;
+    max-width: 1360px;
+    margin: 0 auto;
+
+  }
+
+  @media screen and (max-width: 991px) {
+    .tv-lamina .dobra-02 .feature__content {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 40px;
+      column-gap: 67px;
+      max-width: 360px;
+    }
+  }
+
+  .tv-lamina .dobra-02 .feature__content .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    text-align: center;
+    max-width: 245px;
+    width: 100%;
+    height: 245px;
+  }
+
+  @media screen and (max-width: 991px) {
+    .tv-lamina .dobra-02 .feature__content .card {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .tv-lamina .dobra-02 .feature__content .card div {
+    height: 120px;
+    max-width: 205px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 991px) {
+    .tv-lamina .dobra-02 .feature__content .card div {
+      height: auto;
+      max-height: 64px;
+      max-width: 76px;
+    }
+    .tv-lamina .dobra-02 .feature__content .card div img {
+      width: 100%;
+    }
+  }
+
+  .tv-lamina .dobra-02 .feature__content .card .feature__description {
+    font-size: 30px;
+    max-width: 250px;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    min-height: 82.67px;
+  }
+
+  @media screen and (max-width: 991px) {
+    .tv-lamina .dobra-02 .feature__content .card:nth-child(1) {
+      justify-content: flex-end;
+    }
+
+    .tv-lamina .dobra-02 .feature__content .card:nth-child(1) div img {
+      width: 70px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .tv-lamina .dobra-02 .feature__content .card:nth-child(1) .feature__description {
+    max-width: 170px;
+  }
+
+  @media screen and (max-width: 991px) {
+    .tv-lamina .dobra-02 .feature__content .card:nth-child(2) div img {
+      width: 60px;
+    }
+  
+    .tv-lamina .dobra-02 .feature__content .card:nth-child(2) .feature__description {
+      max-width: 130px;
+    }
+  }
+
+  .tv-lamina .dobra-02 .feature__content .card:nth-child(2) .feature__description {
+    max-width: 180px;
+  }
+
+  @media screen and (max-width: 991px) {
+    .tv-lamina .dobra-02 .feature__content .card:nth-child(3) div img {
+      width: 71px;
+    }
+  
+    .tv-lamina .dobra-02 .feature__content .card:nth-child(3) .feature__description {
+      max-width: 80px;
+    }
+  }
+
+  .tv-lamina .dobra-02 .feature__content .card:nth-child(3) .feature__description {
+    max-width: 200px;
+  }
+
+  @media screen and (max-width: 991px) {
+    .tv-lamina .dobra-02 .feature__content .card:nth-child(4) div img {
+      width: auto;
+      height: 57px;
+    }
+
+    .tv-lamina .dobra-02 .feature__content .card:nth-child(5) div img {
+      width: auto;
+      height: 63px;
+    }
+  }
+
+  .tv-lamina .dobra-02 .feature__content .card:last-child .feature__description {
+    max-width: 150px;
+  }
