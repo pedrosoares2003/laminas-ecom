@@ -176,8 +176,13 @@ body * {
 @media screen and (max-width: 1300px) {
   .fisher-price-lamina .dobra-01 > .feature__content > .card__content > ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fisher-price-lamina .dobra-01 > .feature__content > .card__content > ul {
+    align-items: flex-start;
   }
 }
 .fisher-price-lamina .dobra-01 > .feature__content > .card__content > ul > li {
