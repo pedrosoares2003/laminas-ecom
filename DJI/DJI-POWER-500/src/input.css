@@ -1,0 +1,1636 @@
+/* RESET RETIRAR */
+html, body, body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset básico */
+  .dji-lamina * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+  }
+  
+  .dji-lamina {
+    color: #fff;
+    margin: 0 auto;
+    max-width: 1920px;
+  }
+  
+  .dji-lamina section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+  }
+  
+  /* Títulos, subtitulos, descrições e textos padrões */
+  @font-face {
+    font-family: 'Dji-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/Dji-Light_0.ttf') format('truetype');
+  }
+
+  .dji-lamina h3, .dji-lamina h4, .dji-lamina h5 {
+    margin-bottom: 15px;
+  }
+
+  .dji-lamina .package__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px !important;
+  }
+
+  .dji-lamina .showcase__gallery-image video {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 18px !important;
+  }
+  
+  .dji-lamina .showcase__image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .dji-lamina p {
+    margin-bottom: 20px;
+  }
+
+  .dji-lamina .feature__title {
+    font-size: 48px;
+    margin-bottom: 0px;
+    line-height: 115%;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .dji-lamina .feature__title > span {
+    font-weight: 300;
+  }
+
+  .dji-lamina .feature__subtitle {
+    font-size: 30px;
+    color: #000;
+  }
+
+  .dji-lamina .feature__description {
+    max-width: 672px;
+    color: #000;
+    opacity: 0.45;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 130%;
+    font-size: 18px;
+  }
+  
+  /* Banners e imagens */
+  .dji-lamina .banner__image {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  /* Botões */
+  .dji-lamina .showcase__buttons {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .dji-lamina .showcase__button {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dji-lamina .showcase__button:hover, 
+  .dji-lamina .features-list__button:hover, 
+  .dji-lamina .return-home__button:hover {
+    background: #555;
+  }
+  
+  /* Estrutura geral */
+  .dji-lamina .feature__content {
+    text-align: start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Configuração do carrossel*/
+  .dji-lamina .showcase {
+    gap: 20px;
+  }
+
+  .dji-lamina .feature__image {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .dji-lamina .showcase > div.showcase__gallery,
+  .dji-lamina .showcase > div.showcase__gallery > img,
+  .dji-lamina .showcase > div.showcase__gallery > video,
+  .dji-lamina .image__content > video {
+    border-radius: 18px !important;
+    max-width: 1168px;
+  }
+
+  .dji-lamina .showcase__gallery,
+  .dji-lamina .showcase__gallery * { 
+    border-radius: 18px !important;
+  }
+
+  .dji-lamina .showcase__gallery img {
+    margin: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .dji-lamina .showcase__gallery img:hover {
+    transform: scale(1.025);
+  }
+  
+  .dji-lamina .button-container {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .dji-lamina .category-button {
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    color: #00000060;
+    border-bottom: 2px solid #00000033;
+    transition: 200ms ease;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dji-lamina .category-button.active {
+    opacity: 1 !important;
+  }
+
+  /* Config Showcase */
+  .showcase__paragraph {
+    position: relative;
+    max-width: 600px;
+    color: #ADADAD;
+    text-align: center;
+    margin-top: 20px !important;
+    margin-bottom: 0px;
+    display: none;
+}
+
+  .showcase__paragraph.active {
+    display: block;
+  }
+  
+   /* Estilo ao passar o mouse */
+  .dji-lamina .category-button:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
+  
+    /* Botão ativo */
+  .dji-lamina .category-button.active {
+    color: #000;
+    border-bottom: 2px solid #000 !important;
+  }
+  
+    /* Descrições dobra-13 e dobra-14 */
+  .dji-lamina .showcase .descriptions .feature__description {
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .3s ease;
+    margin-top: 20px;
+  }
+
+  .dji-lamina .showcase .descriptions .feature__description.active {
+    opacity: 100% !important;
+    min-height: 35px;
+  }
+
+  /* Altura mínima para separar o texto do fundo */
+  .dji-lamina .dobra-01 {
+    background: url("./assets/images/dobra-01-dji-power-500-1000-background.png") no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .dji-lamina .dobra-01 > .feature__content {
+    width: 100%;
+    max-width: 1168px;
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 14px;
+  }
+
+  .dji-lamina .dobra-01 > .feature__content > span {
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.7;
+    line-height: 120%; /* 24px */
+    letter-spacing: -0.6px;
+  } 
+
+  .dji-lamina .dobra-01 > .feature__content > .feature__title {
+    /* font-family: 'Dji-light'; */
+    font-size: 72px;
+    font-weight: 500;
+    -webkit-text-fill-color: #fff;
+    color: #fff;
+  }
+
+  .dji-lamina .dobra-01 > .feature__content > .feature__title > span {
+    font-weight: 300;
+  }
+
+  .dji-lamina .dobra-01 > .feature__content > .feature__subtitle {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .dji-lamina section.dobra-02 {
+    padding: 0 21.8px;
+    margin: 120px 0;
+  }
+
+  .dji-lamina .dobra-02 .gallery__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a b c"
+                         "a b c"
+                         "d f g"
+                         "e f g"
+                         "e f h";
+    gap: 16px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .dji-lamina .dobra-02 > .gallery__container > .gallery__image {
+    /* height: 100%; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    min-height: 482px;
+    background-color: #F5F5F6;
+  }
+
+  .dji-lamina .dobra-02 .gallery__image > .text__content {
+    margin: 0 20px;
+  }
+
+  .dji-lamina .dobra-02 .gallery__image > .text__content > .feature__title {
+    color: #424242;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+    letter-spacing: -0.6px;
+  }
+
+  .dji-lamina .dobra-02 .gallery__image > .text__content > .feature__description {
+    color: #424242;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.48px;
+  }
+
+  .dji-lamina .dobra-02 .gallery__image-01 {
+    grid-area: a;
+    gap: 10px;
+  }
+
+  .dji-lamina .dobra-02 .gallery__image-02 {
+    grid-area: b;
+    gap: 30px;
+  }
+
+  .dji-lamina .dobra-02 .gallery__image-03 {
+    grid-area: c;
+    gap: 50px;
+  }
+  
+  .dji-lamina .dobra-02 .gallery__image-04 {
+    grid-area: d;
+  }
+
+  .dji-lamina .dobra-02 .gallery__image-05 {
+    grid-area: e;
+    gap: 18px;
+  }
+
+  .dji-lamina .dobra-02 .gallery__image-06 {
+    grid-area: f;
+    gap: 90px;
+  }
+
+  .dji-lamina .dobra-02 .gallery__image-07 {
+    grid-area: g;
+    gap: 22px;
+  }
+
+  .dji-lamina .dobra-02 .gallery__image-08 {
+    grid-area: h;
+  }
+
+  .dji-lamina .dobra-02  > .gallery__container > .gallery__image-04,
+  .dji-lamina .dobra-02  > .gallery__container > .gallery__image-08 {
+    min-height: 148px;
+    max-height: 148px;
+  }
+
+  .dji-lamina .dobra-02  > .gallery__container > .gallery__image-05,
+  .dji-lamina .dobra-02  > .gallery__container > .gallery__image-07 {
+    min-height: 328.021px;
+    max-height: 328.021px;
+  }
+
+  .dji-lamina .dobra-03 {
+    margin-top: 100px;
+    padding-top: 32px !important;
+    min-height: 821px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dji-lamina .dobra-03 > .feature__image {
+    position: absolute;
+    width: 1920px;
+    max-width: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dji-lamina .dobra-03 > .feature__content {
+    display: flex;
+    gap: 37px;
+    min-height: 875px;
+    z-index: 2;
+  }
+
+  .dji-lamina .dobra-03 > .feature__content > .text__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+    margin-top: 100px;
+  }
+
+  .dji-lamina .dobra-03 > .feature__content > .text__content > .feature__description.subtitle {
+    background: linear-gradient(180deg, #428EEC 0%, #2557C3 146.87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .dji-lamina .dobra-03 > .feature__content > .text__content > .feature__title {
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 750px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .dji-lamina .dobra-03 > .feature__content > .text__content > .feature__description {
+    color: #fff;
+    opacity: .85;
+    max-width: 800px;
+  }
+
+  /* quebra de linha em versão desktop */
+  .quebra-linha-desktop {
+    display: block;
+  }
+
+  @media screen and (max-width: 991px) {
+    .quebra-linha-desktop {
+      display: none;
+    }
+  }
+
+  .dji-lamina .dobra-04 {
+    padding: 90px 0;
+    align-items: flex-start;
+  }
+
+  .dji-lamina .dobra-04 > * {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .dji-lamina .dobra-04 > .feature__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    row-gap: 55px;
+    column-gap: 60px;
+    padding: 40px 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  .dji-lamina .dobra-04 > .feature__content > .feature__title {
+    grid-column: 1/3;
+    text-align: center;
+    color: #000;
+    font-size: 64px;
+    font-weight: 600;
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .dji-lamina .dobra-04 .button-container {
+    gap: 64px;
+    justify-self: flex-start;
+  }
+
+  .dji-lamina .dobra-04 .button-container > .category-button {
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: -0.96px;
+    opacity: .65;
+    padding: 12px 24px;
+    max-width: 226px;
+    text-align: left;
+    padding-left: 0;
+    border: none;
+  }
+
+  .dji-lamina .dobra-04 > .showcase {
+    margin-top: 40px;
+  }
+
+  .dji-lamina .dobra-04 > .showcase > .showcase__gallery > .showcase__section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .dji-lamina .dobra-04 > .showcase > .showcase__gallery > .showcase__section > .showcase__cards-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .dji-lamina .dobra-04 > .showcase > .showcase__gallery > .showcase__section > .showcase__cards-content > .feature__card {
+    width: fit-content;
+    max-width: 235px;
+    height: 140px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    border-radius: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .dji-lamina .dobra-04 > .showcase > .showcase__gallery > .showcase__section > .showcase__cards-content > .feature__card:nth-child(5),
+  .dji-lamina .dobra-04 > .showcase > .showcase__gallery > .showcase__section > .showcase__cards-content > .feature__card:nth-child(6) {
+    border: none;
+    max-width: none;
+  }
+
+  .dji-lamina .dobra-04 > .showcase > .showcase__gallery > .showcase__section > .showcase__cards-content > .feature__card > .feature__description {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: -0.6px;
+    opacity: 1;
+    text-align: left;
+    margin: 0;
+  }
+
+  .dji-lamina .dobra-04 > .showcase > .showcase__gallery > .showcase__section > .showcase__cards-content > .feature__card > .feature__number {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: -1.68px;
+    text-align: left;
+    background: linear-gradient(180deg, #428EEC 0%, #2557C3 146.87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .dji-lamina .dobra-04 > .showcase > .showcase__gallery > .showcase__section > .feature__image {
+    max-width: 485px;
+  }
+
+  .dji-lamina .dobra-04 > .aviso {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    max-width: 1200px;
+    margin-top: 40px;
+  }
+
+  .dji-lamina .dobra-04 > .aviso > .feature__description {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: -0.36px;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 60px;
+    max-width: 985px;
+  }
+
+  .dji-lamina .dobra-05 {
+    background-color: #F5F5F6;
+    padding-top: 120px;
+  }
+
+  .dji-lamina .dobra-05 > .feature__content {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .dji-lamina .dobra-05 > .feature__content > .text__content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .dji-lamina .dobra-05 > .feature__content > .text__content > * {
+    margin: 0;
+  }
+
+  .dji-lamina .dobra-05 > .feature__content > .text__content > .feature__title {
+    font-size: 56px;
+    max-width: 550px;
+  }
+
+  .dji-lamina .dobra-05 > .feature__content > .text__content > .feature__description {
+    max-width: 750px;
+  }
+
+  .dji-lamina .dobra-05 > .feature__content > .cards__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .dji-lamina .dobra-05 > .feature__content > .cards__content > .feature__card {
+    width: fit-content;
+    max-width: 478px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    border-radius: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .dji-lamina .dobra-05 > .feature__content > .cards__content > .feature__card > .feature__description {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: -0.6px;
+    opacity: 1;
+    text-align: left;
+    margin: 0;
+  }
+
+  .dji-lamina .dobra-05 > .feature__content > .cards__content > .feature__card > .feature__description:nth-child(3) {
+    opacity: .45;
+    padding-bottom: 20px;
+  }
+
+  .dji-lamina .dobra-05 > .feature__content > .cards__content > .feature__card > .feature__number {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: -1.68px;
+    text-align: left;
+    background: linear-gradient(180deg, #428EEC 0%, #2557C3 146.87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .dji-lamina .dobra-06 {
+    padding: 90px 0;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .text__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .text__content > .feature__title {
+    font-size: 64px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .text__content > .feature__description {
+    margin: 0;
+    max-width: 870px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding: 90px 0;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row:not(.box__content-row--1, .box__content-row--3) {
+    flex-direction: row-reverse;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row > .text__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row > .text__content > .feature__title {
+    font-size: 40px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row > .text__content > .feature__description {
+    margin: 0;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row > .image__content > .feature__image {
+    width: 100%;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row--1 > .image__content {
+    max-width: 595px;
+  }
+  
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row--1 > .text__content {
+    max-width: 520px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row--2 > .image__content {
+    max-width: 924px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row--2 > .text__content {
+    max-width: 500px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row--3 {
+    align-items: flex-start;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row--3 > .image__content {
+    max-width: 592px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row--3 > .image__content > .feature__description {
+    max-width: 536px;
+    font-size: 12px;
+    text-align: right;
+    font-weight: 600;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: -0.36px;
+    opacity: 0.45;
+    margin: 0;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row--3 > .text__content {
+    max-width: 515px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row--4 > .text__content {
+    max-width: 500px;
+  }
+
+  .dji-lamina .dobra-06 > .feature__content > .box__content-row--4 > .text__content > .feature__title {
+    width: 518px;
+  }
+
+  .dji-lamina .dobra-07 {
+    margin-top: 100px;
+    padding-top: 32px !important;
+    min-height: 821px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dji-lamina .dobra-07 > .feature__image {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .dji-lamina .dobra-07 .feature__image {
+    position: absolute;
+    width: 1920px;
+    max-width: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dji-lamina .dobra-07 > .feature__content {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    min-height: 875px;
+    z-index: 2;
+  }
+
+  .dji-lamina .dobra-07 > .feature__content > .text__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+    margin-bottom: 200px;
+  }
+
+  .dji-lamina .dobra-07 > .feature__content > .text__content > .feature__description.subtitle {
+    background: linear-gradient(180deg, #428EEC 0%, #2557C3 146.87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .dji-lamina .dobra-07 > .feature__content > .text__content > .feature__title {
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 750px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .dji-lamina .dobra-07 > .feature__content > .text__content > .feature__description {
+    color: #fff;
+    opacity: .85;
+    max-width: 750px;
+  }
+
+  .dji-lamina .dobra-08 {
+    padding: 90px 0;
+    padding-bottom: 0;
+    background-color: #F5F5F6;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .text__content {
+    display: grid;
+    grid-template-columns: .05fr 1fr;
+    width: 100%;
+    gap: 40px;
+    row-gap: 25px;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .text__content > .feature__image {
+    grid-column: 1/1;
+    grid-row: 1/3;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .text__content > .feature__title {
+    max-width: none;
+    grid-column: 2/3;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .text__content > .feature__description {
+    margin: 0;
+    max-width: 1200px;
+    grid-column: 2/3;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .box__content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding: 90px 0;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .box__content-row:not(.box__content-row--1) {
+    flex-direction: row-reverse;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .box__content-row > .text__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .box__content-row > .text__content > .feature__description {
+    margin: 0;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .box__content-row > .image__content > .feature__image {
+    width: 100%;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .box__content-row--1 > .image__content {
+    max-width: 595px;
+  }
+  
+  .dji-lamina .dobra-08 > .feature__content > .box__content-row--1 > .text__content {
+    max-width: 520px;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .box__content-row--2 {
+    padding-bottom: 50px;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .box__content-row--2 > .image__content {
+    max-width: 615px;
+  }
+
+  .dji-lamina .dobra-08 > .feature__content > .box__content-row--2 > .text__content {
+    max-width: 550px;
+  }
+
+  .dji-lamina .dobra-09 {
+    padding: 90px 0;
+    padding-top: 50px;
+    background-color: #F5F5F6;
+  }
+
+  .dji-lamina .dobra-09 > .feature__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    gap: 90px;
+    column-gap: 10px;
+    width: 100%;
+  }
+
+  .dji-lamina .dobra-09 > .feature__content > .text__content {
+    grid-column: 1/3;
+  }
+
+  .dji-lamina .dobra-09 > .feature__content > .box__content {
+    position: relative;
+    display: flex;
+    min-height: 620px;
+  }
+
+  .dji-lamina .dobra-09 > .feature__content > .box__content > .image__content {
+    position: absolute;
+    height: 100%;
+  }
+
+  .dji-lamina .dobra-09 > .feature__content > .box__content > .image__content > .feature__image {
+    border-radius: 16px;
+  }
+
+  .dji-lamina .dobra-09 > .feature__content > .box__content > .text__content {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .dji-lamina .dobra-09 > .feature__content > .box__content > .text__content > .feature__title,
+  .dji-lamina .dobra-09 > .feature__content > .box__content > .text__content > .feature__description {
+    color: #fff !important;
+    z-index: 2;
+    position: relative;
+  }
+
+  .dji-lamina .dobra-09 > .feature__content > .box__content > .text__content > .feature__title {
+    font-size: 20px;
+  }
+
+  .dji-lamina .dobra-09 > .feature__content > .box__content > .text__content > .feature__description {
+    opacity: .65;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.48px;
+  }
+  
+  .dji-lamina .dobra-09 > .feature__content > .box__content-02 > .text__content > .feature__description {
+    max-width: 530px;
+  }
+
+  .dji-lamina .dobra-flex-col {
+    padding: 90px 0;
+  }
+
+  .dji-lamina .dobra-flex-col > .feature__content {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    width: 100%;
+  }
+
+  .dji-lamina .dobra-flex-col > .feature__content > .text__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .dji-lamina .dobra-flex-col > .feature__content > .text__content > .feature__description {
+    margin: 0;
+    max-width: 880px;
+  }
+
+  .dji-lamina .dobra-flex-col > .feature__content > .feature__image {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .dji-lamina .dobra-11 > .feature__content > .text__content > .feature__title {
+    max-width: 900px;
+    color: #4F4F4F;
+  }
+
+  .dji-lamina .dobra-11 > .feature__content > .text__content > .feature__description {
+    max-width: 810px;
+  }
+
+  .dji-lamina .dobra-background-black {
+    background-color: #000;
+  }
+
+  .dji-lamina .dobra-background-black > .feature__content > .text__content > * {
+    color: #fff !important;
+  }
+  
+  .dji-lamina .gradient__white-transparent__bottom-from-top {
+    background: linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    width: 100%;
+    height: 222px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .dji-lamina .dobra-12 {
+    margin-top: 100px;
+    padding-top: 32px !important;
+    min-height: 967px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dji-lamina .dobra-12 > .feature__image {
+    position: absolute;
+    bottom: 0;
+    width: 1920px;
+    max-width: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dji-lamina .dobra-12 > .feature__content {
+    display: flex;
+    gap: 37px;
+    min-height: 875px;
+    z-index: 2;
+  }
+
+  .dji-lamina .dobra-12 > .feature__content > .text__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    margin-top: 50px;
+  }
+
+  .dji-lamina .dobra-12 > .feature__content > .text__content > .feature__description.subtitle {
+    background: linear-gradient(180deg, #428EEC 0%, #2557C3 146.87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .dji-lamina .dobra-12 > .feature__content > .text__content > .feature__title {
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 850px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .dji-lamina .dobra-12 > .feature__content > .text__content > .feature__description {
+    color: #fff;
+    opacity: .85;
+    max-width: 800px;
+  }
+
+  .dji-lamina .dobra-13 > .feature__content > .text__content > .feature__title {
+    margin: 0;
+    max-width: 880px;
+  }
+
+  .dji-lamina .dobra-13 > .feature__content > .text__content > .feature__description {
+    max-width: 920px;
+  }
+
+  .dji-lamina .package__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .dji-lamina .package__gallery > div {
+    width: 225px;
+    height: 177px;
+    background-color: #262626;
+    padding: 12px;
+  }
+
+  .dji-lamina .package__gallery > div > .feature__description {
+    color: #fff;
+    opacity: 1;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.39px;
+  }
+
+  .dji-lamina .dobra-15 > .feature__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .dji-lamina .dobra-15 > .feature__content > .text__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    color: #a6a6a6;
+    max-width: 550px;
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .dji-lamina .dobra-15 > .feature__content > .text__content > .feature__title {
+    font-size: 40px;
+    line-height: 115%;
+    color: #fff;
+    font-weight: 600;
+    max-width: 450px;
+    margin-bottom: 50px;
+  }
+
+  .dji-lamina .dobra-15 > .feature__content > .text__content > .feature__description {
+    font-size: 20px;
+    max-width: 450px;
+  }
+
+  .dji-lamina .dobra-15 > .feature__content > .text__content > .feature__description:nth-child(2) {
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .dji-lamina .dobra-15 > .feature__content > .text__content > .feature__description:nth-child(3) {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .dji-lamina .dobra-15 > .feature__content > .feature__image {
+    justify-self: center;
+  }  
+
+  .dji-lamina .dobra-16 {
+    background-color: #F8F8F8;
+    color: #222222;
+    padding: 90px 0;
+  }
+
+  .dji-lamina .dobra-16 > .feature__content,
+  .dji-lamina .dobra-16 > .feature__content > ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .dji-lamina .dobra-16 > .feature__content p,
+  .dji-lamina .dobra-16 > .feature__content > ol > li {
+    margin: 0;
+    font-size: 10px;
+    color: #222;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Ajustes para Mobile */
+  @media screen and (max-width: 1275px) {
+    .dji-lamina .dobra-16 > .feature__content > ol {
+      padding-left: 14px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .dji-lamina section {
+      padding: 60px 40px !important;
+    }
+
+    .dji-lamina .dobra-01 {
+      background-position: 48%;
+      min-height: 700px;
+      padding: 0 !important;
+    }
+
+    .dji-lamina .dobra-01 > .feature__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      padding-top: 0px;
+      gap: 8px;
+    }
+
+    .dji-lamina .dobra-02 {
+      margin: 0 auto !important;
+    }
+    
+    .dji-lamina .dobra-02 > .text_container {
+      gap: 30px;
+    }
+
+    .dji-lamina .dobra-02 > .gallery__container {
+      grid-template-columns: 1fr;
+      grid-template-areas: "a"
+                           "b"
+                           "c"
+                           "d"
+                           "e"
+                           "f"
+                           "g"
+                           "h";
+      max-width: 390px;
+    }
+
+    .dji-lamina .dobra-02 > .gallery__container > .gallery__image {
+      min-height: 148px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .dji-lamina .dobra-02 .gallery__image-02 > .feature__description {
+      padding: 0;
+    }
+
+    .dji-lamina .dobra-03 {
+      margin-top: 0;
+    }
+
+    .dji-lamina .dobra-05 {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    .dji-lamina .dobra-05 > .feature__content > *:not(.feature__image) {
+      padding: 0 40px;
+    }
+
+    .dji-lamina .dobra-06 > .feature__content > .box__content-row:not(.box__content-row--1, .box__content-row--3) {
+      padding: 0;
+    }
+
+    .dji-lamina .dobra-15 {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .dji-lamina .dobra-01 > .feature__content > span {
+      max-width: 405px;
+      text-align: center;
+    }
+
+    .dji-lamina .dobra-01 > .feature__content > .feature__title {
+      font-size: 48px !important;
+    }
+
+    .dji-lamina .dobra-01 > .feature__content > .feature__subtitle {
+      font-size: 22px;
+    }
+
+    .dji-lamina .dobra-04 {
+      margin-top: 40px;
+    }
+
+    .dji-lamina .dobra-04 > .feature__content {
+      grid-template-columns: 1fr;
+      grid-template-areas: "a"
+                           "b"
+                           "c";
+      gap: 40px;
+      max-width: 398px;
+    }
+
+    .dji-lamina .dobra-04 > .feature__content > .feature__title {
+      grid-area: a;
+      font-size: 34px !important;
+      max-width: 275px;
+    }
+
+    .dji-lamina .dobra-04 > .feature__content > div:nth-child(2) {
+      grid-area: b;
+    }
+
+    .dji-lamina .dobra-04 > .feature__content > div:nth-child(2) > .feature__description {
+      margin: 0;
+    }
+
+    .dji-lamina .dobra-04 > .feature__content > .showcase__gallery-image {
+      grid-area: c;
+    }
+
+    .dji-lamina .dobra-05 > .feature__content {
+      flex-direction: column;
+    }
+
+    .dji-lamina .dobra-05 > .feature__content > .text__content {
+      max-width: 398px;
+    }
+
+    .dji-lamina .dobra-05 > .feature__content > .text__content > .feature__title {
+      max-width: 350px;
+    }
+
+    .dji-lamina .dobra-05 > .feature__content > .text__content > .feature__description {
+      font-size: 14px;
+    }
+
+    .dji-lamina .dobra-07 > .feature__content {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .dji-lamina .dobra-flex-row-responsive > .box__content {
+      grid-template-columns: 1fr;
+      grid-template-areas: "b"
+                           "a";
+      gap: 30px;
+      padding-top: 0;
+      padding-bottom: 0;
+      max-width: 398px;
+    }
+
+    .dji-lamina .dobra-flex-row-responsive > .box__content > .text__content > .feature__title {
+      font-size: 24px !important;
+      font-weight: 600;
+      max-width: 270px;
+    }
+
+    .dji-lamina .dobra-08 > .box__content,
+    .dji-lamina .dobra-09 > .box__content,
+    .dji-lamina .dobra-10 > .box__content {
+      grid-template-areas: "a"
+                           "b";
+    }
+
+    /* .dji-lamina .dobra-12 > .box__content > .showcase__gallery-image,
+    .dji-lamina .dobra-13 > .box__content > .showcase__gallery-image,
+    .dji-lamina .dobra-14 > .box__content > .showcase__gallery-image {
+      min-width: 0;
+    } */
+
+    .dji-lamina .dobra-12 > .box__content > .text__content > .feature__description,
+    .dji-lamina .dobra-13 > .box__content > .text__content > .feature__description,
+    .dji-lamina .dobra-14 > .box__content > .text__content > .feature__description {
+      font-size: 14px;
+    }
+
+    .dji-lamina .dobra-12 > .text__content {
+      max-width: 398px;
+    }
+
+    .dji-lamina .dobra-12 > .text__content > .feature__title {
+      max-width: 360px;
+    }
+
+    .dji-lamina .dobra-12 > .box__content > .text__content > .feature__title {
+      max-width: 300px;
+    }
+
+    .dji-lamina .dobra-13 > .box__content > .text__content > .feature__title {
+      max-width: 320px;
+    }
+
+    .dji-lamina .dobra-15 {
+      padding-left: 0!important;
+      padding-right: 0!important;
+      padding-top: 0!important;
+    }
+
+    .dji-lamina .dobra-15 > .feature__content {
+      max-width: 378px;
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+      padding-bottom: 20px;
+    }
+
+    .dji-lamina .dobra-15 > .feature__content * {
+      grid-column: 1/2;
+    }
+
+    .dji-lamina .dobra-15 > .feature__content > .feature__description {
+      font-size: 13px;
+    }
+
+    .dji-lamina .dobra-15 .button-container > .category-button {
+      font-size: 14.971px;
+    }
+
+    .dji-lamina .dobra-15 .button-container {
+      margin-top: 0;
+    }
+
+    .dji-lamina .dobra-17 > .box__content > .text__content > .feature__description,
+    .dji-lamina .dobra-18 > .box__content .feature__description,
+    .dji-lamina .dobra-19 > .box__content > .text__content > .feature__description {
+      opacity: 0.65;
+    }
+
+    .dji-lamina .dobra-20--bg > .dobra-20 > .dobra-20--description {
+      margin-bottom: 50px;
+    }
+
+    .dji-lamina .dobra-20--bg {
+      padding: 0 21.8px !important;
+    }
+
+    .dji-lamina .dobra-20--bg > .dobra-20 {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .dji-lamina .dobra-20--bg > .dobra-20 > .dobra-20--description {
+      width: auto;
+    }
+
+    .dji-lamina .dobra-20--bg > .dobra-20 > .dobra-20--description > h3 {
+      font-size: 28px;
+      max-width: 344px;
+      margin-bottom: 30px;
+    }
+
+    .dji-lamina .dobra-20--bg > .dobra-20 > .dobra-20--description > p {
+      font-size: 14px;
+      max-width: 370px !important;
+    }
+
+    .dji-lamina .dobra-20--bg > .dobra-20 > .dobra-20--description > p:nth-child(3) {
+      max-width: 355px !important;
+    }
+
+    .dji-lamina .dobra-20--bg > .dobra-20 > .showcase__gallery-image {
+      max-width: 345px;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    .dji-lamina .dobra-02 {
+      padding: 80px 0;
+    }
+
+    .dji-lamina .dobra-16 > .dobra-16-2,
+    .dji-lamina .dobra-16 > .dobra-16-3 {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+
+    .dji-lamina .dobra-16 > .dobra-16-2 > .box__content,
+    .dji-lamina .dobra-16 > .dobra-16-3 > .box__content {
+      grid-template-columns: 1fr;
+      grid-template-areas: "b"
+                           "a";
+    }
+
+    .dji-lamina .dobra-16 > .dobra-16-2 > .box__content > .text__content > .feature__title,
+    .dji-lamina .dobra-16 > .dobra-16-3 > .box__content > .text__content > .feature__title {
+      font-size: 24px !important;
+    }
+
+    .dji-lamina .dobra-16 > .dobra-16-2 > .box__content > .feature__image video {
+      max-height: 254px;
+    }
+
+    .dji-lamina .dobra-16 > .dobra-16-3 > .box__content {
+      width: 100%;
+      max-width: 508px;
+    }
+
+    .dji-lamina .dobra-16 > .dobra-16-3 > .box__content > .text__content {
+      margin: 0;
+    }
+
+    .dji-lamina .dobra-16 > .dobra-16-3 > .box__content > .feature__image {
+      max-width: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    h3.feature__title {
+      font-size: 34px !important;
+    }
+
+    .dji-lamina .feature__description {
+      font-size: 14px;
+    }
+
+    .dji-lamina .dobra-02 > .text__container {
+      padding: 24px 0;
+      margin-bottom: 40px;
+    }
+
+    .dji-lamina .dobra-02 > .text__container > .feature__description {
+      max-width: 400px;
+      font-size: 16px;
+    }
+
+    .dji-lamina .dobra-03 {
+      min-height: 371px;
+      margin-top: 0;
+      padding: 0 !important;
+    }
+
+    .dji-lamina .dobra-03 > .feature__content {
+      min-height: 371px;
+    }
+
+    .dji-lamina .dobra-03 > .feature__content .feature__title {
+      font-size: 36px !important;
+      max-width: 400px;
+    }
+
+    .dji-lamina .dobra-06 > .feature__title {
+      max-width: 350px;
+    }
+
+    .dji-lamina .dobra-06 > .feature__content {
+      grid-template-columns: 1fr;
+    }
+
+    .dji-lamina .dobra-06 > .feature__content > .box__content > .feature__description {
+      padding: 0;
+    }
+
+    .dji-lamina .dobra-07 > .feature__content {
+      max-width: 398px;
+    }
+
+    .dji-lamina .dobra-11 {
+      min-height: 371px;
+      margin-top: 0;
+      padding: 0 !important;
+    }
+
+    .dji-lamina .dobra-11 > .feature__content {
+      min-height: 371px;
+    }
+
+    .dji-lamina .dobra-11 .gallery__showcase-image {
+      width: 869px;
+    }
+
+    .dji-lamina .dobra-11 > .feature__content .feature__title {
+      font-size: 36px !important;
+      max-width: 400px;
+    }
+
+    .dji-lamina .dobra-16 {
+      min-height: 480px;
+    }
+
+    .dji-lamina .dobra-16 > .feature__content {
+      min-height: 480px;
+    }
+
+    .dji-lamina .dobra-16 .gallery__showcase-image {
+      height: 480px;
+      margin-top: 0;
+    }
+
+    .dji-lamina .dobra-21 {
+      padding-bottom: 80px !important;
+    }
+
+    .dji-lamina .dobra-21.package > .feature__title {
+      margin-top: 70px;
+      margin-bottom: 40px;
+      text-align: start;
+    }
+
+    .dji-lamina .dobra-21 > .package__content > .feature__title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .dji-lamina .dobra-21 .package__gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .dji-lamina .dobra-21 .package__gallery > div > img {
+      max-width: 185px;
+    }
+
+    .dji-lamina .dobra-21 .package__gallery > div {
+      width: 185px;
+      height: 255px;
+    }
+
+    .dji-lamina .dobra-19 > .feature__content {
+      margin-bottom: 70px;
+    }
+
+    .dji-lamina .dobra-21 > .package__content:nth-child(3) {
+      margin-top: 70px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .dji-lamina .dobra-11-1 > .button-container > .swiper-wrapper {
+      max-width: 380px;
+    }
+
+    .dji-lamina {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .dji-lamina > section {
+      width: 100%;
+    }
+
+    .dji-lamina .dobra-02 {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
