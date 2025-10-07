@@ -1253,6 +1253,18 @@ html, body, body * {
       padding: 0 40px;
     }
 
+    .dji-lamina .dobra-04 .button-container {
+      justify-self: center;
+      width: auto;
+    }
+
+    .dji-lamina .dobra-04 > .showcase > .showcase__gallery > .showcase__section {
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
     .dji-lamina .dobra-06 > .feature__content > .box__content-row:not(.box__content-row--1, .box__content-row--3) {
       padding: 0;
     }
