@@ -1640,3 +1640,18 @@ html, body, body * {
       max-width: none;
     }
   }
+
+  @media screen and (max-width: 428px) {
+    .dji-lamina .dobra-04 .button-container {
+      width: 100%;
+    }
+
+    .dji-lamina .package__gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .dji-lamina .package__gallery > div {
+      width: auto;
+    }
+  }
