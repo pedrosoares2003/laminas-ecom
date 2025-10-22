@@ -100,7 +100,8 @@ body * {
   .fisher-price-lamina .dobra-01 {
     background-image: url("./assets/images/dobra-01-bb721-banner-mobile.png");
     background-size: 100% 100%;
-    height: 680px;
+    height: 670px;
+    padding-bottom: 0;
   }
 }
 .fisher-price-lamina .dobra-01 > .feature__content {
@@ -133,7 +134,7 @@ body * {
     color: #fff;
     grid-area: b;
     gap: 0px;
-    margin-top: 180px;
+    margin-top: 110px;
     max-width: 260px;
     grid-column: 1/2;
   }
@@ -201,11 +202,12 @@ body * {
 .fisher-price-lamina .dobra-02 > .feature__content {
   grid-template-columns: 0.75fr 1.25fr;
   max-width: 1502px;
-  padding: 80px 40px;
+  padding: 80px;
   padding-bottom: 0;
 }
 @media screen and (max-width: 991px) {
   .fisher-price-lamina .dobra-02 > .feature__content {
+    padding: 0 40px;
     padding-top: 40px;
   }
 }
@@ -674,6 +676,8 @@ body * {
 @media screen and (max-width: 991px) {
   .fisher-price-lamina .dobra-06 > .feature__content > .gallery__content > .feature__gallery-05 > .text__content {
     max-width: 160px;
+    padding: 10px;
+    padding-bottom: 0;
   }
 }
 .fisher-price-lamina .dobra-06 > .feature__content > .gallery__content > .feature__gallery-05 > .feature__image {
@@ -822,7 +826,6 @@ body * {
 @media screen and (max-width: 991px) {
   .fisher-price-lamina .dobra-07 > .feature__content > .text__content:nth-child(1) {
     justify-content: flex-end;
-    padding: 0 40px;
   }
 }
 .fisher-price-lamina .dobra-07 > .feature__content > .text__content:nth-child(1) > .feature__title {
@@ -846,6 +849,12 @@ body * {
 @media screen and (max-width: 991px) {
   .fisher-price-lamina .dobra-07 > .feature__content > .text__content:nth-child(1) > .feature__image {
     max-width: 138px;
+  }
+}
+@media screen and (min-width: 1301px) {
+  .fisher-price-lamina .dobra-07 > .feature__content > .text__content:nth-child(2) > .feature__title {
+    text-align: left !important;
+    min-width: 401px;
   }
 }
 .fisher-price-lamina .dobra-07 > .feature__content > .feature__image {
