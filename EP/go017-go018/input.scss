@@ -800,7 +800,7 @@ body {
             @media screen and (max-width: 991px) {
                 flex-direction: column-reverse;
                 max-width: 428px;
-                grid-template-columns: 1fr;
+                grid-template-columns: 100%;
                 grid-template-areas: "c"
                                      "a"
                                      "b";
@@ -915,6 +915,10 @@ body {
 
     & .dobra-07 {
 
+        @media screen and (max-width: 991px) {
+            margin-top: 50px;
+        }
+
         & .feature__content {
             display: grid;
             grid-template-columns: 1.2fr .8fr;
@@ -930,8 +934,10 @@ body {
             }
 
             & > * {
-                grid-column: 1/2 !important;
-                justify-self: center !important;
+                @media screen and (max-width: 991px) {
+                    grid-column: 1/2 !important;
+                    justify-self: center !important;
+                }
             }
 
             & > .text__content {
