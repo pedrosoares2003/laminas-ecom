@@ -134,7 +134,7 @@ body {
         }
 
         @media screen and (max-width: 991px) {
-            font-size: 16px;
+            font-size: 18px;
         }
     }
 
@@ -146,6 +146,10 @@ body {
         border: 1px solid #000000;
         border-radius: 12px;
         width: fit-content;
+    }
+
+    & .feature__redirect:hover {
+        cursor: pointer;
     }
     
     & .feature__image {
@@ -171,78 +175,11 @@ body {
         @media screen and (max-width: 991px) {
             padding: 0;
             margin: 0 auto;
+            max-width: 428px;
         }
 
         @media screen and (max-width: 340px) {
             margin: 0 10px;
-        }
-    }
-
-    
-    & .dobra-flex-column {
-        padding-top: 0;
-        padding-bottom: 0;
-        
-        & .feature__content {
-            display: flex;
-            flex-direction: column;
-            gap: 60px;
-
-            @media screen and (max-width: 991px) {
-                
-            }
-
-            & .text__content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-
-                @media screen and (max-width: 991px) {
-                    text-align: left;
-                    align-items: flex-start;
-                }
-
-                & > * {
-                    max-width: 1204px;
-                }
-
-                & .feature__title {
-                    margin-bottom: 30px;
-                }
-
-                & .feature__description {
-                    max-width: 1100px;
-
-                    & span {
-                        font-size: 18px;
-
-                        @media screen and (max-width: 991px) {
-                            font-size: 8px;
-                        }
-                    }
-                }
-            }
-
-            & .image {
-                border-radius: 30px;
-            }
-
-            & .video {
-                width: 100%;
-            }
-
-            & .video:nth-child(2) {
-                @media screen and (max-width: 991px) {
-                    display: none;
-                }
-            }
-        }
-
-        @media screen and (max-width: 991px) {
-            display: flex;
-            justify-content: center;
         }
     }
 
@@ -258,8 +195,9 @@ body {
         gap: 10px;
 
         @media screen and (max-width: 991px) {
+            background-image: url("./assets/images/dobra-01-lp-windows-11-banner-mobile.png");
             margin: 0 auto;
-            max-width: 100%;
+            min-height: 770px;
         }
 
         & .feature__content {
@@ -270,7 +208,8 @@ body {
             padding: 0 40px;
 
             @media screen and (max-width: 991px) {
-                
+                grid-template-columns: 1fr;
+                height: auto;
             }
 
             & > .feature__image {
@@ -280,7 +219,8 @@ body {
                 margin-top: 50px;
 
                 @media screen and (max-width: 991px) {
-                    
+                    max-width: 198px;
+                    margin-top: 40px;
                 }
             }
 
@@ -292,10 +232,25 @@ body {
                 flex-direction: column;
                 gap: 50px;
 
+                @media screen and (max-width: 991px) {
+                    margin-block: 38px;
+                    align-self: flex-start;
+                    align-items: center;
+                    gap: 20px;
+                }
+
                 & > .feature__title {
                     font-size: 90px;
                     line-height: 107%;
                     letter-spacing: 0%;
+
+                    @media screen and (max-width: 1199px) {
+                        font-size: 64px;
+                    }
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 36px;
+                    }
                 }
 
                 & > .feature__description {
@@ -303,6 +258,22 @@ body {
                     line-height: 107%;
                     letter-spacing: 0%;
                     max-width: 850px;
+
+                    @media screen and (max-width: 1199px) {
+                        font-size: 30px;
+                    }
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+                
+                & > .feature__redirect {
+                    @media screen and (max-width: 991px) {
+                        padding: 4px 16px 7px 16px;
+                        font-size: 18px;
+                    }
                 }
             }
         }
@@ -334,10 +305,28 @@ body {
                 box-shadow: 0 17px 59.7px 0 rgba(43, 100, 124, 0.39);
                 border-radius: 26px;
 
+                @media screen and (max-width: 991px) {
+                    padding-top: 17px;
+                    padding-bottom: 29px;
+                    padding-inline: 44px;
+                    text-align: center;
+                    width: auto;
+                    max-width: 318px;
+                }
+
                 & > span {
                     @include textColorDegrade();
                     font-size: 150px;
                     font-weight: 700;
+
+                    @media screen and (max-width: 1199px) {
+                        font-size: 104px;
+                    }
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 65px;
+                        text-align: center;
+                    }
                 }
             }
 
@@ -347,13 +336,31 @@ body {
                 flex-direction: column;
                 gap: 25px;
                 max-width: 1216px;
+
+                @media screen and (max-width: 1199px) {
+                    padding-inline: 40px;
+                }
+
+                @media screen and (max-width: 991px) {
+                    align-items: center;
+                }
                 
                 & > .feature__title {
                     font-size: 48px;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 30px;
+                        max-width: 319px;
+                    }
                 }
 
                 & > .feature__description {
                     font-size: 18px;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 10px;
+                        max-width: 298px;
+                    }
                 }
             }
         }
@@ -365,6 +372,11 @@ body {
         width: 100%;
         max-width: 1686px;
         margin: 0 auto;
+
+        @media screen and (max-width: 991px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
     }
 
     @mixin backgroundImageDobra ($urlBackground) {
@@ -375,22 +387,55 @@ body {
         background-repeat: no-repeat;
     }
 
+    & .dobra-background-image {
+        display: flex;
+
+        @media screen and (max-width: 1199px) {
+            padding-block: 100px !important;
+        }
+
+        @media screen and (max-width: 991px) {
+            padding-block: 0px !important;
+            min-height: 799px;
+        }
+
+        & > .feature__content {
+            @media screen and (max-width: 991px) {
+                gap: 50px;
+            }
+
+            & > .text__content {
+                @media screen and (max-width: 991px) {
+                    grid-row: 2/3;
+                    grid-column: 1/2 !important;
+                    align-self: center;
+                    text-align: center;
+                    align-items: center;
+                    gap: 15px !important;
+                }
+
+                & > .feature__description:nth-child(3) {
+                    @media screen and (max-width: 991px) {
+                        font-size: 10px !important;
+                    }
+                }
+                    
+            }
+        }
+    }
+
     & .dobra-03 {
         @include backgroundImageDobra(url(./assets/images/dobra-03-lp-windows-11-background.png));
-        display: flex;
         padding-block: 203px;
         padding-inline: 48px;
 
         @media screen and (max-width: 991px) {
             margin: 0px auto;
+            background-image: url('./assets/images/dobra-03-lp-windows-11-background-mobile.png');
         }
 
         & > .feature__content {
             @include contentTwoCols(.85fr 1.15fr);
-
-            @media screen and (max-width: 991px) {
-                
-            }
 
             & > .text__content {
                 max-width: 712px;
@@ -398,8 +443,15 @@ body {
                 flex-direction: column;
                 gap: 26px;
 
+                @media screen and (max-width: 991px) {
+                }
+
                 & > .feature__title {
                     max-width: 420px;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: 210px;
+                    }
                 }
 
                 & > .feature__description:nth-child(2) {
@@ -408,6 +460,10 @@ body {
 
                 & > .feature__description:nth-child(3) {
                     font-size: 15px;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: 265px;
+                    }
                 }
             }
         }
@@ -415,12 +471,16 @@ body {
 
     & .dobra-04 {
         @include backgroundImageDobra(url(./assets/images/dobra-04-lp-windows-11-background.png));
-        display: flex;
         padding-block: 254px;
         padding-inline: 48px;
 
+        @media screen and (min-width: 991px) and (max-width: 1199px) {
+            padding-block: 0 !important;
+        }
+
         @media screen and (max-width: 991px) {
             margin: 0px auto;
+            background-image: url('./assets/images/dobra-04-lp-windows-11-background-mobile.png');
         }
 
         & > .feature__content {
@@ -450,12 +510,12 @@ body {
 
     & .dobra-05 {
         @include backgroundImageDobra(url(./assets/images/dobra-05-lp-windows-11-background.png));
-        display: flex;
         padding-block: 270px;
         padding-inline: 48px;
 
         @media screen and (max-width: 991px) {
             margin: 0px auto;
+            background-image: url('./assets/images/dobra-05-lp-windows-11-background-mobile.png');
         }
 
         & > .feature__content {
@@ -494,9 +554,9 @@ body {
             
         }
 
-        & .feature__content {
+        // & .feature__content {
             
-        }
+        // }
     }
 
     & .dobra-07 {
@@ -507,6 +567,7 @@ body {
 
         @media screen and (max-width: 991px) {
             margin: 0px auto;
+            background-image: url('./assets/images/dobra-07-lp-windows-11-background-mobile.png');
         }
 
         & > .feature__content {
@@ -533,6 +594,10 @@ body {
 
                 & > .feature__description:nth-child(3) {
                     font-size: 15px;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: 327px;
+                    }
                 }
             }
         }
@@ -542,12 +607,21 @@ body {
         max-width: 1686px;
         margin: 0 auto;
 
+        @media screen and (max-width: 991px) {
+            max-width: 428px;
+            overflow: hidden;
+            padding-block: 60px;
+        }
+
         & > .feature__content {
+            z-index: 1 !important;
+
             @media screen and (max-width: 1698px) {
                 max-width: 991px;
             }
 
-            & > .feature__card {
+            & .feature__card {
+                margin: 0 auto;
                 max-width: 322px;
                 padding-inline: 20px;
                 padding-bottom: 20px;
@@ -558,6 +632,11 @@ body {
                 border: 2px solid #FFF;
                 background: linear-gradient(210deg, #F5F5F5 1.14%, #F5F5F5 100%);
                 box-shadow: 14px 19px 29.1px 0 rgba(0, 0, 0, 0.10);
+                z-index: 100;
+
+                @media screen and (max-width: 991px) {
+                    max-width: 242px;
+                }
 
                 & > .feature__image {
                     max-width: 224px;
@@ -569,11 +648,23 @@ body {
                     font-weight: 700;
                     margin-bottom: 20px;
                     max-width: 248px;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 12px;
+                        max-width: 180px;
+                        margin-bottom: 16px !important;
+                    }
                 }
 
                 & > .feature__redirect {
                     font-size: 20px;
                     padding: 14px 16px;
+                    z-index: 101;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 15px;
+                        padding: 10px 12px;
+                    }
                 }
             }
         }
@@ -581,6 +672,9 @@ body {
 
     & > .dobra-09 {
         
+        @media screen and (min-width: 992px) and (max-width: 1686px) {
+            padding-inline: 40px;
+        }
 
         & > .feature__content {
             display: flex;
@@ -598,9 +692,27 @@ body {
                 max-width: 1200px;
                 text-align: center;
 
+                & > .feature__title {
+
+                    @media screen and (max-width: 991px) {
+                        max-width: 352px;
+                    }
+                }
+
                 & > .feature__description {
                     margin-bottom: 14px;
                     max-width: 990px;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: 336px;
+                    }
+                }
+
+                & > .feature__redirect {
+                    @media screen and (max-width: 991px) {
+                        padding: 4px 16px 7px 16px;
+                        font-size: 18px;
+                    }
                 }
             }
 
@@ -613,6 +725,13 @@ body {
                 @media screen and (max-width: 1208px) {
                     @include contentTwoCols(.9fr 1.1fr);
                 }
+                
+                @media screen and (max-width: 991px) {
+                    background-image: url('./assets/images/dobra-09-lp-windows-11-background-mobile.png');
+                    background-repeat: no-repeat;
+                    min-height: 941px;
+                    grid-template-rows: 50% 50%;
+                }
 
                 & > .text__content {
                     padding: 256px 0 228px 75px;
@@ -624,16 +743,42 @@ body {
                         padding: 256px 0 228px 45px;
                     }
 
+                    
+                    @media screen and (max-width: 991px) {
+                        padding: 0;
+                        padding-inline: 40px;
+                        grid-row: 2/3;
+                        align-self: center;
+                        margin-bottom: 50px;
+                    }
+
                     & > .feature__title {
                         @include textColorDegrade;
                         max-width: 599px;
                         padding-bottom: 0;
+
+                        @media screen and (max-width: 1284px) {
+                            font-size: 53px;
+                        }
+
+                        @media screen and (max-width: 991px) {
+                            font-size: 45px;
+                        }
                     }
 
                     & > .feature__description {
                         padding-top: 0;
                         font-size: 40px;
                         max-width: 450px;
+
+                        @media screen and (max-width: 1284px) {
+                            font-size: 25px;
+                        }
+
+                        @media screen and (max-width: 991px) {
+                            font-size: 30px;
+                            max-width: 350px;
+                        }
                     }
                 }
             }
@@ -641,6 +786,7 @@ body {
     }
 
     & .dobra-footer {
+        padding: 40px;
 
         @media screen and (max-width: 991px) {
 
@@ -649,8 +795,11 @@ body {
         & .feature__content {
             margin: 0 auto;
             max-width: 1612px;
-            padding-top: 55px;
-            border-top: 1px solid #C8C8C8;
+
+            @media screen and (min-width: 992px) {
+                padding-top: 55px;
+                border-top: 1px solid #C8C8C8;
+            }
 
             & > .text__content {
                 display: flex;
@@ -679,7 +828,7 @@ body {
                         }
 
                         @media screen and (max-width: 991px) {
-                            font-size: 10px;
+                            font-size: 11px;
                         }
                     }
                 }

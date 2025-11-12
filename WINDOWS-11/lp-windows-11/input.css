@@ -111,7 +111,7 @@ body {
 }
 @media screen and (max-width: 991px) {
   .ep-lamina .feature__description {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .ep-lamina .feature__redirect {
@@ -123,6 +123,9 @@ body {
   border-radius: 12px;
   width: -moz-fit-content;
   width: fit-content;
+}
+.ep-lamina .feature__redirect:hover {
+  cursor: pointer;
 }
 .ep-lamina .feature__image {
   width: 100%;
@@ -147,67 +150,12 @@ body {
   .ep-lamina section {
     padding: 0;
     margin: 0 auto;
+    max-width: 428px;
   }
 }
 @media screen and (max-width: 340px) {
   .ep-lamina section {
     margin: 0 10px;
-  }
-}
-.ep-lamina .dobra-flex-column {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.ep-lamina .dobra-flex-column .feature__content {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-.ep-lamina .dobra-flex-column .feature__content .text__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-@media screen and (max-width: 991px) {
-  .ep-lamina .dobra-flex-column .feature__content .text__content {
-    text-align: left;
-    align-items: flex-start;
-  }
-}
-.ep-lamina .dobra-flex-column .feature__content .text__content > * {
-  max-width: 1204px;
-}
-.ep-lamina .dobra-flex-column .feature__content .text__content .feature__title {
-  margin-bottom: 30px;
-}
-.ep-lamina .dobra-flex-column .feature__content .text__content .feature__description {
-  max-width: 1100px;
-}
-.ep-lamina .dobra-flex-column .feature__content .text__content .feature__description span {
-  font-size: 18px;
-}
-@media screen and (max-width: 991px) {
-  .ep-lamina .dobra-flex-column .feature__content .text__content .feature__description span {
-    font-size: 8px;
-  }
-}
-.ep-lamina .dobra-flex-column .feature__content .image {
-  border-radius: 30px;
-}
-.ep-lamina .dobra-flex-column .feature__content .video {
-  width: 100%;
-}
-@media screen and (max-width: 991px) {
-  .ep-lamina .dobra-flex-column .feature__content .video:nth-child(2) {
-    display: none;
-  }
-}
-@media screen and (max-width: 991px) {
-  .ep-lamina .dobra-flex-column {
-    display: flex;
-    justify-content: center;
   }
 }
 .ep-lamina .dobra-01 {
@@ -223,8 +171,9 @@ body {
 }
 @media screen and (max-width: 991px) {
   .ep-lamina .dobra-01 {
+    background-image: url("./assets/images/dobra-01-lp-windows-11-banner-mobile.png");
     margin: 0 auto;
-    max-width: 100%;
+    min-height: 770px;
   }
 }
 .ep-lamina .dobra-01 .feature__content {
@@ -234,11 +183,23 @@ body {
   height: 100%;
   padding: 0 40px;
 }
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-01 .feature__content {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
 .ep-lamina .dobra-01 .feature__content > .feature__image {
   max-width: 390px;
   grid-column: 1/3;
   justify-self: center;
   margin-top: 50px;
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-01 .feature__content > .feature__image {
+    max-width: 198px;
+    margin-top: 40px;
+  }
 }
 .ep-lamina .dobra-01 .feature__content > .text__content {
   margin-block: 50px;
@@ -248,16 +209,51 @@ body {
   flex-direction: column;
   gap: 50px;
 }
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-01 .feature__content > .text__content {
+    margin-block: 38px;
+    align-self: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .ep-lamina .dobra-01 .feature__content > .text__content > .feature__title {
   font-size: 90px;
   line-height: 107%;
   letter-spacing: 0%;
+}
+@media screen and (max-width: 1199px) {
+  .ep-lamina .dobra-01 .feature__content > .text__content > .feature__title {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-01 .feature__content > .text__content > .feature__title {
+    font-size: 36px;
+  }
 }
 .ep-lamina .dobra-01 .feature__content > .text__content > .feature__description {
   font-size: 42px;
   line-height: 107%;
   letter-spacing: 0%;
   max-width: 850px;
+}
+@media screen and (max-width: 1199px) {
+  .ep-lamina .dobra-01 .feature__content > .text__content > .feature__description {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-01 .feature__content > .text__content > .feature__description {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-01 .feature__content > .text__content > .feature__redirect {
+    padding: 4px 16px 7px 16px;
+    font-size: 18px;
+  }
 }
 .ep-lamina .dobra-02 {
   overflow: hidden;
@@ -285,6 +281,16 @@ body {
   box-shadow: 0 17px 59.7px 0 rgba(43, 100, 124, 0.39);
   border-radius: 26px;
 }
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-02 .feature__content > .feature__contrast {
+    padding-top: 17px;
+    padding-bottom: 29px;
+    padding-inline: 44px;
+    text-align: center;
+    width: auto;
+    max-width: 318px;
+  }
+}
 .ep-lamina .dobra-02 .feature__content > .feature__contrast > span {
   background: linear-gradient(90deg, #142B5F 0%, #2482D3 100%);
   background-clip: text;
@@ -293,6 +299,17 @@ body {
   font-size: 150px;
   font-weight: 700;
 }
+@media screen and (max-width: 1199px) {
+  .ep-lamina .dobra-02 .feature__content > .feature__contrast > span {
+    font-size: 104px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-02 .feature__content > .feature__contrast > span {
+    font-size: 65px;
+    text-align: center;
+  }
+}
 .ep-lamina .dobra-02 .feature__content > .text__content {
   text-align: center;
   display: flex;
@@ -300,11 +317,67 @@ body {
   gap: 25px;
   max-width: 1216px;
 }
+@media screen and (max-width: 1199px) {
+  .ep-lamina .dobra-02 .feature__content > .text__content {
+    padding-inline: 40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-02 .feature__content > .text__content {
+    align-items: center;
+  }
+}
 .ep-lamina .dobra-02 .feature__content > .text__content > .feature__title {
   font-size: 48px;
 }
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-02 .feature__content > .text__content > .feature__title {
+    font-size: 30px;
+    max-width: 319px;
+  }
+}
 .ep-lamina .dobra-02 .feature__content > .text__content > .feature__description {
   font-size: 18px;
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-02 .feature__content > .text__content > .feature__description {
+    font-size: 10px;
+    max-width: 298px;
+  }
+}
+.ep-lamina .dobra-background-image {
+  display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .ep-lamina .dobra-background-image {
+    padding-block: 100px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-background-image {
+    padding-block: 0px !important;
+    min-height: 799px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-background-image > .feature__content {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-background-image > .feature__content > .text__content {
+    grid-row: 2/3;
+    grid-column: 1/2 !important;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    gap: 15px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-background-image > .feature__content > .text__content > .feature__description:nth-child(3) {
+    font-size: 10px !important;
+  }
 }
 .ep-lamina .dobra-03 {
   margin: 0 auto;
@@ -312,13 +385,13 @@ body {
   background-size: 100%;
   background-position: left;
   background-repeat: no-repeat;
-  display: flex;
   padding-block: 203px;
   padding-inline: 48px;
 }
 @media screen and (max-width: 991px) {
   .ep-lamina .dobra-03 {
     margin: 0px auto;
+    background-image: url("./assets/images/dobra-03-lp-windows-11-background-mobile.png");
   }
 }
 .ep-lamina .dobra-03 > .feature__content {
@@ -327,6 +400,12 @@ body {
   width: 100%;
   max-width: 1686px;
   margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-03 > .feature__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 .ep-lamina .dobra-03 > .feature__content > .text__content {
   max-width: 712px;
@@ -337,11 +416,21 @@ body {
 .ep-lamina .dobra-03 > .feature__content > .text__content > .feature__title {
   max-width: 420px;
 }
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-03 > .feature__content > .text__content > .feature__title {
+    max-width: 210px;
+  }
+}
 .ep-lamina .dobra-03 > .feature__content > .text__content > .feature__description:nth-child(2) {
   max-width: 650px;
 }
 .ep-lamina .dobra-03 > .feature__content > .text__content > .feature__description:nth-child(3) {
   font-size: 15px;
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-03 > .feature__content > .text__content > .feature__description:nth-child(3) {
+    max-width: 265px;
+  }
 }
 .ep-lamina .dobra-04 {
   margin: 0 auto;
@@ -349,13 +438,18 @@ body {
   background-size: 100%;
   background-position: left;
   background-repeat: no-repeat;
-  display: flex;
   padding-block: 254px;
   padding-inline: 48px;
+}
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .ep-lamina .dobra-04 {
+    padding-block: 0 !important;
+  }
 }
 @media screen and (max-width: 991px) {
   .ep-lamina .dobra-04 {
     margin: 0px auto;
+    background-image: url("./assets/images/dobra-04-lp-windows-11-background-mobile.png");
   }
 }
 .ep-lamina .dobra-04 > .feature__content {
@@ -364,6 +458,12 @@ body {
   width: 100%;
   max-width: 1686px;
   margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-04 > .feature__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 .ep-lamina .dobra-04 > .feature__content > .text__content {
   grid-column: 2/3;
@@ -381,13 +481,13 @@ body {
   background-size: 100%;
   background-position: left;
   background-repeat: no-repeat;
-  display: flex;
   padding-block: 270px;
   padding-inline: 48px;
 }
 @media screen and (max-width: 991px) {
   .ep-lamina .dobra-05 {
     margin: 0px auto;
+    background-image: url("./assets/images/dobra-05-lp-windows-11-background-mobile.png");
   }
 }
 .ep-lamina .dobra-05 > .feature__content {
@@ -396,6 +496,12 @@ body {
   width: 100%;
   max-width: 1686px;
   margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-05 > .feature__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 .ep-lamina .dobra-05 > .feature__content > .text__content {
   max-width: 712px;
@@ -429,6 +535,7 @@ body {
 @media screen and (max-width: 991px) {
   .ep-lamina .dobra-07 {
     margin: 0px auto;
+    background-image: url("./assets/images/dobra-07-lp-windows-11-background-mobile.png");
   }
 }
 .ep-lamina .dobra-07 > .feature__content {
@@ -437,6 +544,12 @@ body {
   width: 100%;
   max-width: 1686px;
   margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-07 > .feature__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 .ep-lamina .dobra-07 > .feature__content > .text__content {
   grid-column: 2/3;
@@ -451,16 +564,32 @@ body {
 .ep-lamina .dobra-07 > .feature__content > .text__content > .feature__description:nth-child(3) {
   font-size: 15px;
 }
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-07 > .feature__content > .text__content > .feature__description:nth-child(3) {
+    max-width: 327px;
+  }
+}
 .ep-lamina .dobra-08 {
   max-width: 1686px;
   margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-08 {
+    max-width: 428px;
+    overflow: hidden;
+    padding-block: 60px;
+  }
+}
+.ep-lamina .dobra-08 > .feature__content {
+  z-index: 1 !important;
 }
 @media screen and (max-width: 1698px) {
   .ep-lamina .dobra-08 > .feature__content {
     max-width: 991px;
   }
 }
-.ep-lamina .dobra-08 > .feature__content > .feature__card {
+.ep-lamina .dobra-08 > .feature__content .feature__card {
+  margin: 0 auto;
   max-width: 322px;
   padding-inline: 20px;
   padding-bottom: 20px;
@@ -471,20 +600,45 @@ body {
   border: 2px solid #FFF;
   background: linear-gradient(210deg, #F5F5F5 1.14%, #F5F5F5 100%);
   box-shadow: 14px 19px 29.1px 0 rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
-.ep-lamina .dobra-08 > .feature__content > .feature__card > .feature__image {
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-08 > .feature__content .feature__card {
+    max-width: 242px;
+  }
+}
+.ep-lamina .dobra-08 > .feature__content .feature__card > .feature__image {
   max-width: 224px;
 }
-.ep-lamina .dobra-08 > .feature__content > .feature__card > .feature__title {
+.ep-lamina .dobra-08 > .feature__content .feature__card > .feature__title {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 20px;
   max-width: 248px;
 }
-.ep-lamina .dobra-08 > .feature__content > .feature__card > .feature__redirect {
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-08 > .feature__content .feature__card > .feature__title {
+    font-size: 12px;
+    max-width: 180px;
+    margin-bottom: 16px !important;
+  }
+}
+.ep-lamina .dobra-08 > .feature__content .feature__card > .feature__redirect {
   font-size: 20px;
   padding: 14px 16px;
+  z-index: 101;
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina .dobra-08 > .feature__content .feature__card > .feature__redirect {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1686px) {
+  .ep-lamina > .dobra-09 {
+    padding-inline: 40px;
+  }
 }
 .ep-lamina > .dobra-09 > .feature__content {
   display: flex;
@@ -502,9 +656,25 @@ body {
   max-width: 1200px;
   text-align: center;
 }
+@media screen and (max-width: 991px) {
+  .ep-lamina > .dobra-09 > .feature__content > .text__content > .feature__title {
+    max-width: 352px;
+  }
+}
 .ep-lamina > .dobra-09 > .feature__content > .text__content > .feature__description {
   margin-bottom: 14px;
   max-width: 990px;
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina > .dobra-09 > .feature__content > .text__content > .feature__description {
+    max-width: 336px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina > .dobra-09 > .feature__content > .text__content > .feature__redirect {
+    padding: 4px 16px 7px 16px;
+    font-size: 18px;
+  }
 }
 .ep-lamina > .dobra-09 > .feature__content > .image__content {
   margin: 0 auto;
@@ -520,6 +690,12 @@ body {
   gap: 20px;
   width: 100%;
 }
+@media screen and (max-width: 991px) {
+  .ep-lamina > .dobra-09 > .feature__content > .image__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 @media screen and (max-width: 1208px) {
   .ep-lamina > .dobra-09 > .feature__content > .image__content {
     display: grid;
@@ -527,6 +703,20 @@ body {
     width: 100%;
     max-width: 1686px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1208px) and (max-width: 991px) {
+  .ep-lamina > .dobra-09 > .feature__content > .image__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina > .dobra-09 > .feature__content > .image__content {
+    background-image: url("./assets/images/dobra-09-lp-windows-11-background-mobile.png");
+    background-repeat: no-repeat;
+    min-height: 941px;
+    grid-template-rows: 50% 50%;
   }
 }
 .ep-lamina > .dobra-09 > .feature__content > .image__content > .text__content {
@@ -540,6 +730,15 @@ body {
     padding: 256px 0 228px 45px;
   }
 }
+@media screen and (max-width: 991px) {
+  .ep-lamina > .dobra-09 > .feature__content > .image__content > .text__content {
+    padding: 0;
+    padding-inline: 40px;
+    grid-row: 2/3;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+}
 .ep-lamina > .dobra-09 > .feature__content > .image__content > .text__content > .feature__title {
   background: linear-gradient(90deg, #142B5F 0%, #2482D3 100%);
   background-clip: text;
@@ -548,16 +747,44 @@ body {
   max-width: 599px;
   padding-bottom: 0;
 }
+@media screen and (max-width: 1284px) {
+  .ep-lamina > .dobra-09 > .feature__content > .image__content > .text__content > .feature__title {
+    font-size: 53px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina > .dobra-09 > .feature__content > .image__content > .text__content > .feature__title {
+    font-size: 45px;
+  }
+}
 .ep-lamina > .dobra-09 > .feature__content > .image__content > .text__content > .feature__description {
   padding-top: 0;
   font-size: 40px;
   max-width: 450px;
 }
+@media screen and (max-width: 1284px) {
+  .ep-lamina > .dobra-09 > .feature__content > .image__content > .text__content > .feature__description {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ep-lamina > .dobra-09 > .feature__content > .image__content > .text__content > .feature__description {
+    font-size: 30px;
+    max-width: 350px;
+  }
+}
+.ep-lamina .dobra-footer {
+  padding: 40px;
+}
 .ep-lamina .dobra-footer .feature__content {
   margin: 0 auto;
   max-width: 1612px;
-  padding-top: 55px;
-  border-top: 1px solid #C8C8C8;
+}
+@media screen and (min-width: 992px) {
+  .ep-lamina .dobra-footer .feature__content {
+    padding-top: 55px;
+    border-top: 1px solid #C8C8C8;
+  }
 }
 .ep-lamina .dobra-footer .feature__content > .text__content {
   display: flex;
@@ -581,6 +808,6 @@ body {
 }
 @media screen and (max-width: 991px) {
   .ep-lamina .dobra-footer .feature__content > .text__content > ul > .feature__description {
-    font-size: 10px;
+    font-size: 11px;
   }
 }/*# sourceMappingURL=input.css.map */
