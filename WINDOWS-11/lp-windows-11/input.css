@@ -222,9 +222,10 @@ body {
   line-height: 107%;
   letter-spacing: 0%;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1448px) {
   .ep-lamina .dobra-01 .feature__content > .text__content > .feature__title {
     font-size: 64px;
+    max-width: 700px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -441,7 +442,12 @@ body {
   padding-block: 254px;
   padding-inline: 48px;
 }
-@media screen and (min-width: 991px) and (max-width: 1199px) {
+@media screen and (min-width: 1450px) and (max-width: 1686px) {
+  .ep-lamina .dobra-04 {
+    padding-block: 100px !important;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1450px) {
   .ep-lamina .dobra-04 {
     padding-block: 0 !important;
   }
