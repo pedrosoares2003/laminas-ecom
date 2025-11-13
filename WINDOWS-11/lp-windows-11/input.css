@@ -187,6 +187,7 @@ body {
   .ep-lamina .dobra-01 .feature__content {
     grid-template-columns: 1fr;
     height: auto;
+    padding: 0 35px;
   }
 }
 .ep-lamina .dobra-01 .feature__content > .feature__image {
